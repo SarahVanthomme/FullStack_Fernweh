@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\City;
+use App\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class AdminCategoriesController extends Controller
+class AdminCountriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +17,8 @@ class AdminCategoriesController extends Controller
     public function index()
     {
         //
-        $categories = Category::all();
-        return view('admin.categories.index',compact('categories'));
+        $countries = Country::all();
+        return view('admin.countries.index',compact('countries'));
     }
 
     /**
@@ -28,7 +29,8 @@ class AdminCategoriesController extends Controller
     public function create()
     {
         //
-        return view('admin.categories.create');
+        return view('admin.countries.create');
+
     }
 
     /**
@@ -40,12 +42,9 @@ class AdminCategoriesController extends Controller
     public function store(Request $request)
     {
         //
-//        Category::create([
-//            'name'=>['name']]);
-
         $input = $request->all();
-        Category::create($input);
-        return redirect('/admin/categories');
+        Country::create($input);
+        return redirect('/admin/countries');
     }
 
     /**
@@ -68,8 +67,8 @@ class AdminCategoriesController extends Controller
     public function edit($id)
     {
         //
-        $category = Category::findOrFail($id);
-        return view ('admin.categories.edit',compact('category'));
+        $country = Country::findOrFail($id);
+        return view ('admin.countries.edit',compact('country'));
     }
 
     /**
@@ -82,10 +81,10 @@ class AdminCategoriesController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $category = Category::findOrFail($id);
+        $country = Country::findOrFail($id);
         $input = $request->all();
-        $category->update($input);
-        return redirect('admin/categories');
+        $country->update($input);
+        return redirect('admin/countries');
     }
 
     /**
@@ -97,10 +96,9 @@ class AdminCategoriesController extends Controller
     public function destroy($id)
     {
         //
-        $category = Category::findOrFail($id);
-        $category->delete();
-        Session::flash('deleted_category', 'The category is deleted');
-        //flash is weergave message, deleted_category is de message naam en 'the category is deleted' is wat er getoond wordt aan de gebruiker.
-        return redirect('/admin/categories');
+        $country = Country::findOrFail($id);
+        $country->delete();
+        Session::flash('deleted_country', 'The country is deleted');
+        return redirect('/admin/countries');
     }
 }

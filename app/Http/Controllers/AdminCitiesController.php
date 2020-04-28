@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\City;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class AdminCategoriesController extends Controller
+class AdminCitiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class AdminCategoriesController extends Controller
     public function index()
     {
         //
-        $categories = Category::all();
-        return view('admin.categories.index',compact('categories'));
+        $cities = City::all();
+        return view('admin.cities.index',compact('cities'));
     }
 
     /**
@@ -28,7 +28,8 @@ class AdminCategoriesController extends Controller
     public function create()
     {
         //
-        return view('admin.categories.create');
+        return view('admin.cities.create');
+
     }
 
     /**
@@ -40,12 +41,9 @@ class AdminCategoriesController extends Controller
     public function store(Request $request)
     {
         //
-//        Category::create([
-//            'name'=>['name']]);
-
         $input = $request->all();
-        Category::create($input);
-        return redirect('/admin/categories');
+        City::create($input);
+        return redirect('/admin/cities');
     }
 
     /**
@@ -68,8 +66,8 @@ class AdminCategoriesController extends Controller
     public function edit($id)
     {
         //
-        $category = Category::findOrFail($id);
-        return view ('admin.categories.edit',compact('category'));
+        $city = City::findOrFail($id);
+        return view ('admin.cities.edit',compact('city'));
     }
 
     /**
@@ -82,10 +80,10 @@ class AdminCategoriesController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $category = Category::findOrFail($id);
+        $city = City::findOrFail($id);
         $input = $request->all();
-        $category->update($input);
-        return redirect('admin/categories');
+        $city->update($input);
+        return redirect('admin/cities');
     }
 
     /**
@@ -97,10 +95,9 @@ class AdminCategoriesController extends Controller
     public function destroy($id)
     {
         //
-        $category = Category::findOrFail($id);
-        $category->delete();
-        Session::flash('deleted_category', 'The category is deleted');
-        //flash is weergave message, deleted_category is de message naam en 'the category is deleted' is wat er getoond wordt aan de gebruiker.
-        return redirect('/admin/categories');
+        $city = City::findOrFail($id);
+        $city->delete();
+        Session::flash('deleted_city', 'The city is deleted');
+        return redirect('/admin/cities');
     }
 }

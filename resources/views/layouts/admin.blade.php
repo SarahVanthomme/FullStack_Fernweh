@@ -58,9 +58,9 @@
                                     <a class="nav-link thin" href="#">Addresses</a>
                                     <a class="nav-link thin" href="#">Products</a>
                                     <a class="nav-link thin" href="{{route('categories.index')}}">Categories</a>
-                                    <a class="nav-link thin" href="#">Cities</a>
-                                    <a class="nav-link thin" href="#">Countries</a>
-                                    <a class="nav-link thin" href="#">Continents</a>
+                                    <a class="nav-link thin" href="{{route('cities.index')}}">Cities</a>
+                                    <a class="nav-link thin" href="{{route('countries.index')}}">Countries</a>
+                                    <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
                                     <a class="nav-link thin" href="#">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
                                 </small></h4>
@@ -89,9 +89,8 @@
                                     <a class="nav-link thin" href="#">Addresses</a>
                                     <a class="nav-link thin" href="#">Products</a>
                                     <a class="nav-link thin" href="{{route('categories.create')}}">Categories</a>
-                                    <a class="nav-link thin" href="#">Cities</a>
-                                    <a class="nav-link thin" href="#">Countries</a>
-                                    <a class="nav-link thin" href="#">Continents</a>
+                                    <a class="nav-link thin" href="{{route('cities.create')}}">Cities</a>
+                                    <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
                                     <a class="nav-link thin" href="#">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
                                 </small></h4>

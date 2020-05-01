@@ -63,6 +63,7 @@
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
                                     <a class="nav-link thin" href="#">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
+                                    <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
                                 </small></h4>
                         </nav>
                     </div>
@@ -93,6 +94,7 @@
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
                                     <a class="nav-link thin" href="#">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
+                                    <a class="nav-link thin" href="{{route('posts.create')}}">Posts</a>
                                 </small></h4>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav"><h4><small><a class="nav-link thin" href="401.html">401 Page</a><a class="nav-link thin" href="404.html">404 Page</a><a class="nav-link thin" href="500.html">500 Page</a></small></h4></nav>

@@ -34,3 +34,4 @@ Route::resource('admin/categories','AdminCategoriesController');
 Route::resource('admin/cities','AdminCitiesController');
 Route::resource('admin/countries','AdminCountriesController');
 Route::resource('admin/continents','AdminContinentsController');
+Route::resource('admin/posts','AdminPostsController');

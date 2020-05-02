@@ -3,11 +3,10 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\SoftDeletes;
+//use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
-use function GuzzleHttp\Psr7\_parse_request_uri;
 
 
 class User extends Authenticatable
@@ -20,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
 
-    use SoftDeletes;
+    //use SoftDeletes;
     protected $fillable = [
         'name',  'email', 'address', 'country', 'role_id', 'is_active','password',
     ];
@@ -35,14 +34,6 @@ class User extends Authenticatable
 
     ];
 
-    public function role(){
-        return $this->belongsTo('App\Role');
-    }
-
-    public function posts(){
-        return $this->hasMany('App\Post');
-    }
-
     /**
      * The attributes that should be cast to native types.
      *
@@ -51,6 +42,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function role(){
+        return $this->belongsTo('App\Role');
+    }
+
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
+
 
     public function isAdmin()
     {

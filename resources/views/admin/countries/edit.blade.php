@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col-12">
                             @include('includes.form_error')
-                            {!! Form::open(['method'=>'PATCH', 'action'=>['AdminCountriesController@update', $country->id],'files'=>true]) !!}
+                            {!! Form::model($country,['method'=>'PATCH', 'action'=>['AdminCountriesController@update', $country->id],'files'=>true]) !!}
                             <div class="form-group">
                                 {!! Form::label('name', 'Name:') !!}
                                 {!! Form::text('name', $country->name,['class'=>'form-control']) !!}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UsersEditRequest;
 use App\Http\Requests\UsersRequest;
 //use App\Photo;
 use App\Role;
@@ -20,8 +21,9 @@ class AdminUsersController extends Controller
     public function index()
     {
         //
-        $users = User::withTrashed()->paginate(100);
-        return view('admin.users.index',compact('users'));
+       // $users = User::withTrashed()->paginate(100);
+        $users = User::all();
+        return view('admin.users.index', compact('users'));
 
     }
 
@@ -34,7 +36,7 @@ class AdminUsersController extends Controller
     {
         //
         $roles=Role::pluck('name','id')->all();
-        return view('admin.users.create',compact('roles'));
+        return view('admin.users.create', compact('roles'));
 
     }
 
@@ -162,15 +164,15 @@ class AdminUsersController extends Controller
         $user->delete();
         Session::flash('deleted_user', 'The user is deleted');
         //flash is weergave message, deleted user is de message naam en the user deleted is wat er getoond wordt aan de gebruiker.
-        return redirect('/admin/users');
+        return redirect('admin/users');
     }
 
 
-    public function roleRestore($id)
+   /* public function roleRestore($id)
     {
         Role:onlyTrashed()->where('id',$id)->restore();
         return redirect('admin/roles');
-    }
+    }*/
 
 
 }

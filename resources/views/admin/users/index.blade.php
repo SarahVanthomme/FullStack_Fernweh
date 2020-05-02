@@ -44,20 +44,31 @@
                                     <td>{{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
                                     <td>{{$user->created_at}}</td>
                                     <td>{{$user->updated_at}}</td>
-                                    @if($user->deleted_at != null)
-                               <td><a href="{{route('admin.userrestore',$user->id)}}" class="btn btn-outline-success rounded-pill mb-1 w-100">Restore user</a></td>
-                           @else
 
-                               <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-outline-warning rounded-pill w-100 mb-1">Edit user</a></td>
-                               {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
-                               <td class="form-group">
-                                   {!! form::submit('Delete user', ['class'=>'btn btn-outline-danger rounded-pill w-100 mb-1']) !!}
-                               </td>
-                               {!! Form::close() !!}
-                           @endif
-                                </tr>
-                            @endforeach
-                        @endif
+
+                                    {{--@if($user->deleted_at != null)
+                                    <td><a href="{{route('admin.userrestore',$user->id)}}" class="btn btn-outline-success rounded-pill mb-1 w-100">Restore user</a></td>
+                                    @else
+                                   <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-outline-warning rounded-pill w-100 mb-1">Edit user</a></td>
+                                   {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
+                                   <td class="form-group">
+                                       {!! form::submit('Delete user', ['class'=>'btn btn-outline-danger rounded-pill w-100 mb-1']) !!}
+                                   </td>
+                                   {!! Form::close() !!}
+                                   @endif--}}
+
+                                    <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit user</a></td>
+                                    {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
+                                    <td class="form-group">
+                                        {!! form::submit('Delete user', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                    </td>
+                                    {!! Form::close() !!}
+
+                                        </tr>
+                                    @endforeach
+                                    @endif
+
+
 {{--                        <tr class="line-height-50">
                             <th scope="row">2</th>
                             <td>Jacob</td>

@@ -61,7 +61,7 @@
                                     <a class="nav-link thin" href="{{route('cities.index')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.index')}}">Countries</a>
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
-                                    <a class="nav-link thin" href="#">Comments</a>
+                                    <a class="nav-link thin" href="{{route('comments.index')}}">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
                                     <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
                                 </small></h4>
@@ -92,7 +92,7 @@
                                     <a class="nav-link thin" href="{{route('categories.create')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.create')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
-                                    <a class="nav-link thin" href="#">Comments</a>
+                                    <a class="nav-link thin" href="{{route('comments.create')}}">Comments</a>
                                     <a class="nav-link thin" href="#">Orders</a>
                                     <a class="nav-link thin" href="{{route('posts.create')}}">Posts</a>
                                 </small></h4>

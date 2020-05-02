@@ -29,9 +29,11 @@ Route::group(['middleware'=>'admin'],function(){
 });
 
 Route::resource('admin/users', 'AdminUsersController');
-Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
+//Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
 Route::resource('admin/categories','AdminCategoriesController');
 Route::resource('admin/cities','AdminCitiesController');
 Route::resource('admin/countries','AdminCountriesController');
 Route::resource('admin/continents','AdminContinentsController');
 Route::resource('admin/posts','AdminPostsController');
+Route::resource('admin/comments','PostCommentsController');
+Route::resource('admin/commentreplies','CommentRepliesController');

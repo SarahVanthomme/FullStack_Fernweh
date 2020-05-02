@@ -15,6 +15,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
+            'role_id'=>1,
             'is_active' => 1,
             'name' => 'sarah',
             'email' => 'sarah@test.be',
@@ -25,6 +26,6 @@ class UsersTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        factory('App\User', 25)->create();
+        factory('App\User', 5)->create();
     }
 }

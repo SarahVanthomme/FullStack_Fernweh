@@ -4,14 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Country extends Model
+class Discount extends Model
 {
     //
     protected $fillable = [
         'name',
+        'percentage'
     ];
-
-    public function products(){
-        return $this->hasMany(Product::class);
-    }
 }

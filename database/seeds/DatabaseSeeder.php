@@ -20,6 +20,9 @@ class DatabaseSeeder extends Seeder
         $this->call(CountriesTableSeeder::class);
         $this->call(ContinentsTableSeeder::class);
         $this->call(PostsTableSeeder::class);
+        $this->call(ProductSeeder::class);
+        $this->call(DiscountSeeder::class);
+        $this->call(PhotoSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

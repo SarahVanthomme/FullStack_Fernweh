@@ -35,5 +35,14 @@ Route::resource('admin/cities','AdminCitiesController');
 Route::resource('admin/countries','AdminCountriesController');
 Route::resource('admin/continents','AdminContinentsController');
 Route::resource('admin/posts','AdminPostsController');
-Route::resource('admin/comments','PostCommentsController');
-Route::resource('admin/commentreplies','CommentRepliesController');
+//Route::resource('admin/comments','PostCommentsController');
+//Route::resource('admin/commentreplies','CommentRepliesController');
+Route::resource('admin/products','AdminProductsController', ['index'=>'admin.products.index']);
+Route::get('admin/products/continent/{id}','AdminProductsController@productsPerContinent')->name('admin.productsPerContinent');
+Route::get('admin/products/country/{id}','AdminProductsController@productsPerCountry')->name('admin.productsPerCountry');
+Route::resource('admin/discounts','AdminDiscountsController');
+Route::resource('admin/photos','AdminPhotosController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

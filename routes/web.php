@@ -28,6 +28,19 @@ Route::group(['middleware'=>'admin'],function(){
     })->name('admin');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/shop', 'FrontendController@index')->name('shop');
+Route::get('/products/continent/{id}', 'FrontendController@productsPerContinent')->name('productsPerContinent');
+Route::get('/products/country/{id}', 'FrontendController@productsPerCountry')->name('productsPerCountry');
+Route::get('/products/city/{id}', 'FrontendController@productsPerCity')->name('productsPerCity');
+Route::get('/products/category/{id}', 'FrontendController@productsPerCategory')->name('productsPerCategory');
+
+
+/**backend**/
+
 Route::resource('admin/users', 'AdminUsersController');
 //Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
 Route::resource('admin/categories','AdminCategoriesController');
@@ -43,6 +56,3 @@ Route::get('admin/products/country/{id}','AdminProductsController@productsPerCou
 Route::resource('admin/discounts','AdminDiscountsController');
 Route::resource('admin/photos','AdminPhotosController');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

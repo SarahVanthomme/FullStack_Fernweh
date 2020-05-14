@@ -2,35 +2,432 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/discounts/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/discounts/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/discounts/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/photos/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/photos/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/photos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/topbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/totals.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front-app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/.idea/Fernweh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/ROADMAP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/ROADMAP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/bird_blue_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-drag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-modern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-module.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-responsive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/feature-zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/owl-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/img/twitter_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/js/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/vendors/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/vendors/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/autoheight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/autoplay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/autowidth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/center.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/demos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/lazyLoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/merge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/mousewheel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/responsive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/rtl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/stagepadding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/urlhashnav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/demos/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/api-classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/api-events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/api-options.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/dev-buildin-plugins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/dev-external.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/dev-plugin-api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/dev-styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/started-faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/started-installation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/started-welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/support-changelog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/support-contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/docs/support-contributing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/bird_blue_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-drag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-modern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-module.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-responsive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/feature-zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/owl-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/img/twitter_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/js/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/demos.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/docs.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/scss/highlight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/vendors/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/vendors/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/data/classes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/data/events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/data/features.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/data/options.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/helpers/modulo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/helpers/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/layouts/demos.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/layouts/docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/layouts/home.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/animate.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoheight.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autoplay.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/autowidth.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/basic.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/center.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/demos.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/events.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/lazyLoad.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/merge.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/mousewheel.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/responsive.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/rtl.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/stagepadding.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/test.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/urlhashnav.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/demos/video.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-classes.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-events.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/api-options.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-external.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-plugin-api.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/dev-styles.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-faq.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-installation.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/started-welcome.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-changelog.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contact.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/docs/support-contributing.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/pages/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/footer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/head.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/home-carousel.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/home-features.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/home-hero.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/home-teaser-text.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/javascripts.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/releated-docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/sidenav-docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/title.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/docs_src/templates/partials/vendors.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/img/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/img/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.animate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.autoheight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.autoplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.autorefresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.support.modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/js/owl.video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_autoheight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_lazyload.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_theme.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_theme.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/_video.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/src/scss/owl.theme.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/test/unit/autoplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/OwlCarousel2-2.3.4/test/unit/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/africa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/asia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/australia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/check_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/destinations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/europe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/Travel_Type1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller1a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller2a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller3a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller4a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller5a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller6a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/bestseller7a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/destination-slider-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/footer6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/header-detail-pagina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/header1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/product-owl-carousel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/img/sign-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/north_america.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/prepros-6.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/prepros.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_deprecate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_overflow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_stretched-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/scss/vendor/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/shopping_cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fernwehfrontend/south_america.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/destination-slider-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/footer6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/frontend/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/Travel_Type1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller1a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller2a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller3a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller4a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller5a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller6a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller7a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/footer6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/header-detail-pagina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/header1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/product-owl-carousel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/img/sign-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/front-app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/front-app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Continent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Continent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CityFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CityFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_28_151142_create_cities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_151142_create_cities_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CountriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CountriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/products/1589243627bestseller5a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
@@ -158,21 +555,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\admin" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\admin\discounts" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\includes" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\products" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\admin\comments\replies" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\jquery" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\js" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\products" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\frontend" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject" />
     </key>
   </component>
   <component name="RunManager">
@@ -220,6 +621,15 @@
       <workItem from="1588855575195" duration="11051000" />
       <workItem from="1589121559630" duration="11177000" />
       <workItem from="1589197023794" duration="25950000" />
+      <workItem from="1589248526002" duration="41000" />
+      <workItem from="1589283999150" duration="2424000" />
+      <workItem from="1589381970673" duration="8790000" />
+      <workItem from="1589457315950" duration="4808000" />
+      <workItem from="1589462141005" duration="1126000" />
+      <workItem from="1589463291987" duration="1245000" />
+      <workItem from="1589464707259" duration="9878000" />
+      <workItem from="1589477963281" duration="6906000" />
+      <workItem from="1589492742934" duration="5484000" />
     </task>
     <servers />
   </component>
@@ -239,10 +649,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="708" y="182" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1588343134700" />
-    <state x="421" y="84" key="FileChooserDialogImpl" timestamp="1589235640605">
+    <state x="277" y="120" key="EditFileWatcherDialog" timestamp="1589454281918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589235640605" />
+    <state x="277" y="120" key="EditFileWatcherDialog/0.0.1280.680@0.0.1280.680" timestamp="1589454281918" />
+    <state x="421" y="84" key="FileChooserDialogImpl" timestamp="1589454133935">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589454133935" />
     <state width="596" height="161" key="GridCell.Tab.0.bottom" timestamp="1589158877459">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -259,10 +673,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="596" height="161" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589158877459" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1589197025399">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1589492765281">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589197025399" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589492765281" />
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589208103431">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

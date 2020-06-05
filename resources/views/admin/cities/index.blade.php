@@ -30,10 +30,10 @@
                                                 <td>{{$city->name}}</td>
                                                 <td>{{$city->created_at}}</td>
                                                 <td>{{$city->updated_at}}</td>
-                                                <td><a href="{{route('cities.edit',$city->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit city</a></td>
+                                                <td><a href="{{route('cities.edit',$city->id)}}" class="btn btn-link text-warning text-decoration-none">Edit city</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminCitiesController@destroy', $city->id]]) !!}
                                                 <td class="form-group">
-                                                    {!! form::submit('Delete city', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                                    {!! form::submit('Delete city', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                                 </td>
                                                 {!! Form::close() !!}
                                             </tr>

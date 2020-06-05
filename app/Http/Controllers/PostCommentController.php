@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\PostComment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostCommentController extends Controller
 {
@@ -37,6 +38,16 @@ class PostCommentController extends Controller
     public function store(Request $request)
     {
         //
+        $user = Auth::user();
+        $data = [
+            'post_id'=>$request->post_id,
+            'author'=>  $user->name,
+            'email'=>  $user->email,
+            'body'=>  $request->body,
+        ];
+        PostComment::create($data);
+        $request->session()->flash('comment_message', 'Your message has been submitted and awaits approval');
+        return redirect()->back();
     }
 
     /**

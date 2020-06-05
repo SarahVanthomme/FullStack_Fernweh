@@ -57,10 +57,10 @@
                                    {!! Form::close() !!}
                                    @endif--}}
 
-                                    <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit user</a></td>
+                                    <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-link text-warning text-decoration-none">Edit user</a></td>
                                     {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
                                     <td class="form-group">
-                                        {!! form::submit('Delete user', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                        {!! form::submit('Delete user', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                     </td>
                                     {!! Form::close() !!}
 

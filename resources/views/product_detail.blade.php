@@ -1,0 +1,358 @@
+{{--<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Product Detail</title>
+</head>
+<body>
+<section class="container-fluid z-index-5">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand xxl-font-300 text-dark" href="index.html">FERNWEH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse large-font-300" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="destinations.html" data-target="destinations.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="africa.html">Africa</a>
+                        <a class="dropdown-item" href="asia.html">Asia</a>
+                        <a class="dropdown-item" href="australia.html">Australia</a>
+                        <a class="dropdown-item" href="europe.html">Europe</a>
+                        <a class="dropdown-item" href="north_america.html">North America</a>
+                        <a class="dropdown-item" href="south_america.html">South America</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link ml-30pr text-dark d-none d-lg-block" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <a class="d-block d-lg-none nav-link text-dark" href="shopping_cart.html">Shopping cart</a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <p><b>Your shopping cart is empty</b></p>
+                        <button class="btn text-white border-none btn-dark mr-5pr w-80 mb-4pr"><a href="destinations.html" class="btn-proceed">Go to shop</a></button>
+                        <button class="btn text-white border-none btn-dark mr-5pr w-80"><a href="shopping_cart.html" class="btn-proceed">Go to cart</a></button>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-none d-lg-block ml-70pr text-dark" href="#"><i class="fa fa-user pr-45pr"></i>
+                    </a>
+                    <a class="d-block d-lg-none nav-link text-dark" href="#">Your account</a>
+                    <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1"><b>Email address</b></label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1"><b>Password</b></label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    <b>Remember me</b>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">New around here? Sign up</a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="background-search" class="form-control mr-sm-2" type="search"
+                       placeholder="Search"
+                       aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+</section>--}}
+
+@extends('layouts.front')
+@section('title')
+    Product Detail
+@endsection
+@section('content')
+
+<section class="container-fluid pt-4pr">
+    <div class="row">
+        <div class="col-12 align-items-center">
+            <div class="row d-flex justify-content-around">
+                <div class="col-6 col-md-4 col-lg-3 text-center">
+                    <img src="img/product1.png" alt="product1">
+                </div>
+                <div class="col-6 col-md-8 col-lg-6 d-flex flex-column">
+                    <div class="flex-grow-1 flex-lg-grow-0">
+                        <h5>Egypt Travel Guide</h5>
+                        <p class="m-0">€ 15<br>Categorie: blabla<br>Availability: in stock</p>
+                        <p id="product-content-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
+                            assumenda
+                            corporis
+                            cum dicta eius est ex
+                            incidunt iusto minus mollitia nisi non nulla officia repellat sapiente sequi tempore vitae.</p>
+                        <div class="d-flex mb-4pr d-md-none">
+                            <label class="m-0">Quantity</label>
+                            <input class="ml-5pr bg-grey input-number" type="number" min="1" max="10">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-4pr d-sm-none d-md-block">
+                            <label class="m-0">Quantity</label>
+                            <input class="ml-5pr input-number border-grey" type="number" min="1" max="10">
+                        </div>
+                        <div class="align-items-center d-flex">
+                            <button class="btn text-white btn-dark mr-5pr">add to cart</button>
+                            <a href="#"><i class="bg-circle-product-detail product-icon-1 fa fa-heart font-xl text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 text-center d-none d-lg-block">
+                    <h5>Deals of the week</h5>
+                    <div class="text-center">
+                        <img class="small pt-4pr" src="img/product1.png" alt="product1">
+                        <img class="small pt-4pr" src="img/product1.png" alt="product1">
+                    </div>
+
+                </div>
+            </div>
+            <p id="product-content-mobile" class="pt-4pr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad assumenda
+                corporis cum
+                dicta eius est
+                ex incidunt
+                iusto minus mollitia nisi non nulla officia repellat sapiente sequi tempore vitae.</p>
+        </div>
+
+    </div>
+</section>
+<section class="container text-center pt-4pr pb-4pr">
+    <h2>Reviews</h2>
+    <div class="row">
+        <div class="col-6 col-md-2"><p>Overall<br><span class="font-xxl">4.0</span><br>200 revieuws</p></div>
+        <div class="col-6 col-md-4">
+            <p>Based on 200 reviews</p>
+            <div>
+                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa
+                            fa-star"></i><i class="fa fa-star"></i><p class="m-0 pt-1pr pl-4pr text-decoration-none">40</p></a>
+                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
+                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
+                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                        class="fa fa-star-o"></i><i
+                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
+                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i
+                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 offset-1 text-left">
+            <h5>Add a review</h5>
+            {!! Form::open(['method'=>'POST', 'action'=>'PostCommentController@store'])!!}
+            <input type="hidden" name="post_id" value="{{$post->id}}">
+            <div class="d-flex">
+                <p class="pr-4pr">Your rating</p>
+                <a href="#"><i class="fa fa-star-o"></i><i
+                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></a>
+            </div>
+            <div class="form-group">
+                {!! Form::text('author', null, ['class'=>'form-control']) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::email('body', null, ['class'=>'form-control']) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::textarea('body', null, ['class'=>'form-control', 'rows'=>3]) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::submit('Submit', ['class'=>'btn btn-primary']) !!}
+            </div>
+            {{--<input class="input-type-width" type="text" name="full_name" placeholder="Your Full Name"><br>
+            <input class="mt-2pr input-type-width" type="email" name="email_address" placeholder="Your Email"><br>
+            <input class="mt-2pr input-type-width" type="tel" name="tel" placeholder="Your Mobile Number"><br>
+            <input class="mt-2pr input-type-width" type="text" name="review" placeholder="Your Review"><br>
+            <button type="submit" class="btn text-white btn-dark mt-3pr">Submit</button>--}}
+            {!! Form::close() !!}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-10 pt-4pr">
+            <div class="row d-flex mt-3pr">
+                <div class="col-sm-12 col-md-3 col-lg-2 d-flex align-items-sm-center align-items-md-start">
+                    <div class="profiel-review mb-2pr"></div>
+                    <div class="d-md-none text-left ml-4pr">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 text-left">
+                    <div class="d-sm-none d-md-inline">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis consequatur, cumque delectus dignissimos error et facilis id illo impedit laudantium nemo nisi quisquam sint temporibus totam vero voluptate.</p>
+                </div>
+            </div>
+            <div class="row d-flex mt-3pr">
+                <div class="col-sm-12 col-md-3 col-lg-2 d-flex align-items-sm-center align-items-md-start">
+                    <div class="profiel-review mb-2pr"></div>
+                    <div class="d-md-none text-left ml-4pr">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 text-left">
+                    <div class="d-sm-none d-md-inline">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis consequatur, cumque delectus dignissimos error et facilis id illo impedit laudantium nemo nisi quisquam sint temporibus totam vero voluptate.</p>
+                </div>
+            </div>
+            <div class="row d-flex mt-3pr">
+                <div class="col-sm-12 col-md-3 col-lg-2 d-flex align-items-sm-center align-items-md-start">
+                    <div class="profiel-review mb-2pr"></div>
+                    <div class="d-md-none text-left ml-4pr">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 text-left">
+                    <div class="d-sm-none d-md-inline">
+                        <p><b>Name</b></p>
+                        <i class="fa fa-star-o"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis consequatur, cumque delectus dignissimos error et facilis id illo impedit laudantium nemo nisi quisquam sint temporibus totam vero voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <h5 class="col-12 text-center">More books for you</h5>
+            </div>
+            <div class="row">
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+                <a href="product_detail.html" class="col-4 col-lg-2 small"><img src="img/product1.png" alt="product1"></a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@endsection
+{{--
+<footer class="container-fluid bg-darkgrey pt-4pr pb-1pr">
+    <div class="row d-flex justify-content-center pb-2pr">
+        <div class="col-9 col-lg-11 d-lg-flex justify-content-lg-around text-center text-lg-left">
+            <div class="col-lg-2">
+                <h5 class="text-secondary pb-1pr">
+                    ABOUT US
+                </h5>
+                <p class="font-small text-secondary m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae voluptas. Aspernatur
+                    dolorum esse fuga inventore nobis perspiciatis quia sapiente soluta temporibus.
+                </p>
+            </div>
+            <div class="col-lg-2 footer-padding">
+                <h5 class="text-secondary pb-1pr">NEWSLETTER</h5>
+                <p class="font-small text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere placeat.</p>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <input type="email" placeholder="Subscribe">
+                    <button type="submit" class="btn text-white btn-dark">GO</button>
+                </div>
+            </div>
+            <div class="col-lg-2 footer-padding">
+                <h5 class="text-secondary pb-1pr">INSTAGRAM FEED</h5>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <img src="img/footer1.png" alt="instafeed" class="p-1pr">
+                    <img src="img/footer2.png" alt="instafeed" class="p-1pr">
+                    <img src="img/footer3.png" alt="instafeed" class="p-1pr">
+                </div>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <img src="img/footer4.png" alt="instafeed" class="p-1pr">
+                    <img src="img/footer5.png" alt="instafeed" class="p-1pr">
+                    <img src="img/footer6.png" alt="instafeed" class="p-1pr">
+                </div>
+            </div>
+            <div class="col-lg-2 footer-padding">
+                <h5 class="text-secondary pb-1pr">CONTACT US</h5>
+                <p class="font-small text-secondary m-0">Schönhauser Allee<br>167c, 10345 Berlin Germany</p>
+                <p class="font-small text-secondary m-0"><span class="text-blue">Email:</span> moin@fernweh.de</p>
+                <p class="font-small text-secondary m-0"><span class="text-blue">Telephone:</span> 0123456789</p>
+                <div class="row pt-4pr d-flex justify-content-center justify-content-lg-start">
+                    <div class="col-4 col-lg-10 d-flex justify-content-between">
+                        <a href="#"><i class="fa fa-facebook-f text-secondary footer-icon"></i></a>
+                        <a href="#"><i class="fa fa-twitter text-secondary footer-icon"></i></a>
+                        <a href="#"><i class="fa fa-instagram text-secondary footer-icon"></i></a>
+                        <a href="#"><i class="fa fa-pinterest text-secondary footer-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center footer-border pt-2pr">
+        <div class="col-6 col-lg-4 col-xl-3 text-secondary text-center">
+            <div class="d-flex align-items-center justify-content-around">
+                <p class="m-0 font-small">Home</p><span class="dot"></span><p class="m-0 font-small">Destinations</p><span class="dot"></span><p
+                    class="m-0 font-small">Blog</p><span class="dot"></span><p class="m-0 font-small">Shopping Cart</p>
+            </div>
+            <p class="text-secondary font-small pt-2pr">&copy; Voyage. All Rights Reserved</p>
+            <div onclick="call()"><i class="fa fa-arrow-up text-white font-small bounce"></i></div>
+
+        </div>
+    </div>
+
+</footer>
+--}}
+
+{{--
+<script src="../resources/assets/front_assets/vendor/jquery/jquery.min.js"></script>
+<script src="../resources/assets/front_assets/vendor/jquery/script.js"></script>
+<script src="../resources/assets/front_assets/vendor/jquery/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="../resources/assets/front_assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+</body>
+</html>--}}

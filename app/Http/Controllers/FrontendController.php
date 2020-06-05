@@ -2,23 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Category;
 use App\City;
 use App\Continent;
 use App\Country;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class FrontendController extends Controller
 {
     //
     public function index(){
+        return view('front.home');
+    }
+
+    public function shop(){
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->get();
-        return view('index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     public function productsPerContinent($id){
@@ -27,7 +33,7 @@ class FrontendController extends Controller
         $cities = City::all();
         $categories = Category::all();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('continent_id', '=', $id)->get();
-        return view('index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     public function productsPerCountry($id){
@@ -36,7 +42,7 @@ class FrontendController extends Controller
         $cities = City::all();
         $categories = Category::all();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('country_id', '=', $id)->get();
-        return view('index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     public function productsPerCity($id){
@@ -45,7 +51,7 @@ class FrontendController extends Controller
         $cities = City::all();
         $categories = Category::all();
         $products = Product::with(['continent', 'country', 'city', 'category',  'photo'])->where('city_id', '=', $id)->get();
-        return view('index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     public function productsPerCategory($id){
@@ -54,7 +60,53 @@ class FrontendController extends Controller
         $cities = City::all();
         $categories = Category::all();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('city_id', '=', $id)->get();
-        return view('index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+    }
+
+    public function addToCart($id){
+        $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id','=', $id)->first();
+
+        $oldCart = Session::has('cart') ? Session::get('cart'):null;
+        $cart = new Cart($oldCart);
+        $cart->add($product, $id);
+        Session::put('cart', $cart);
+        //dd(Session::get('cart'));
+        return redirect('/');
+    }
+
+    public function cart(){
+        if(!Session::has('cart')){
+            return redirect('/');
+        }else{
+            $currentCart = Session::has('cart') ? Session::get('cart') : null;
+            $cart = new Cart($currentCart);
+            $cart = $cart->products;
+            return view('checkout',compact('cart'));
+        }
+    }
+
+    public function updateQuantity(Request $request){
+        $oldCart = Session::has('cart') ? Session::get('cart'):null;
+        $cart = new Cart($oldCart);
+        $cart->updateQuantity($request->id, $request->quantity);
+        //(Session('cart'));
+        Session::put('cart', $cart);
+
+        return redirect('/checkout');
+    }
+
+    public function removeItem($id){
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->removeItem($id);
+        //(Session('cart'));
+        Session::put('cart', $cart);
+
+        return redirect('/checkout');
+    }
+
+    public function product_detail(){
+        return view('product_detail');
     }
 
 }

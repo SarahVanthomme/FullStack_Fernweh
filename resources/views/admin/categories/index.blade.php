@@ -33,10 +33,10 @@
                                                 <td>{{$category->name}}</td>
                                                 <td>{{$category->created_at}}</td>
                                                 <td>{{$category->updated_at}}</td>
-                                                <td><a href="{{route('categories.edit',$category->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit category</a></td>
+                                                <td><a href="{{route('categories.edit',$category->id)}}" class="btn btn-link text-warning text-decoration-none">Edit category</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminCategoriesController@destroy', $category->id]]) !!}
                                                 <td class="form-group">
-                                                    {!! form::submit('Delete category', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                                    {!! form::submit('Delete category', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                                 </td>
                                                 {!! Form::close() !!}
                                                 {{-- @if($user->deleted_at != null)

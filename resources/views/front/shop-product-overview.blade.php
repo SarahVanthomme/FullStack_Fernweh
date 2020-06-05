@@ -208,7 +208,7 @@
                                 <div class="overlay">
                                     <p class="icon-links d-flex justify-content-around">
                                         <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                        <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
+                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
                                         <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
                                     </p>
                                 </div>
@@ -219,149 +219,7 @@
                             </div>
                         </div>
                     @endforeach
-                    {{--<div class="text-center product-overview">
-                        <div class="hovereffect product-content">
-                            <div class="product-content-overlay"></div>
-                            <img class="img-fluid" src="img/product1.png" alt="product1">
-                            <div class="overlay">
-                                <p class="icon-links d-flex justify-content-around">
-                                    <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                    <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                    <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                            <p>GUIDEBOOK<br>€ 15</p>
-                        </div>
-                    </div>
-                    <div class="text-center product-overview">
-                        <div class="hovereffect product-content">
-                            <div class="product-content-overlay"></div>
-                            <img class="img-fluid" src="img/product1.png" alt="product1">
-                            <div class="overlay">
-                                <p class="icon-links d-flex justify-content-around">
-                                    <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                    <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                    <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                            <p>GUIDEBOOK<br>€ 15</p>
-                        </div>
-                    </div>
---}}
                 </div>
-                {{-- <div class="row justify-content-around">
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="row justify-content-around">
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                     <div class="text-center product-overview">
-                         <div class="hovereffect product-content">
-                             <div class="product-content-overlay"></div>
-                             <img class="img-fluid" src="img/product1.png" alt="product1">
-                             <div class="overlay">
-                                 <p class="icon-links d-flex justify-content-around">
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                     <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
-                                     <a href="product_detail.html"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
-                                 </p>
-                             </div>
-                         </div>
-                         <div>
-                             <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">Egypt travel guide</h5></a>
-                             <p>GUIDEBOOK<br>€ 15</p>
-                         </div>
-                     </div>
-                 </div>
---}}
             </div>
 
         </div>

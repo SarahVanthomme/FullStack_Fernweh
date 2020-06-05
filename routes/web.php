@@ -31,16 +31,23 @@ Route::group(['middleware'=>'admin'],function(){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/shop', 'FrontendController@index')->name('shop');
+/*home van back end*/
+Route::get('/admin', 'HomeController@index')->name('admin');
+
+/*front end*/
+Route::get('/home', 'FrontendController@index')->name('home');
+Route::get('/shop', 'FrontendController@shop')->name('shop');
 Route::get('/products/continent/{id}', 'FrontendController@productsPerContinent')->name('productsPerContinent');
 Route::get('/products/country/{id}', 'FrontendController@productsPerCountry')->name('productsPerCountry');
 Route::get('/products/city/{id}', 'FrontendController@productsPerCity')->name('productsPerCity');
 Route::get('/products/category/{id}', 'FrontendController@productsPerCategory')->name('productsPerCategory');
+Route::get('/products/addToCart/{id}','FrontendController@addToCart')->name('addToCart');
+Route::get('/checkout', 'FrontendController@cart')->name('checkout');
+Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
+Route::get('/product_detail', 'FrontendController@product_detail')->name('product_detail');
 
 
-/**backend**/
-
+/*backend*/
 Route::resource('admin/users', 'AdminUsersController');
 //Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
 Route::resource('admin/categories','AdminCategoriesController');
@@ -55,4 +62,5 @@ Route::get('admin/products/continent/{id}','AdminProductsController@productsPerC
 Route::get('admin/products/country/{id}','AdminProductsController@productsPerCountry')->name('admin.productsPerCountry');
 Route::resource('admin/discounts','AdminDiscountsController');
 Route::resource('admin/photos','AdminPhotosController');
+Route::resource('admin/comments', 'PostCommentController');
 

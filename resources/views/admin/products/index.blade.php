@@ -84,10 +84,10 @@
                                                 <td>{{$product->price}}</td>
                                                 <td>{{$product->created_at}}</td>
                                                 <td>{{$product->updated_at}}</td>
-                                                <td><a href="{{route('products.edit',$product->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit product</a></td>
+                                                <td><a href="{{route('products.edit',$product->id)}}" class="btn btn-link text-warning text-decoration-none">Edit product</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminProductsController@destroy', $product->id]]) !!}
                                                 <td class="form-group">
-                                                    {!! form::submit('Delete product', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                                    {!! form::submit('Delete product', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                                 </td>
                                                 {!! Form::close() !!}
                                             </tr>

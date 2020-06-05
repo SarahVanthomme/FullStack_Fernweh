@@ -1,6 +1,6 @@
-<!doctype html>
+{{--<!doctype html>
 <html lang="en">
-<body>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,6 +14,15 @@
     <title>Check Out</title>
 
 </head>
+<body>--}}
+
+@extends('layouts.front')
+@section('title')
+    Checkout
+@endsection
+@section('content')
+
+{{--
 <section class="container-fluid z-index-5">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand xxl-font-300 text-dark" href="index.html">FERNWEH</a>
@@ -91,6 +100,7 @@
 
     </nav>
 </section>
+--}}
 <section class="container pb-4pr">
     <div class="row d-flex justify-content-center pt-4pr pb-4pr">
         <h1>Check out</h1>
@@ -107,10 +117,10 @@
                 <input type="password" name="pw" placeholder="Password" required class="pl-15px">
             </div>
             <div class="d-flex">
-            <button type="submit" class="btn btn-dark mr-5pr mb-4pr">Login</button>
-            <div class="d-flex align-items-center">
-                <input type="checkbox"><p class="m-0">Remember me</p>
-            </div>
+                <button type="submit" class="btn btn-dark mr-5pr mb-4pr">Login</button>
+                <div class="d-flex align-items-center">
+                    <input type="checkbox"><p class="m-0">Remember me</p>
+                </div>
             </div>
             <a href="#">Lost your password?</a>
         </form>
@@ -154,14 +164,14 @@
             </div>
             <div class="row mt-2pr">
                 <form action="#" class="col-11 p-0">
-                        <select name="Country" class="w-100 pl-15px">
-                            <option value="country">Country</option>
-                            <option value="country">Country</option>
-                            <option value="country">Country</option>
-                            <option value="country">Country</option>
-                            <option value="country">Country</option>
-                            <option value="country">Country</option>
-                        </select>
+                    <select name="Country" class="w-100 pl-15px">
+                        <option value="country">Country</option>
+                        <option value="country">Country</option>
+                        <option value="country">Country</option>
+                        <option value="country">Country</option>
+                        <option value="country">Country</option>
+                        <option value="country">Country</option>
+                    </select>
                 </form>
             </div>
 
@@ -205,12 +215,29 @@
             </div>
         </div>
         <div class="col-12 col-md-5 bg-lightgrey margin-your-order">
+            @if(Session::has('cart'))
             <h2 class="mt-3 pb-3pr border-bottom">Your order</h2>
             <div class="row d-flex mt-4pr">
                 <p class="col-6">Product</p>
                 <p class="col-6 text-right">Total</p>
             </div>
+            @foreach($cart as $item)
             <div class="row d-flex">
+                <p class="col-5">{{$item['product_name']}}</p>
+                <form class="col-2" method="POST" action="{{action('FrontendController@updateQuantity')}}" enctype="multipart/form-data">
+                    @csrf
+                    @method('POST')
+                    <input class="form-control form-control-sm" type="number" name="quantity" value="{{$item['quantity']}}" min="1" max="100">
+                    <input class="form-control form-control-sm" type="hidden" name="id" value="{{$item['product_id']}}">
+                    <button class="btn btn-primary btn-sm mt-2" type="submit"><i class="fas fa-euro"></i>Update</button>
+{{--
+                    <a class="text-danger" href="{{route('removeItem', $item['product_id'])}}">Remove</a>
+--}}
+                </form>
+                <p class="col-5 text-right">€ {{$item['product_price']*$item['quantity']}}</p>
+            </div>
+                @endforeach
+{{--            <div class="row d-flex">
                 <p class="col-5">Egypt Travel Guide</p>
                 <p class="col-2 text-right">X 01</p>
                 <p class="col-5 text-right">€ 15,00</p>
@@ -219,15 +246,10 @@
                 <p class="col-5">Egypt Travel Guide</p>
                 <p class="col-2 text-right">X 01</p>
                 <p class="col-5 text-right">€ 15,00</p>
-            </div>
-            <div class="row d-flex">
-                <p class="col-5">Egypt Travel Guide</p>
-                <p class="col-2 text-right">X 01</p>
-                <p class="col-5 text-right">€ 15,00</p>
-            </div>
+            </div>--}}
             <div class="row d-flex mt-4pr">
                 <p class="col-6"><b>Subtotal</b></p>
-                <p class="col-6 text-right">€ 45,00</p>
+                <p class="col-6 text-right">€ {{Session::get('cart')->totalPrice}}</p>
             </div>
             <div class="row d-flex mt-4pr">
                 <p class="col-6"><b>Shipping</b></p>
@@ -235,8 +257,9 @@
             </div>
             <div class="row d-flex mt-4pr">
                 <p class="col-6"><b>Total</b></p>
-                <p class="col-6 text-right"><b>€ 50,00</b></p>
+                <p class="col-6 text-right"><b>€ {{(Session::get('cart')->totalPrice)+5}}</b></p>
             </div>
+            @endif
             <div class="row d-flex align-items-center">
                 <input type="checkbox" class="col-1">
                 <p class="mb-0 col-11">Check payments</p>
@@ -272,7 +295,7 @@
 
 
 </section>
-<footer class="container-fluid bg-darkgrey pt-4pr pb-1pr">
+{{--<footer class="container-fluid bg-darkgrey pt-4pr pb-1pr">
     <div class="row d-flex justify-content-center pb-2pr">
         <div class="col-9 col-lg-11 d-lg-flex justify-content-lg-around text-center text-lg-left">
             <div class="col-lg-2">
@@ -334,14 +357,16 @@
         </div>
     </div>
 
-</footer>
+</footer>--}}
 
-
-<script src="../resources/assets/front_assets/vendor/jquery/jquery.min.js"></script>
+{{--<script src="../resources/assets/front_assets/vendor/jquery/jquery.min.js"></script>
 <script src="../resources/assets/front_assets/vendor/jquery/script.js"></script>
 <script src="../resources/assets/front_assets/vendor/jquery/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="../resources/assets/front_assets/vendor/bootstrap/js/bootstrap.min.js">
-</script>
-</body>
-</html>
+</script>--}}
+{{--</body>
+</html>--}}
+
+@endsection
+

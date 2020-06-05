@@ -17,7 +17,6 @@
                                     <a class="nav-link thin" href="{{route('users.index')}}">Users</a>
                                     <a class="nav-link thin" href="#">Addresses</a>
                                     <a class="nav-link thin" href="{{route('products.index')}}">Products</a>
-                                    <a class="nav-link thin" href="{{route('photos.index')}}">Photos</a>
                                     <a class="nav-link thin" href="{{route('categories.index')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.index')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.index')}}">Countries</a>
@@ -26,6 +25,22 @@
                                     <a class="nav-link thin" href="#">Orders</a>
                                     <a class="nav-link thin" href="{{route('discounts.index')}}">Discounts</a>
                                     <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
+                                </small></h4>
+                        </nav>
+                    </div>
+                    <h4><small><a class="nav-link collapsed py-4 thin" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2"
+                            ><div class="sb-nav-link-icon"><i class="fas fa-book-open fa-lg mr-3"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
+                                ></a></small></h4>
+                    <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav"><h4><small>
+
+                                    <a class="nav-link thin" href="{{route('photos.index')}}">Banners</a>
+                                    <a class="nav-link thin" href="#">Index banners</a>
+                                    <a class="nav-link thin" href="#">Texts - titles</a>
+
+
                                 </small></h4>
                         </nav>
                     </div>

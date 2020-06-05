@@ -30,10 +30,10 @@
                                                 <td>{{$country->name}}</td>
                                                 <td>{{$country->created_at}}</td>
                                                 <td>{{$country->updated_at}}</td>
-                                                <td><a href="{{route('countries.edit',$country->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit country</a></td>
+                                                <td><a href="{{route('countries.edit',$country->id)}}" class="btn btn-link text-warning text-decoration-none">Edit country</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminCountriesController@destroy', $country->id]]) !!}
                                                 <td class="form-group">
-                                                    {!! form::submit('Delete country', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                                    {!! form::submit('Delete country', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                                 </td>
                                                 {!! Form::close() !!}
                                             </tr>

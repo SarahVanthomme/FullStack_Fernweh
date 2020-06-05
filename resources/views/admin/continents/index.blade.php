@@ -30,7 +30,7 @@
                                                 <td>{{$continent->name}}</td>
                                                 <td>{{$continent->created_at}}</td>
                                                 <td>{{$continent->updated_at}}</td>
-                                                <td><a href="{{route('continents.edit',$continent->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit continent</a></td>
+                                                <td><a href="{{route('continents.edit',$continent->id)}}" class="btn btn-link text-warning text-decoration-none">Edit continent</a></td>
                                             </tr>
                                         @endforeach
                                     @endif

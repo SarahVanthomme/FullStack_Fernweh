@@ -14,7 +14,7 @@
                                     <thead class="table-borderless">
                                     <tr class="line-height-50">
                                         <th scope="col"></th>
-{{--                                        <th scope="col">PHOTO</th>--}}
+                                        <th scope="col">PHOTO</th>
                                         <th scope="col">AUTHOR</th>
                                         <th scope="col">CATEGORY</th>
                                         <th scope="col">TITLE</th>
@@ -36,10 +36,10 @@
                                                 <td>{{$post->body}}</td>
                                                 <td>{{$post->created_at}}</td>
                                                 <td>{{$post->updated_at}}</td>
-                                                <td><a href="{{route('posts.edit',$post->id)}}" class="btn btn-outline-warning rounded-pill w-50 mb-1">Edit post</a></td>
+                                                <td><a href="{{route('posts.edit',$post->id)}}" class="btn btn-link text-warning text-decoration-none">Edit post</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminPostsController@destroy', $post->id]]) !!}
                                                 <td class="form-group">
-                                                    {!! form::submit('Delete post', ['class'=>'btn btn-outline-danger rounded-pill w-50 mb-1']) !!}
+                                                    {!! form::submit('Delete post', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                                 </td>
                                                 {!! Form::close() !!}
                                             </tr>

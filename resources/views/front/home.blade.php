@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('title')
-    Home
+    Fernweh
 @endsection
 @section('content')
 
@@ -171,6 +171,15 @@
     </nav>
 
 </section>--}}
+    @foreach($covers as $cover)
+        <section style="background-image: url({{$cover->photo ? asset('images/index/' . $cover->photo->file) : "none"}});height: 800px; background-attachment:fixed;
+            background-position:center;background-repeat:no-repeat;background-size:cover;">
+        </section>
+{{--        <img style="height: 800px; background-size: cover;" src="{{$cover->photo ? asset('images/index/' . $cover->photo->file) : "none"}}" alt="">--}}
+
+
+
+    @endforeach
 <section class="container-fluid p-0 parallax d-flex align-items-center justify-content-center">
     <div class="absolute-center row">
         <div class="col-12">

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use App\Cart;
 use App\Category;
 use App\City;
 use App\Continent;
 use App\Country;
+use App\IndexBanner;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -15,7 +17,8 @@ class FrontendController extends Controller
 {
     //
     public function index(){
-        return view('front.home');
+        $covers = IndexBanner::all();
+        return view('front.home',compact('covers'));
     }
 
     public function shop(){
@@ -23,8 +26,9 @@ class FrontendController extends Controller
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
+        $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
     }
 
     public function productsPerContinent($id){
@@ -32,8 +36,9 @@ class FrontendController extends Controller
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
+        $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('continent_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
     }
 
     public function productsPerCountry($id){
@@ -41,8 +46,9 @@ class FrontendController extends Controller
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
+        $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('country_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
     }
 
     public function productsPerCity($id){
@@ -50,8 +56,9 @@ class FrontendController extends Controller
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
+        $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category',  'photo'])->where('city_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
     }
 
     public function productsPerCategory($id){
@@ -59,8 +66,9 @@ class FrontendController extends Controller
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
+        $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('city_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
     }
 
     public function addToCart($id){

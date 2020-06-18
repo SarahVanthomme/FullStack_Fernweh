@@ -10,6 +10,7 @@ use App\Photo;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 
 class AdminProductsController extends Controller
 {
@@ -24,7 +25,7 @@ class AdminProductsController extends Controller
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
-        $products = Product::with(['category', 'continent', 'photo', 'country', 'city'])->get();
+        $products = Product::with(['category', 'continent', 'photo', 'country', 'city'])->get(); //moet photo hierbij??
         return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
     }
 
@@ -54,7 +55,23 @@ class AdminProductsController extends Controller
     public function store(Request $request)
     {
         //
+
+
         $input = $request->all();
+
+       /* if($request->hasFile('image')) {
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalExtension(); //neemt image extension
+            $filename = time() . '.' . $extension;
+            $file->move('images/products/', $filename);
+            $input->image = $filename;
+        }else{
+            return $request;
+            $input->image = '';
+        }
+        $input->save();
+        return redirect('/admin/products');*/
+
         if($file=$request->file('photo_id')){
             $name = time() . $file->getClientOriginalName();
             $file->move('images/products', $name);

@@ -13,6 +13,7 @@ class Product extends Model
         'country_id',
         'city_id',
         'photo_id',
+        'image',
         'name',
         'description',
         'price'

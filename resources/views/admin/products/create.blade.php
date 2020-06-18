@@ -59,6 +59,14 @@
                         {!! Form::label('price', 'Price:') !!}
                         <input class="form-control" type="number" name="price" step="0.05">
                     </div>
+
+                    {{--<div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" name="image" class="custom-file-input">
+                            <label class="custom-file-label">Choose file</label>
+                        </div>
+                    </div>--}}
+
                     <div class="form-group">
                         <label for="photo_id">Photo:</label>
                         <input type="file" class="form-control-file" id="photo_id" name="photo_id">

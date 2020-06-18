@@ -45,6 +45,7 @@ Route::get('/products/addToCart/{id}','FrontendController@addToCart')->name('add
 Route::get('/checkout', 'FrontendController@cart')->name('checkout');
 Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
 Route::get('/product_detail', 'FrontendController@product_detail')->name('product_detail');
+//Route::get('test','FrontendController@test')->name('test');
 
 
 /*backend*/
@@ -63,4 +64,7 @@ Route::get('admin/products/country/{id}','AdminProductsController@productsPerCou
 Route::resource('admin/discounts','AdminDiscountsController');
 Route::resource('admin/photos','AdminPhotosController');
 Route::resource('admin/comments', 'PostCommentController');
+Route::resource('admin/comments', 'PostCommentController');
+Route::resource('admin/banners', 'BannerController');
+Route::resource('admin/index-banners', 'IndexBannerController');
 

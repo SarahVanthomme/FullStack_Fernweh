@@ -29,7 +29,7 @@ class CreateProductsTable extends Migration
             $table->foreign('continent_id')->references('id')->on('continents');
             $table->foreign('country_id')->references('id')->on('countries');
             $table->foreign('city_id')->references('id')->on('cities');
-            $table->foreign('photo_id')->references('id')->on('photos');
+//            $table->foreign('photo_id')->references('id')->on('photos');
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePhotosTable extends Migration
+class CreateIndexBannerPhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreatePhotosTable extends Migration
      */
     public function up()
     {
-        Schema::create('photos', function (Blueprint $table) {
+        Schema::create('index_banner_photos', function (Blueprint $table) {
             $table->id();
-           /* $table->string('title')->default('');
-            $table->string('body')->default('');*/
             $table->string('file');
-            //$table->string('continent')->default('');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreatePhotosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('photos');
+        Schema::dropIfExists('index_banner_photos');
     }
 }

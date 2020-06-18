@@ -36,8 +36,8 @@
                     <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav"><h4><small>
 
-                                    <a class="nav-link thin" href="{{route('photos.index')}}">Banners</a>
-                                    <a class="nav-link thin" href="#">Index banners</a>
+                                    <a class="nav-link thin" href="{{route('banners.index')}}">Banners</a>
+                                    <a class="nav-link thin" href="{{route('index-banners.index')}}">Index banners</a>
                                     <a class="nav-link thin" href="#">Texts - titles</a>
 
 
@@ -66,7 +66,7 @@
                                     <a class="nav-link thin" href="{{route('users.create')}}">Users</a>
                                     <a class="nav-link thin" href="#">Addresses</a>
                                     <a class="nav-link thin" href="{{route('products.create')}}">Products</a>
-                                    <a class="nav-link thin" href="{{route('photos.create')}}">Photos</a>
+                                    <a class="nav-link thin" href="{{route('banners.create')}}">Banners</a>
                                     <a class="nav-link thin" href="{{route('categories.create')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.create')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>

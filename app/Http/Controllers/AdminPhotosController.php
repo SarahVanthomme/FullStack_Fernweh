@@ -27,6 +27,7 @@ class AdminPhotosController extends Controller
     public function create()
     {
         //
+        return view('admin.photos.create');
     }
 
     /**
@@ -38,6 +39,16 @@ class AdminPhotosController extends Controller
     public function store(Request $request)
     {
         //
+
+        $input = $request->all();
+        if($file=$request->file('photo_id')){
+            $name = time() . $file->getClientOriginalName();
+            $file->move('images/products', $name);
+            $photo = Photo::create(['file'=>$name]);
+            $input['photo_id']=$photo->id;
+        }
+        Photo::create($input);
+        return redirect('/admin/photos');
     }
 
     /**

@@ -1,3 +1,15 @@
+
+/*NAVBAR*/
+
+.xxl-font-300{
+    font-size:3rem;
+    font-weight:300;
+}
+
+/*HOME*/
+
+/*SHOP -- DESTINATIONS*/
+
 .fa-stack[data-count]:after{
     position:absolute;
     right: 0%;
@@ -19,3 +31,12 @@
     color: #DF0000;
 }*/
 
+/*home page*/
+
+   /* .parallax{
+        background-image:url("{{$banner->photo ? asset('images/banners/' . $banner->photo->file) : "none"}}");
+        height:800px;
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;background-size:cover}
+*/

@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->decimal('price')->default(0);
+            $table->string('bestseller');
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories');

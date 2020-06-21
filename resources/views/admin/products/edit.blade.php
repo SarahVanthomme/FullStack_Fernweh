@@ -76,6 +76,14 @@
                                     {!! Form::textarea('description', null,['class'=>'form-control']) !!}
                                 </div>
                                 <div class="form-group">
+                                    {!! Form::label('bestseller', 'Bestseller:') !!}
+                                    <select name="bestseller" class="form-control">
+                                        <option value="" disabled selected>Choose yes or no</option>
+                                        <option value="1">yes</option>
+                                        <option value="0">no</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     {!! Form::label('price', 'Price:') !!}
                                     <input class="form-control" type="number" name="price" step="0.05" value="{{$product->price}}">
                                 </div>

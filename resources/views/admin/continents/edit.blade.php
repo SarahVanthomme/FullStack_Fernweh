@@ -26,6 +26,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-4 offset-1 my-4">
+                            <div class="form-group">
+                                <img class="img-thumbnail mb-3" src="{{$continent->photo ? asset('/images/continents/' . $continent->photo->file) : 'NO PHOTO'}}" alt="">
+                                <input type="file" class="form-control-file" id="photo_id" name="photo_id">
+                            </div>
+                        </div>
                     </div>
                 </div>
 

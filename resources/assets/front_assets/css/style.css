@@ -1,7 +1,7 @@
 
 /*NAVBAR*/
 
-.xxl-font-300{
+.xxl-font-3{
     font-size:3rem;
     font-weight:300;
 }
@@ -15,15 +15,15 @@
     right: 0%;
     top: 0%;
     content: attr(data-count);
-    font-size: 40%;
+    font-size: 60%;
     padding: .6em;
     border-radius: 999px;
     line-height: .75em;
-    color: red;
+    color: white;
     text-align: center;
     min-width: 2em;
     font-weight: bold;
-    background: #343a40;
+    /*background: #343a40;*/
     border-style: solid;
 }
 
@@ -40,3 +40,35 @@
         background-position:center;
         background-repeat:no-repeat;background-size:cover}
 */
+
+
+#box{
+    position: relative;
+    text-decoration: none;
+
+}
+#box :hover{
+    opacity: 0.5;
+}
+
+#box:hover #box-title{
+    opacity: 1;
+    transition: 1000ms;
+}
+
+
+#box-title{
+    font-family: "Permanent Marker";
+    color: grey;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    opacity: 0;
+    font-size: 4rem;
+
+}
+

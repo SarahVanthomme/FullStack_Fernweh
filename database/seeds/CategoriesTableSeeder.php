@@ -13,9 +13,9 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('categories')->insert(['name'=>'Adventure']);
-        DB::table('categories')->insert(['name'=>'Beach']);
-        DB::table('categories')->insert(['name'=>'City Break']);
-        DB::table('categories')->insert(['name'=>'Safari']);
+    /*  DB::table('categories')->insert(['name'=>'Adventure', 'body'=>'nlamlkdqfmqlskdjfmqlks']);
+        DB::table('categories')->insert(['name'=>'Beach', 'body'=>'nlamlkdqfmqlskdjfmqlks']);
+        DB::table('categories')->insert(['name'=>'City Break', 'body'=>'nlamlkdqfmqlskdjfmqlks']);
+        DB::table('categories')->insert(['name'=>'Safari', 'body'=>'nlamlkdqfmqlskdjfmqlks']);*/
     }
 }

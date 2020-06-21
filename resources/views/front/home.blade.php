@@ -174,30 +174,24 @@
     @foreach($covers as $cover)
         <section style="background-image: url({{$cover->photo ? asset('images/index/' . $cover->photo->file) : "none"}});height: 800px; background-attachment:fixed;
             background-position:center;background-repeat:no-repeat;background-size:cover;">
+            <div class="absolute-center row" style="position: center; padding-top: 30%">
+                <div class="col-12">
+                    <div class="row">
+                        <p class="text-center col-12 text-header">{{$cover->name}}</p>
+                    </div>
+                    <div class="row">
+                        <p id="subtext-header" class="text-white text-center col-12">{{$cover->body}}</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <a href="destinations.html"><button type="button" class="btn btn-link header-button mr-2">SHOP</button></a>
+                        <a href="#"><button type="button" class="btn btn-link header-button">OUR BLOG</button></a>
+                    </div>
+                </div>
+            </div>
         </section>
-{{--        <img style="height: 800px; background-size: cover;" src="{{$cover->photo ? asset('images/index/' . $cover->photo->file) : "none"}}" alt="">--}}
-
-
-
     @endforeach
-<section class="container-fluid p-0 parallax d-flex align-items-center justify-content-center">
-    <div class="absolute-center row">
-        <div class="col-12">
-            <div class="row">
-                <p class="text-center col-12 text-header">To travel is to live</p>
-            </div>
-            <div class="row">
-                <p id="subtext-header" class="text-white text-center col-12">You don't need magic to disappear.
-                    <span>All you need is a destination.</span>
-                </p>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <a href="destinations.html"><button type="button" class="btn btn-link header-button mr-2">SHOP</button></a>
-                <a href="#"><button type="button" class="btn btn-link header-button">OUR BLOG</button></a>
-            </div>
-        </div>
-    </div>
-</section>
+
+{{--
 <section class="container-fluid bg-darkgrey search-bar">
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
@@ -254,6 +248,22 @@
         </div>
     </div>
 </section>
+--}}
+
+<section class="container-fluid my-5">
+    <div class="row pt-4pr">
+        <div class="col-12 text-center mb-5">
+            <h2>DISCOVER THE WORLD</h2>
+            <p>Explore every day.</p>
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        @foreach($continents as $continent)
+            <a href="#" id="box"><h1 id="box-title" class="text-center">{{$continent->name}}</h1><img class="mb-5" width="500" height="500" src="{{$continent->photo ? asset('images/continents/' . $continent->photo->file) : "none"}}" alt="" style="object-fit: cover;"></a>
+        @endforeach
+    </div>
+</section>
+
 <section class="container-fluid mb-5">
     <div class="row pt-4pr">
         <div class="col-12 text-center">
@@ -265,10 +275,12 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="d-flex justify-content-center">
-                    <img class="d-block m-4 small" src="img/bestseller1a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller2a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller3a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller4a.png" alt="First slide">
+                    @foreach($products as $product)
+                        @if($product->bestseller == "1")
+                            <img class="d-block m-4 small" src="{{$product->photo ? asset('images/products/' . $product->photo->file) : "none"}}" alt="First slide">
+                        @else
+                        @endif
+                   @endforeach
                 </div>
             </div>
             <div class="carousel-item">
@@ -292,6 +304,7 @@
     </div>
 
 </section>
+{{--
 <section class="container-fluid travel-type pt-4pr pb-5pr">
     <div class="row">
         <div class="col-12 text-center text-white pb-4pr">
@@ -330,6 +343,21 @@
         </div>
     </div>
 </section>
+--}}
+<section class="pt-4pr pb-5pr d-flex justify-content-around">
+    @foreach($categories as $category)
+        <a href="#" style="text-decoration: none; color: black">
+            <div class="card" style="width: 25rem;">
+                <img class="card-img-top mb-5" src="{{$category->photo ? asset('images/categories/' . $category->photo->file) : "none"}}" alt="Card image cap">
+                <div class="card-body text-center" style="position:relative;">
+                    <div style="border-top: 3px solid grey; width: 2rem; position: absolute; left: 45%;"></div>
+                    <p class="card-text pt-5">{{$category->body}}</p>
+                </div>
+            </div>
+        </a>
+    @endforeach
+</section>
+
 <section class="container pt-4pr pb-5pr">
     <div class="row pb-4pr">
         <div class="col-12 text-center">

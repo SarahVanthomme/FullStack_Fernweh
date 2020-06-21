@@ -70,6 +70,7 @@
                                     <a class="nav-link thin" href="{{route('categories.create')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.create')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
+                                    <a class="nav-link thin" href="{{route('continents.create')}}">Continents</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.create')}}">Comments</a>--}}
                                     <a class="nav-link thin" href="#">Orders</a>
                                     <a class="nav-link thin" href="{{route('discounts.create')}}">Orders</a>

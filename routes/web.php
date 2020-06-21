@@ -44,7 +44,9 @@ Route::get('/products/category/{id}', 'FrontendController@productsPerCategory')-
 Route::get('/products/addToCart/{id}','FrontendController@addToCart')->name('addToCart');
 Route::get('/checkout', 'FrontendController@cart')->name('checkout');
 Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
-Route::get('/product_detail', 'FrontendController@product_detail')->name('product_detail');
+Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('product_detail');
+Route::get('/account','FrontendController@account')->name('account');
+Route::post('/account','FrontendController@updateAccount')->name('update');
 //Route::get('test','FrontendController@test')->name('test');
 
 
@@ -63,7 +65,6 @@ Route::get('admin/products/continent/{id}','AdminProductsController@productsPerC
 Route::get('admin/products/country/{id}','AdminProductsController@productsPerCountry')->name('admin.productsPerCountry');
 Route::resource('admin/discounts','AdminDiscountsController');
 Route::resource('admin/photos','AdminPhotosController');
-Route::resource('admin/comments', 'PostCommentController');
 Route::resource('admin/comments', 'PostCommentController');
 Route::resource('admin/banners', 'BannerController');
 Route::resource('admin/index-banners', 'IndexBannerController');

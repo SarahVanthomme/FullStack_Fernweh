@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\CategoryPhoto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
 
 class AdminCategoriesController extends Controller
@@ -16,7 +18,7 @@ class AdminCategoriesController extends Controller
     public function index()
     {
         //
-        $categories = Category::all();
+        $categories = Category::with(['photo'])->get();
         return view('admin.categories.index',compact('categories'));
     }
 
@@ -44,6 +46,12 @@ class AdminCategoriesController extends Controller
 //            'name'=>['name']]);
 
         $input = $request->all();
+        if($file=$request->file('photo_id')){
+            $name = time() . $file->getClientOriginalName();
+            $file->move('images/categories', $name);
+            $photo = CategoryPhoto::create(['file'=>$name]);
+            $input['photo_id']=$photo->id;
+        }
         Category::create($input);
         return redirect('/admin/categories');
     }
@@ -84,6 +92,13 @@ class AdminCategoriesController extends Controller
         //
         $category = Category::findOrFail($id);
         $input = $request->all();
+        if($file = $request->file('photo_id')){
+            $name = time() . $file->getClientOriginalName();
+            $file->move('images/categories', $name);
+            File::delete('images/categories/'.$category->photo);
+            $photo = CategoryPhoto::create(['file'=>$name]);
+            $input['photo_id'] = $photo->id;
+        }
         $category->update($input);
         return redirect('admin/categories');
     }

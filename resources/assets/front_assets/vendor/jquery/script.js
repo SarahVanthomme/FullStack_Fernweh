@@ -73,6 +73,7 @@ $('#show-more').click(function(){
     $('#show-more-content').show();
     $('#show-less').show();
     $('#show-more').hide();
+    console.log("mlqksdjfm");
 });
 
 $('#show-less').click(function(){
@@ -178,6 +179,18 @@ $(function() {
     });*/
 
 
-/*carousel ipc slick*/
+
+/*
+
+    $('#box').each(function () {
+        $('#box').hover(function () {
+            $('#box-title').css('color', 'red');
+        }, function () {
+            $('#box-title').css('color', 'grey');
+        });
+    });
+*/
+
+
 
 

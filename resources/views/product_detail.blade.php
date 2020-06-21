@@ -104,17 +104,13 @@
         <div class="col-12 align-items-center">
             <div class="row d-flex justify-content-around">
                 <div class="col-6 col-md-4 col-lg-3 text-center">
-                    <img src="img/product1.png" alt="product1">
+                    <img src="{{$product->photo ? asset('images/products/' . $product->photo->file) : "NONE"}}" alt="product1">
                 </div>
                 <div class="col-6 col-md-8 col-lg-6 d-flex flex-column">
                     <div class="flex-grow-1 flex-lg-grow-0">
-                        <h5>Egypt Travel Guide</h5>
-                        <p class="m-0">€ 15<br>Categorie: blabla<br>Availability: in stock</p>
-                        <p id="product-content-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
-                            assumenda
-                            corporis
-                            cum dicta eius est ex
-                            incidunt iusto minus mollitia nisi non nulla officia repellat sapiente sequi tempore vitae.</p>
+                        <h5>{{$product->name}}</h5>
+                        <p class="m-0">€ {{$product->price}}<br>Categorie: {{$product->category->name}}<br>Availability: in stock</p>
+                        <p id="product-content-medium">{{$product->description}}</p>
                         <div class="d-flex mb-4pr d-md-none">
                             <label class="m-0">Quantity</label>
                             <input class="ml-5pr bg-grey input-number" type="number" min="1" max="10">
@@ -173,7 +169,7 @@
         <div class="col-10 col-md-5 offset-1 text-left">
             <h5>Add a review</h5>
             {!! Form::open(['method'=>'POST', 'action'=>'PostCommentController@store'])!!}
-            <input type="hidden" name="post_id" value="{{$post->id}}">
+{{--            <input type="hidden" name="post_id" value="{{$postcomment->id}}">--}}
             <div class="d-flex">
                 <p class="pr-4pr">Your rating</p>
                 <a href="#"><i class="fa fa-star-o"></i><i

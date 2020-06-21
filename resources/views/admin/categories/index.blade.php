@@ -19,7 +19,9 @@
                                     <thead class="table-borderless">
                                     <tr class="line-height-50">
                                         <th scope="col"></th>
+                                        <th scope="col">IMAGE</th>
                                         <th scope="col">NAME</th>
+                                        <th scope="col">BODY</th>
                                         <th scope="col">CREATED</th>
                                         <th scope="col">UPDATED</th>
                                         <th scope="col">ACTIONS</th>
@@ -30,7 +32,9 @@
                                         @foreach($categories as $category)
                                             <tr class="line-height-50">
                                                 <th scope="row">{{$category->id}}</th>
+                                                <td><img height="60" src="{{$category->photo ? asset('/images/categories/' . $category->photo->file) : 'NONE'}}" alt=""></td>
                                                 <td>{{$category->name}}</td>
+                                                <td>{{$category->body}}</td>
                                                 <td>{{$category->created_at}}</td>
                                                 <td>{{$category->updated_at}}</td>
                                                 <td><a href="{{route('categories.edit',$category->id)}}" class="btn btn-link text-warning text-decoration-none">Edit category</a></td>

@@ -14,6 +14,7 @@
 {{--    <link rel="stylesheet" href="css/bootstrap.min.css">--}}
 
     <link rel="stylesheet" href="{{asset('css/front-app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/front-styles.css')}}">
     <title>@yield('title')</title>
 </head>
 <body>
@@ -34,6 +35,7 @@
 </script>--}}
 
 <script src="{{asset('js/front-app.js')}}"></script>
+<script src="{{asset('js/script-dist.js')}}"></script>
 </body>
 </html>
 

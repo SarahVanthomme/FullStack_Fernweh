@@ -17,6 +17,10 @@
                                 {!! Form::label('name', 'Name:') !!}
                                 {!! Form::text('name', $category->name,['class'=>'form-control']) !!}
                             </div>
+                            <div class="form-group">
+                                {!! Form::label('body', 'Body:') !!}
+                                {!! Form::textarea('body', $category->body,['class'=>'form-control']) !!}
+                            </div>
                             <div class="row">
                                 <div class="col-12 d-flex">
                                     <div class="form-group mr-3">
@@ -30,6 +34,12 @@
                                     </div>
                                     {!! Form::close() !!}
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-4 offset-1 my-4">
+                            <div class="form-group">
+                                <img class="img-thumbnail mb-3" src="{{$category->photo ? asset('/images/categories/' . $category->photo->file) : 'NO PHOTO'}}" alt="">
+                                <input type="file" class="form-control-file" id="photo_id" name="photo_id">
                             </div>
                         </div>
                     </div>

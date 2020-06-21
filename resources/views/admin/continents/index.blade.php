@@ -16,6 +16,7 @@
                                     <thead class="table-borderless">
                                     <tr class="line-height-50">
                                         <th scope="col"></th>
+                                        <th scope="col">IMAGE</th>
                                         <th scope="col">NAME</th>
                                         <th scope="col">CREATED</th>
                                         <th scope="col">UPDATED</th>
@@ -27,6 +28,7 @@
                                         @foreach($continents as $continent)
                                             <tr class="line-height-50">
                                                 <th scope="row">{{$continent->id}}</th>
+                                                <td><img height="60" src="{{$continent->photo ? asset('/images/continents/' . $continent->photo->file) : 'NONE'}}" alt=""></td>
                                                 <td>{{$continent->name}}</td>
                                                 <td>{{$continent->created_at}}</td>
                                                 <td>{{$continent->updated_at}}</td>
@@ -36,6 +38,7 @@
                                     @endif
                                     </tbody>
                                 </table>
+                                <a href="{{route('continents.create')}}" class="font-larger thin text-decoration-none text-blue">Add new continent</a>
                             </div>
                         </div>
                     </div>

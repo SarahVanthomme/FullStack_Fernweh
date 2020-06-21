@@ -16,6 +16,14 @@
                         {!! Form::text('name', null,['class'=>'form-control']) !!}
                     </div>
                     <div class="form-group">
+                        {!! Form::label('body', 'Body:') !!}
+                        {!! Form::textarea('body', null,['class'=>'form-control']) !!}
+                    </div>
+                    <div class="form-group">
+                        <label for="photo_id">Photo:</label>
+                        <input type="file" class="form-control-file" id="photo_id" name="photo_id">
+                    </div>
+                    <div class="form-group">
                         {!! Form::submit('Create category', ['class' => 'btn btn-outline-primary']) !!}
                     </div>
                     {!! Form::close() !!}

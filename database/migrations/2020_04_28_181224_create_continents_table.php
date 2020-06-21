@@ -16,6 +16,7 @@ class CreateContinentsTable extends Migration
         Schema::create('continents', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->bigInteger('photo_id')->unsigned()->index();
             $table->timestamps();
         });
     }

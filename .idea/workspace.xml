@@ -2,77 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/continents/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login-front.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/account.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ConsumesExternalServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resolvers/PaymentPlatformResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/PayPalService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/payment-platforms/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/success-payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fernwehlaravelproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fernwehlaravelproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Continent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Continent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminCategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminContinentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminContinentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_24_114649_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_24_114649_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_28_181224_create_continents_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_181224_create_continents_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_07_134354_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_07_134354_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ContinentsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContinentsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/front_assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/Travel_Type1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller1a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller2a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller3a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller4a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller5a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller6a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/bestseller7a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/destination-slider-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/footer6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/header-detail-pagina.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/header1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/product-owl-carousel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/product1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/img/sign-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/front_assets/vendor/jquery/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/front-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/front-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/continents/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/continents/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/continents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/continents/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header-light.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header-light.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +136,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aZpibFUmrK6OxwVKYjjZjZZ6tL" />
@@ -200,23 +152,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\frontend" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\front" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\jquery" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\js" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\app\Http\Controllers" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\payment-platforms" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\frontend" />
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
     </key>
   </component>
@@ -311,7 +263,8 @@
       <workItem from="1592549888806" duration="7106000" />
       <workItem from="1592566092305" duration="100000" />
       <workItem from="1592567790620" duration="8744000" />
-      <workItem from="1592597496236" duration="56753000" />
+      <workItem from="1592597496236" duration="77039000" />
+      <workItem from="1592768630961" duration="7675000" />
     </task>
     <servers />
   </component>
@@ -331,10 +284,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="708" y="182" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1588343134700" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1592158221608">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1592775612348">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592158221608" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592775612348" />
     <state x="277" y="120" key="EditFileWatcherDialog" timestamp="1589454281918">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -364,18 +317,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="386" y="156" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1592570943292" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1592548368407">
+    <state x="796" y="268" key="NewPhpFileDialog" timestamp="1592754576308">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592548368407" />
+    <state x="796" y="268" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1592754576308" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1592768637048">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592768637048" />
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589208103431">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1589208103431" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1589197260512">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1592770349072">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1589197260512" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1592770349072" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1592505841502">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

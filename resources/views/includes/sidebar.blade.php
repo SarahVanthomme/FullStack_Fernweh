@@ -7,11 +7,11 @@
                             ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt fa-lg mr-3"></i></div>
                                 Dashboard</a
                             ></small></h4>--}}
+                    <h4><small><a class="nav-link collapsed py-4 thin" href="{{route('home')}}">FW site</a></small></h4>
                     <h4><small><a class="nav-link collapsed py-4 thin" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
                             ><div class="sb-nav-link-icon"><i class="fas fa-book-open fa-lg mr-3"></i></div>
                                 All
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
-                                ></a></small></h4>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a></small></h4>
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav"><h4><small>
                                     <a class="nav-link thin" href="{{route('users.index')}}">Users</a>

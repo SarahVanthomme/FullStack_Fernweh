@@ -1,3 +1,4 @@
+{{--
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -84,7 +85,8 @@
                     Fernweh CMS
                 </div>
 
-                {{--<div class="links">
+                --}}
+{{--<div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -93,8 +95,34 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>--}}
+                </div>--}}{{--
+
             </div>
         </div>
     </body>
 </html>
+--}}
+
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Dashboard</div>
+                    <div class="card-body">
+                       {{-- @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+
+                        You are logged in!--}}
+                        Payments!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

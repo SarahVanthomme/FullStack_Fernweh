@@ -49,6 +49,26 @@ Route::get('/account','FrontendController@account')->name('account');
 Route::post('/account','FrontendController@updateAccount')->name('update');
 //Route::get('test','FrontendController@test')->name('test');
 
+//Routes payments - front
+
+Route::get('payment', 'StripePaymentController@stripe');
+Route::post('payment', 'StripePaymentController@stripePost')->name('stripe.post');
+
+
+//Route::get('/payment', 'HomeController@payment')->name('payment');
+
+//Route::post('/payments/pay', 'PaymentController@pay')->name('pay');
+//Route::get('/payments/approval', 'PaymentController@approval')->name('approval');
+//Route::get('/payments/cancelled', 'PaymentController@cancelled')->name('cancelled');
+
+
+/*Routes mailables*/
+Route::get('/post/{slug}', 'AdminPostsController@post')->name('home.post');
+Route::get('/contact', 'ContactController@create');
+Route::post('/contact', 'ContactController@store');
+
+
+
 
 /*backend*/
 Route::resource('admin/users', 'AdminUsersController');

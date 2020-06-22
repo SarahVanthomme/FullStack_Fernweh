@@ -26,6 +26,7 @@ class StripePaymentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function stripePost(Request $request)
     {
         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
@@ -36,10 +37,6 @@ class StripePaymentController extends Controller
             "description" => "Betaling Fernweh."
         ]);
 
-      //  Session::flash('success', 'Payment successful!');
-
         return view('front.confirmation');
     }
-
-
 }

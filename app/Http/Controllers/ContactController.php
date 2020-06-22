@@ -13,4 +13,8 @@ class ContactController extends Controller
         Mail::to(request('email'))->send(new Contact($data));
         return redirect('/contact');
     }
+
+    public function sent(){
+        return view('front.message-sent');
+    }
 }

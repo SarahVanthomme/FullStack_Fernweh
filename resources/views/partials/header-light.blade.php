@@ -11,7 +11,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ env('URL') }}/home">Home <span class="sr-only">(current)</span></a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-target="{{ env('URL') }}/shop" href="{{ env('URL') }}/shop" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
                         Destinations
@@ -40,40 +39,7 @@
                             <i class="fa fa-shopping-cart"></i>
                         </span>
                     </a>
-                   {{-- <a class="d-block d-lg-none nav-link" href="{{route('checkout')}}">Shopping cart</a>
-                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                        <p><b>Your shopping cart is empty</b></p>
-                        <button class="btn text-white border-none btn-dark mr-5pr w-80 mb-4pr">Go to shop</button>
-                        <button class="btn text-white border-none btn-dark mr-5pr w-80">Go to cart</button>
-                    </div>--}}
                 </li>
-                {{--<li class="nav-item dropdown">
-                    <a class="d-none d-lg-block nav-link ml-70pr" href="#"><i class="fa fa-user pr-45pr"></i>
-                    </a>
-                    <a class="d-block d-lg-none nav-link" href="#">Your account</a>
-                    <div class="dropdown-menu">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <label for="exampleDropdownFormEmail1"><b>Email address</b></label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleDropdownFormPassword1"><b>Password</b></label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                <label class="form-check-label" for="dropdownCheck">
-                                    <b>Remember me</b>
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-dark">Sign in</button>
-                        </form>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">New around here? Sign up</a>
-                        <a class="dropdown-item" href="#">Forgot password?</a>
-                    </div>
-                </li>--}}
                 <li class="nav-item dropdown">
                     <a class="d-none d-lg-block nav-link ml-70pr" href="{{ env('URL') }}/account"><i class="fa fa-user pr-45pr"></i></a>
                     <a class="d-block d-lg-none nav-link" href="{{ env('URL') }}/account">Your account</a>
@@ -105,8 +71,6 @@
 
 
                 </li>
-
-
             </ul>
         </div>
     </nav>

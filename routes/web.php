@@ -28,7 +28,6 @@ Route::group(['middleware'=>'admin'],function(){
     })->name('admin');
 });
 
-
 Auth::routes();
 
 /*home van back end*/
@@ -47,7 +46,6 @@ Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
 Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('product_detail');
 Route::get('/account','FrontendController@account')->name('account');
 Route::post('/account','FrontendController@updateAccount')->name('update');
-//Route::get('test','FrontendController@test')->name('test');
 
 //Routes payments - front
 
@@ -55,23 +53,15 @@ Route::get('payment', 'StripePaymentController@stripe');
 Route::post('payment', 'StripePaymentController@stripePost')->name('stripe.post');
 Route::get('/confirmation', 'StripePaymentController@confirmation')->name('confirmation');
 
+/*Routes contact*/
 
-//Route::get('/payment', 'HomeController@payment')->name('payment');
-
-//Route::post('/payments/pay', 'PaymentController@pay')->name('pay');
-//Route::get('/payments/approval', 'PaymentController@approval')->name('approval');
-//Route::get('/payments/cancelled', 'PaymentController@cancelled')->name('cancelled');
-
-
-/*Routes mailables*/
 Route::get('/post/{slug}', 'AdminPostsController@post')->name('home.post');
 Route::get('/contact', 'ContactController@create');
 Route::post('/contact', 'ContactController@store');
-
-
-
+Route::get('/message-sent', 'ContactController@sent')->name('sent');
 
 /*backend*/
+
 Route::resource('admin/users', 'AdminUsersController');
 //Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
 Route::resource('admin/categories','AdminCategoriesController');

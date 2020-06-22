@@ -19,13 +19,14 @@ class UsersTableSeeder extends Seeder
             'is_active' => 1,
             'name' => 'sarah',
             'email' => 'sarah@test.be',
-            'address'=>'street 1',
-            'country'=>'Belgium',
+            'address_id'=>'1',
+            'zip_id'=>'1',
+           // 'country_id'=>'1',
             'password' => bcrypt(11111111),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
-        factory('App\User', 5)->create();
+       // factory('App\User', 5)->create();
     }
 }

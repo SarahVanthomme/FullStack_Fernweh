@@ -2,9 +2,12 @@
 @section('title')
     Destinations
 @endsection
+@include('partials.header-light')
+
 @section('content')
     @include('front.shop-banner')
-{{--
+
+    {{--
     <section>
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Address;
 use App\Http\Requests\UsersEditRequest;
 use App\Http\Requests\UsersRequest;
 //use App\Photo;
@@ -67,6 +68,14 @@ class AdminUsersController extends Controller
 
         //$user->password = Hash::make($request['password']);
         $input['password'] = Hash::make($request['password']);
+
+       /* if($address=$request->string('address_id')){
+
+            $address = Address::create(['address']);
+            $input['address_id']=$address->id;
+        }*/
+
+
        // $user->save();
         User::create($input);
         //$user->roles()->sync($request->roles, false);

@@ -9,11 +9,11 @@
         <div class="collapse navbar-collapse large-font-300" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ env('URL') }}/home">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-target="destinations.html" href="destinations.html" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" data-target="{{ env('URL') }}/shop" href="{{ env('URL') }}/shop" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
                         Destinations
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDrop">
@@ -25,9 +25,9 @@
                         <a class="dropdown-item" href="#">South America</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                {{--<li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
-                </li>
+                </li>--}}
                 <li class="nav-item dropdown">
                    {{-- <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}"><i class="fa fa-shopping-cart"></i></a>
                     <a class="d-block d-lg-none nav-link" href="{{route('checkout')}}">Shopping cart</a>--}}
@@ -75,8 +75,8 @@
                     </div>
                 </li>--}}
                 <li class="nav-item dropdown">
-                    <a class="d-none d-lg-block nav-link ml-70pr" href="#"><i class="fa fa-user pr-45pr"></i></a>
-                    <a class="d-block d-lg-none nav-link" href="#">Your account</a>
+                    <a class="d-none d-lg-block nav-link ml-70pr" href="{{ env('URL') }}/account"><i class="fa fa-user pr-45pr"></i></a>
+                    <a class="d-block d-lg-none nav-link" href="{{ env('URL') }}/account">Your account</a>
                     <div class="dropdown-menu">
                         <form class="px-4 py-3">
                             @guest

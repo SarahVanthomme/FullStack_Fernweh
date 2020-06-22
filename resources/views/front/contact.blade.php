@@ -1,4 +1,14 @@
-<form action="{{action('ContactController@store')}}" method="POST">
+@extends('layouts.front')
+@section('title')
+    Checkout
+@endsection
+@include('partials.header-dark')
+
+@section('content')
+
+
+
+    <form action="{{action('ContactController@store')}}" method="POST">
     @csrf
     <div class="form-group d-flex flex-column justify-content-center text-center">
         <input type="text" class="form-control form-control-sm" id="contact_name" name="name"
@@ -16,3 +26,5 @@
         <button type="submit" class="btn btnContact"> Submit Now </button>
     </div>
 </form>
+
+    @endsection

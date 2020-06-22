@@ -21,7 +21,7 @@ class User extends Authenticatable
 
     //use SoftDeletes;
     protected $fillable = [
-        'name',  'email', 'address', 'country', 'role_id', 'is_active','password',
+        'name',  'email', 'address_id', 'zip_id',/* 'country_id',*/ 'role_id', 'is_active','password',
     ];
 
     /**
@@ -48,9 +48,17 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
-    public function posts(){
-        return $this->hasMany('App\Post');
+    public function address(){
+        return $this->belongsTo('App\Address');
     }
+
+    public function zip(){
+        return $this->belongsTo('App\Zip');
+    }
+//
+//    public function country(){
+//        return $this->hasMany('App\Country');
+//    }
 
 
     public function isAdmin()

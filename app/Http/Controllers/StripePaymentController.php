@@ -38,6 +38,8 @@ class StripePaymentController extends Controller
 
       //  Session::flash('success', 'Payment successful!');
 
-        return view('front.success-payment');
+        return view('front.confirmation');
     }
+
+
 }

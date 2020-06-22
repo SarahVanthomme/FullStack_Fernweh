@@ -38,8 +38,8 @@
                                     <th scope="row">{{$user->id}}</th>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td>{{$user->address}}</td>
-                                    <td>{{$user->country}}</td>
+                                    <td>{{$user->address ? $user->address->street:'none'}}</td>
+{{--                                    <td>{{$user->country}}</td>--}}
                                     <td>{{$user->role ? $user->role->name:'User without role'}}</td>
                                     <td>{{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
                                     <td>{{$user->created_at}}</td>

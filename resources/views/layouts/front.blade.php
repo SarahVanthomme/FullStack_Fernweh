@@ -20,7 +20,6 @@
 <body>
 
 <!--if page type x then show header-dark, if page type y then show header-light-->
-@include('partials.header-light')
 
 @yield('content')
 

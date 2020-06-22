@@ -2,6 +2,8 @@
 @section('title')
     My Account
 @endsection
+@include('partials.header-dark')
+
 @section('content')
 <section class="container-fluid pt-3pr">
     <h1 class="ml-5">My Account</h1>

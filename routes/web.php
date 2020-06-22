@@ -53,6 +53,7 @@ Route::post('/account','FrontendController@updateAccount')->name('update');
 
 Route::get('payment', 'StripePaymentController@stripe');
 Route::post('payment', 'StripePaymentController@stripePost')->name('stripe.post');
+Route::get('/confirmation', 'StripePaymentController@confirmation')->name('confirmation');
 
 
 //Route::get('/payment', 'HomeController@payment')->name('payment');

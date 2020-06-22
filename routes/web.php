@@ -82,4 +82,5 @@ Route::resource('admin/comments', 'PostCommentController');
 Route::resource('admin/banners', 'BannerController');
 Route::resource('admin/index-banners', 'IndexBannerController');
 Route::resource('admin/orders', 'StripePaymentController');
+Route::resource('admin/addresses', 'StripePaymentController');
 

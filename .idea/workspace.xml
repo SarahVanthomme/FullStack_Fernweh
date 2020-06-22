@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Currency.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addresses/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PaymentPlatform.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_21_222115_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_21_222115_create_addresses_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/AddressesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AddressesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +247,7 @@
       <workItem from="1592567790620" duration="8744000" />
       <workItem from="1592597496236" duration="77039000" />
       <workItem from="1592768630961" duration="17042000" />
-      <workItem from="1592807326477" duration="28994000" />
+      <workItem from="1592807326477" duration="31792000" />
     </task>
     <servers />
   </component>

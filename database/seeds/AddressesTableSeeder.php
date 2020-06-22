@@ -18,8 +18,6 @@ class AddressesTableSeeder extends Seeder
         'user_id'=>1,
         'street'=>'vlaslaan',
         'number'=>'2'
-
-
     ]);
 
     }

@@ -47,74 +47,21 @@
                                     <td>{{$user->created_at}}</td>
                                     <td>{{$user->updated_at}}</td>
                                     <td>{{$user->deleted_at}}</td>
-
-                                    {{--@if($user->deleted_at != null)
-                                    <td><a href="{{route('admin.userrestore',$user->id)}}" class="btn btn-outline-success rounded-pill mb-1 w-100">Restore user</a></td>
-                                    @else
-                                   <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-outline-warning rounded-pill w-100 mb-1">Edit user</a></td>
-                                   {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
-                                   <td class="form-group">
-                                       {!! form::submit('Delete user', ['class'=>'btn btn-outline-danger rounded-pill w-100 mb-1']) !!}
-                                   </td>
-                                   {!! Form::close() !!}
-                                   @endif--}}
-
-                                   {{-- <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-link text-warning text-decoration-none">Edit user</a></td>
-                                    {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
-                                    <td class="form-group">
-                                        {!! form::submit('Delete user', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
-                                    </td>
-                                    {!! Form::close() !!}--}}
-
-
-
+                                    <td><a class="btn btn-link text-warning text-decoration-none" href="{{route('users.edit',$user->id)}}">Edit user</a></td>
                                     <td>
-                                        <a class="btn btn-outline-warning w-100 rounded-0" href="{{route('users.edit',$user->id)}}">Edit user</a>
                                         @if($user->deleted_at !=null)
-                                            <a class="btn btn-outline-info w-100 rounded-0 mt-3" href="{{route('admin.userrestore',$user->id)}}">Activate user</a>
+                                           <a class="btn btn-link text-dark text-decoration-none" href="{{route('admin.userrestore',$user->id)}}">Activate user</a>
                                         @else
                                             {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy',$user->id]]) !!}
-                                            <div class="formgroup my-3">
-                                                {!! Form::submit('Deactivate user',['class'=>'btn btn-outline-danger rounded-0 w-100']) !!}
+                                            <div>
+                                                {!! Form::submit('Deactivate',['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                             </div>
                                             {!! Form::close() !!}
                                         @endif
                                     </td>
-
-
-                                        </tr>
-                                    @endforeach
-                                    @endif
-
-
-{{--                        <tr class="line-height-50">
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr class="line-height-50">
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr class="line-height-50">
-                            <th scope="row">4</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr class="line-height-50">
-                            <th scope="row">5</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>--}}
+                                </tr>
+                            @endforeach
+                        @endif
                         </tbody>
                     </table>
                         <a href="{{route('users.create')}}" class="font-larger thin text-decoration-none text-blue">Create new user</a>

@@ -105,7 +105,7 @@
                             class="d-flex align-items-center pb-3pr pb-3pr"><input class="mb-1pr mr-4pr" type="checkbox"><p class="m-0">Categorie
                             </p></div>
                     </div>--}}
-                    <button class="collapsible toggle-icon-2 bg-dark">Continents<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-1 bg-dark">Continents<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
@@ -124,7 +124,7 @@
                         @endforeach
 
                     </div>
-                    <button class="collapsible toggle-icon-3 bg-dark">Country<div class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-2 bg-dark">Country<div class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
                     <div class="content">
                             <div class="d-flex align-items-center pb-3pr pt-3pr">
                                 <input class="mb-1pr mr-4pr" type="checkbox">
@@ -142,8 +142,9 @@
                                 </div>
                             @endforeach
                         </div>
-                    <button class="collapsible toggle-icon-4 bg-dark">City<div
+                    <button class="collapsible toggle-icon-3 bg-dark">City<div
                             class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
+
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
@@ -161,8 +162,7 @@
                             </div>
                         @endforeach
                     </div>
-                    <button class="collapsible toggle-icon-5 bg-dark">Category<div
-                            class="plus-minus-toggle collapsed toggle-5 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-4 bg-dark">Category<div class="plus-minus-toggle collapsed toggle-5 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
@@ -180,44 +180,7 @@
                             </div>
                         @endforeach
                     </div>
-
- {{--
-
-                     <button class="collapsible toggle-icon-5 bg-dark">Price<div
-                             class="plus-minus-toggle collapsed toggle-5 float-right mt-3pr"></div></button>
-                     <div class="content">
-                         <div class="price-slider-range pt-6pr">
-                             <input type="range" min="1" max="25" value="50" class="price-slider" id="myRange">
-                             <p>Maximum price: <span id="demo"></span></p>
-                         </div>
-                     </div>
-                     <button class="collapsible toggle-icon-6 bg-dark">Reviews<div
-                             class="plus-minus-toggle collapsed toggle-6 float-right mt-3pr"></div></button>
-                     <div class="content">
-                         <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa
-                         fa-star"></i><i class="fa fa-star"></i></a><br>
-                         <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></a><br>
-                         <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></a><br>
-                         <a href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></a><br>
-                         <a href="#"><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></a>
-                     </div>
-
                 </div>
-            </div>--}}
-                </div>
-{{--
-        <div class="row pb-2pr pt-4pr">
-            <div class="col-lg-9 col-12 offset-lg-3 d-flex justify-content-center">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-product-page">1</button><p class="m-0 align-self-center">|</p>
-                        <button type="button" class="btn btn-product-page">2</button><p class="m-0 align-self-center">|</p>
-                        <button type="button" class="btn btn-product-page">3</button>
-                    </div>
-                </div>
-            </div>
-        </div>
---}}
             </div>
             <div class="col-lg-9 col-md-12 col-4 offset-4 offset-md-0 filter-content">
                 <div class="row justify-content-around d-flex">
@@ -245,5 +208,44 @@
 
         </div>
     </section>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+        $(function() {
+            $('.toggle-icon-1').on('click', function() {
+                $('.toggle-1').toggleClass('collapsed');
+            });
+            $('.toggle-icon-2').on('click', function() {
+                $('.toggle-2').toggleClass('collapsed');
+            });
+            $('.toggle-icon-3').on('click', function() {
+                $('.toggle-3').toggleClass('collapsed');
+            });
+            $('.toggle-icon-4').on('click', function() {
+                $('.toggle-4').toggleClass('collapsed');
+            });
+            $('.toggle-icon-5').on('click', function() {
+                $('.toggle-5').toggleClass('collapsed');
+            });
+            $('.toggle-icon-6').on('click', function() {
+                $('.toggle-6').toggleClass('collapsed');
+            });
+        });
+
+    </script>
 
 @endsection

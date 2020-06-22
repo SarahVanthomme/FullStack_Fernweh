@@ -21,12 +21,13 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable()->default('NULL');
-            $table->integer('address_id')->index()->unsigned()->nullable();
-            $table->integer('zip_id')->index()->unsigned()->nullable();
+            $table->bigInteger('address_id')->index()->unsigned()->nullable();
+ /*           $table->bigInteger('zip_id')->index()->unsigned()->nullable();
+            $table->bigInteger('city_id')->index()->unsigned()->nullable();*/
             //$table->integer('country_id')->index()->unsigned()->nullable();
             //$table->string('address')->default('');
             //$table->string('country')->default();
-            //$table->softDeletes();
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
         });

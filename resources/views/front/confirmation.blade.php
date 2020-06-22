@@ -14,7 +14,7 @@
                 <h5 class="border-bottom pb-4pr">Order Info</h5>
                 <div class="row">
                     <p class="col-6">Order number</p>
-                    <p class="col-6 text-right text-lg-left">60238</p>
+                    <p class="col-6 text-right text-lg-left">927348</p>
                 </div>
                 <div class="row">
                     <p class="col-6">Country</p>

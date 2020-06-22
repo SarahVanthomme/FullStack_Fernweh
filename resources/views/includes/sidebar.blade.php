@@ -22,8 +22,8 @@
                                     <a class="nav-link thin" href="{{route('countries.index')}}">Countries</a>
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.index')}}">Comments</a>--}}
-                                    <a class="nav-link thin" href="#">Orders</a>
-                                    <a class="nav-link thin" href="{{route('discounts.index')}}">Discounts</a>
+                                    <a class="nav-link thin" href="{{route('orders.index')}}">Orders</a>
+{{--                                    <a class="nav-link thin" href="{{route('discounts.index')}}">Discounts</a>--}}
                                     <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
                                 </small></h4>
                         </nav>
@@ -72,8 +72,6 @@
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
                                     <a class="nav-link thin" href="{{route('continents.create')}}">Continents</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.create')}}">Comments</a>--}}
-                                    <a class="nav-link thin" href="#">Orders</a>
-                                    <a class="nav-link thin" href="{{route('discounts.create')}}">Orders</a>
                                     <a class="nav-link thin" href="{{route('posts.create')}}">Posts</a>
                                 </small></h4>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">

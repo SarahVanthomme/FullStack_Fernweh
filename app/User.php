@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 //use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
@@ -19,9 +20,9 @@ class User extends Authenticatable
      * @var array
      */
 
-    //use SoftDeletes;
+    use SoftDeletes;
     protected $fillable = [
-        'name',  'email', 'address_id', 'zip_id',/* 'country_id',*/ 'role_id', 'is_active','password',
+        'name',  'email', 'address_id', 'zip_id', 'city_id', 'role_id', 'is_active','password',
     ];
 
     /**
@@ -55,11 +56,14 @@ class User extends Authenticatable
     public function zip(){
         return $this->belongsTo('App\Zip');
     }
-//
-//    public function country(){
-//        return $this->hasMany('App\Country');
-//    }
 
+    public function city(){
+        return $this->belongsTo('App\City');
+    }
+
+    public function orders(){
+        return $this->hasMany('App\Order');
+    }
 
     public function isAdmin()
     {

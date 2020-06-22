@@ -64,6 +64,8 @@ Route::get('/message-sent', 'ContactController@sent')->name('sent');
 
 Route::resource('admin/users', 'AdminUsersController');
 //Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
+Route::get('/admin/user/restore/{user}', 'AdminUsersController@userRestore')->name('admin.userrestore');
+
 Route::resource('admin/categories','AdminCategoriesController');
 Route::resource('admin/cities','AdminCitiesController');
 Route::resource('admin/countries','AdminCountriesController');
@@ -79,4 +81,5 @@ Route::resource('admin/photos','AdminPhotosController');
 Route::resource('admin/comments', 'PostCommentController');
 Route::resource('admin/banners', 'BannerController');
 Route::resource('admin/index-banners', 'IndexBannerController');
+Route::resource('admin/orders', 'StripePaymentController');
 

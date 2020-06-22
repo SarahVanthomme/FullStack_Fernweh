@@ -22,8 +22,8 @@ class AdminUsersController extends Controller
     public function index()
     {
         //
-       // $users = User::withTrashed()->paginate(100);
-        $users = User::all();
+        $users = User::withTrashed()->paginate(100);
+        //$users = User::all();
         return view('admin.users.index', compact('users'));
 
     }
@@ -173,6 +173,11 @@ class AdminUsersController extends Controller
         $user->delete();
         Session::flash('deleted_user', 'The user is deleted');
         //flash is weergave message, deleted user is de message naam en the user deleted is wat er getoond wordt aan de gebruiker.
+        return redirect('admin/users');
+    }
+    public function userRestore($id){
+        User::onlyTrashed()->where('id', $id)->restore();
+        Session::flash('restored_user', 'The user is restored');
         return redirect('admin/users');
     }
 

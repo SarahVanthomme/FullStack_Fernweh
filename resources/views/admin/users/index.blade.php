@@ -22,11 +22,12 @@
                             <th scope="col">NAME</th>
                             <th scope="col">EMAIL</th>
                             <th scope="col">ADDRESS</th>
-                            <th scope="col">COUNTRY</th>
+{{--                            <th scope="col">COUNTRY</th>--}}
                             <th scope="col">ROLE</th>
                             <th scope="col">STATUS</th>
                             <th scope="col">CREATED</th>
                             <th scope="col">UPDATED</th>
+                            <th scope="col">DELETED</th>
                             <th scope="col">ACTIONS</th>
 
                         </tr>
@@ -38,13 +39,14 @@
                                     <th scope="row">{{$user->id}}</th>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td>{{$user->address ? $user->address->street:'none'}}</td>
+{{--                                    <td>{{$user->address ? $user->address->street:'none'}}</td>--}}
+                                    <td>{{$user->address_id}}</td>
 {{--                                    <td>{{$user->country}}</td>--}}
                                     <td>{{$user->role ? $user->role->name:'User without role'}}</td>
                                     <td>{{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
                                     <td>{{$user->created_at}}</td>
                                     <td>{{$user->updated_at}}</td>
-
+                                    <td>{{$user->deleted_at}}</td>
 
                                     {{--@if($user->deleted_at != null)
                                     <td><a href="{{route('admin.userrestore',$user->id)}}" class="btn btn-outline-success rounded-pill mb-1 w-100">Restore user</a></td>
@@ -57,12 +59,28 @@
                                    {!! Form::close() !!}
                                    @endif--}}
 
-                                    <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-link text-warning text-decoration-none">Edit user</a></td>
+                                   {{-- <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-link text-warning text-decoration-none">Edit user</a></td>
                                     {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id]]) !!}
                                     <td class="form-group">
                                         {!! form::submit('Delete user', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
                                     </td>
-                                    {!! Form::close() !!}
+                                    {!! Form::close() !!}--}}
+
+
+
+                                    <td>
+                                        <a class="btn btn-outline-warning w-100 rounded-0" href="{{route('users.edit',$user->id)}}">Edit user</a>
+                                        @if($user->deleted_at !=null)
+                                            <a class="btn btn-outline-info w-100 rounded-0 mt-3" href="{{route('admin.userrestore',$user->id)}}">Activate user</a>
+                                        @else
+                                            {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy',$user->id]]) !!}
+                                            <div class="formgroup my-3">
+                                                {!! Form::submit('Deactivate user',['class'=>'btn btn-outline-danger rounded-0 w-100']) !!}
+                                            </div>
+                                            {!! Form::close() !!}
+                                        @endif
+                                    </td>
+
 
                                         </tr>
                                     @endforeach

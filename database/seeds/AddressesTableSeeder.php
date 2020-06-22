@@ -13,7 +13,14 @@ class AddressesTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('addresses')->insert(['street'=>'straatnaam 1']);
+
+        DB::table('addresses')->insert([
+        'user_id'=>1,
+        'street'=>'vlaslaan',
+        'number'=>'2'
+
+
+    ]);
 
     }
 }

@@ -124,7 +124,8 @@
                 <p class="col-6">Product</p>
                 <p class="col-6 text-right">Total</p>
             </div>
-            @foreach($cart as $item)
+            @if($cart)
+                @foreach($cart as $item)
             <div class="row d-flex">
                 <p class="col-5">{{$item['product_name']}}</p>
                 <form class="col-2" method="POST" action="{{action('FrontendController@updateQuantity')}}" enctype="multipart/form-data">
@@ -140,6 +141,9 @@
                 <p class="col-5 text-right">€ {{$item['product_price']*$item['quantity']}}</p>
             </div>
             @endforeach
+                @else
+                <p>no products</p>
+                @endif
             <div class="row d-flex mt-4pr">
                 <p class="col-6"><b>Subtotal</b></p>
                 <p class="col-6 text-right">€ {{Session::get('cart')->totalPrice}}</p>

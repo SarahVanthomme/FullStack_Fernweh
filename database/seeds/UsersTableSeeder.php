@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'sarah',
             'email' => 'sarah@test.be',
             'address_id'=>'1',
-            'zip_id'=>'1',
+            //'zip_id'=>'1',
            // 'country_id'=>'1',
             'password' => bcrypt(11111111),
             'created_at' => now(),

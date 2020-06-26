@@ -25,8 +25,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PhotoSeeder::class);
         $this->call(AddressesTableSeeder::class);
         $this->call(ZipsTableSeeder::class);
-       // $this->call(PaymentPlatformsTableSeeder::class);
-        //$this->call(CurrenciesTableSeeder::class);
+        $this->call(CategoryPhotosTableSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

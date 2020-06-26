@@ -351,7 +351,8 @@
                 <img class="card-img-top mb-5" src="{{$category->photo ? asset('images/categories/' . $category->photo->file) : "none"}}" alt="Card image cap">
                 <div class="card-body text-center" style="position:relative;">
                     <div style="border-top: 3px solid grey; width: 2rem; position: absolute; left: 45%;"></div>
-                    <p class="card-text pt-5">{{$category->body}}</p>
+
+                    <p class="card-text pt-5"><strong>{{$category->name}}</strong><br>{{$category->body}}</p>
                 </div>
             </div>
         </a>
@@ -374,6 +375,8 @@
                 </div>
             </div>
             <div class="card">
+
+
                 <div class="card-body">
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     <small class="text-muted">Name of the client<br>Country</small>

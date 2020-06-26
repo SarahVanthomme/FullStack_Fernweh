@@ -15,7 +15,7 @@
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav"><h4><small>
                                     <a class="nav-link thin" href="{{route('users.index')}}">Users</a>
-                                    <a class="nav-link thin" href="#">Addresses</a>
+                                    <a class="nav-link thin" href="{{route('addresses.index')}}">Addresses</a>
                                     <a class="nav-link thin" href="{{route('products.index')}}">Products</a>
                                     <a class="nav-link thin" href="{{route('categories.index')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.index')}}">Cities</a>

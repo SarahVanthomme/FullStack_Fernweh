@@ -52,14 +52,14 @@
 }
 
 #box:hover #box-title{
-    opacity: 1;
+    opacity: 0.5;
     transition: 1000ms;
 }
 
 
 #box-title{
     font-family: "Permanent Marker";
-    color: grey;
+    color: red;
     position: absolute;
     left: 0;
     right: 0;
@@ -71,4 +71,7 @@
     font-size: 4rem;
 
 }
+
+
+
 

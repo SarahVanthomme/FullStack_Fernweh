@@ -3,8 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/AddressesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AddressesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_22_074113_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_22_074113_create_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CurrenciesTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PaymentPlatformsTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/front-app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/front-app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/front-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/front-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/front-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/front-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front_assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/front_assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/front-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/front-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/front-app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/front-app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addresses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addresses/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,24 +159,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/assets/front_assets/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\css" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\app\Http\Controllers" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\payment-platforms" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\frontend" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\admin" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\front" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\jquery" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\vendor\bootstrap\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -247,7 +272,11 @@
       <workItem from="1592567790620" duration="8744000" />
       <workItem from="1592597496236" duration="77039000" />
       <workItem from="1592768630961" duration="17042000" />
-      <workItem from="1592807326477" duration="31792000" />
+      <workItem from="1592807326477" duration="49324000" />
+      <workItem from="1593020750019" duration="103000" />
+      <workItem from="1593107910663" duration="4584000" />
+      <workItem from="1593113391032" duration="4141000" />
+      <workItem from="1593179125857" duration="9118000" />
     </task>
     <servers />
   </component>
@@ -259,10 +288,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="386" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1592163755136" />
-    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592825488712">
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592861943757">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1592825488712" />
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1592861943757" />
     <state x="708" y="182" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588343134700">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -275,10 +304,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="277" y="120" key="EditFileWatcherDialog/0.0.1280.680@0.0.1280.680" timestamp="1589454281918" />
-    <state x="421" y="84" key="FileChooserDialogImpl" timestamp="1592727386271">
+    <state x="421" y="84" key="FileChooserDialogImpl" timestamp="1593116953184">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592727386271" />
+    <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593116953184" />
     <state x="632" y="128" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591857672537" />
     <state width="596" height="161" key="GridCell.Tab.0.bottom" timestamp="1589158877459">
       <screen x="0" y="0" width="1280" height="680" />
@@ -304,10 +333,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="796" y="268" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1592754576308" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1592807327214">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1593179163922">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592807327214" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1593179163922" />
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589208103431">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

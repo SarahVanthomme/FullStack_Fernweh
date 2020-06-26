@@ -48,9 +48,7 @@ class StripePaymentController extends Controller
             'token' => $token
         ]);
 
-        Session::get('cart')->totalQuantity = 0;
-        Session::get('cart')->totalPrice = 0;
-        Session::get('cart')->products = 0;
+       Session::forget('cart');
 
         return view('front.confirmation');
     }
@@ -60,7 +58,7 @@ class StripePaymentController extends Controller
     }
 
     public function index(){
-        $orders = Order::all();
+        $orders = Order::withTrashed()->paginate(100);
         return view('admin.orders.index', compact('orders'));
     }
 
@@ -78,4 +76,19 @@ class StripePaymentController extends Controller
         $order->update($input);
         return redirect('/admin/orders');
     }
+
+    public function destroy($id)
+    {
+        $order = Order::findOrFail($id);
+        $order->delete();
+        Session::flash('deleted_order', 'The order is deleted');
+        return redirect('admin/orders');
+    }
+
+    public function orderRestore($id){
+        Order::onlyTrashed()->where('id', $id)->restore();
+        Session::flash('restored_order', 'The order is restored');
+        return redirect('admin/orders');
+    }
+
 }

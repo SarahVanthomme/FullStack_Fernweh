@@ -105,7 +105,7 @@
                             class="d-flex align-items-center pb-3pr pb-3pr"><input class="mb-1pr mr-4pr" type="checkbox"><p class="m-0">Categorie
                             </p></div>
                     </div>--}}
-                    <button class="collapsible toggle-icon-1 bg-dark">Continents<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-1 bg-dark">Continents<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
@@ -124,7 +124,7 @@
                         @endforeach
 
                     </div>
-                    <button class="collapsible toggle-icon-2 bg-dark">Country<div class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-2 bg-dark">Country<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
                     <div class="content">
                             <div class="d-flex align-items-center pb-3pr pt-3pr">
                                 <input class="mb-1pr mr-4pr" type="checkbox">
@@ -143,7 +143,7 @@
                             @endforeach
                         </div>
                     <button class="collapsible toggle-icon-3 bg-dark">City<div
-                            class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
+                            class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
 
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
@@ -162,7 +162,7 @@
                             </div>
                         @endforeach
                     </div>
-                    <button class="collapsible toggle-icon-4 bg-dark">Category<div class="plus-minus-toggle collapsed toggle-5 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-4 bg-dark">Category<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">

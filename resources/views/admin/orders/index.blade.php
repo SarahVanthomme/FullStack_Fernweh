@@ -10,6 +10,9 @@
                     <div class="col-12">
                         <div class="card border-0 py-2">
                             <div class="card-body">
+                                @if(Session::has('deleted_order'))
+                                    <p class="alert alert-success">{{session('deleted_order')}}</p>
+                                @endif
                                 <table class="table text-secondary thin">
                                     <thead class="table-borderless">
                                     <tr class="line-height-50">
@@ -18,6 +21,7 @@
                                         <th scope="col">AMOUNT</th>
                                         <th scope="col">CREATED AT</th>
                                         <th scope="col">UPDATED AT</th>
+                                        <th scope="col">DELETED AT</th>
                                         <th scope="col">ACTIONS</th>
                                     </tr>
                                     </thead>
@@ -30,10 +34,23 @@
                                                 <td>{{$order->amount}}</td>
                                                 <td>{{$order->created_at}}</td>
                                                 <td>{{$order->updated_at}}</td>
-                                                <td><a href="{{route('orders.edit',$order->id)}}" class="btn btn-link text-warning text-decoration-none">view order</a></td>
+                                                <td>{{$order->deleted_at}}</td>
+                                               {{-- <td><a href="{{route('orders.edit',$order->id)}}" class="btn btn-link text-warning text-decoration-none">view order</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['StripePaymentController@destroy', $order->id]]) !!}
                                                 <td class="form-group">
                                                     {!! form::submit('Delete order', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
+                                                </td>--}}
+                                                <td><a class="btn btn-link text-warning text-decoration-none" href="{{route('orders.edit',$order->id)}}">View order</a></td>
+                                                <td>
+                                                    @if($order->deleted_at !=null)
+                                                        <a class="btn btn-link text-dark text-decoration-none" href="{{route('admin.orderrestore',$order->id)}}">Activate order</a>
+                                                    @else
+                                                        {!! Form::open(['method'=>'DELETE','action'=>['StripePaymentController@destroy',$order->id]]) !!}
+                                                        <div>
+                                                            {!! Form::submit('Deactivate',['class'=>'btn btn-link text-danger text-decoration-none']) !!}
+                                                        </div>
+                                                        {!! Form::close() !!}
+                                                    @endif
                                                 </td>
                                                 {!! Form::close() !!}
                                             </tr>

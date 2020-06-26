@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://use.fontawesome.com/releases/v5.13.0/css/all.css);@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -86,20 +86,32 @@
         background-position:center;
         background-repeat:no-repeat;background-size:cover}*/
     .margin-your-order{margin-top:5%}}@media (min-width:768px){.text-header{font-size:350%}.input-group{width:25%}#product-content-mobile{display:none}#product-content-medium{display:block}.margin-your-order{margin-top:1%}}@media (min-width:992px){.input-group{width:25%}.footer-padding{padding-top:0}.filter{display:none}.eachfilter{position:static;display:block}.inner-filter{width:auto}#position-navbar{position:absolute;left:50%;transform:translateX(-50%);z-index:15}}
+
+/*NAVBAR*/
+
+.xxl-font-3{
+    font-size:3rem;
+    font-weight:300;
+}
+
+/*HOME*/
+
+/*SHOP -- DESTINATIONS*/
+
 .fa-stack[data-count]:after{
     position:absolute;
     right: 0%;
     top: 0%;
     content: attr(data-count);
-    font-size: 40%;
+    font-size: 60%;
     padding: .6em;
     border-radius: 999px;
     line-height: .75em;
-    color: red;
+    color: white;
     text-align: center;
     min-width: 2em;
     font-weight: bold;
-    background: #343a40;
+    /*background: #343a40;*/
     border-style: solid;
 }
 
@@ -107,13 +119,55 @@
     color: #DF0000;
 }*/
 
-@charset "UTF-8";
+/*home page*/
 
+   /* .parallax{
+        background-image:url("{{$banner->photo ? asset('images/banners/' . $banner->photo->file) : "none"}}");
+        height:800px;
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:no-repeat;background-size:cover}
+*/
+
+
+#box{
+    position: relative;
+    text-decoration: none;
+
+}
+#box :hover{
+    opacity: 0.5;
+}
+
+#box:hover #box-title{
+    opacity: 0.5;
+    transition: 1000ms;
+}
+
+
+#box-title{
+    font-family: "Permanent Marker";
+    color: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    opacity: 0;
+    font-size: 4rem;
+
+}
+
+
+
+
+@charset "UTF-8";
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
 .fa,
 .fas,
 .far,
@@ -193,7 +247,6 @@
   margin-left: 2.5em;
   padding-left: 0;
 }
-
 .fa-ul > li {
   position: relative;
 }
@@ -227,7 +280,6 @@
 .fab.fa-pull-left {
   margin-right: 0.3em;
 }
-
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
@@ -250,7 +302,6 @@
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -260,12 +311,10 @@
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg);
@@ -291,8 +340,7 @@
   transform: scale(1, -1);
 }
 
-.fa-flip-both,
-.fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   transform: scale(-1, -1);
 }
@@ -338,7 +386,6 @@
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
-
 .fa-500px:before {
   content: "\F26E";
 }
@@ -6102,8 +6149,7 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
+.sr-only-focusable:active, .sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -6116,16 +6162,14 @@ readers do not read off random characters that represent icons */
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
 @font-face {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?a0369ea57eb6d3843d6474c035111f29);
-  src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?a0369ea57eb6d3843d6474c035111f29) format("embedded-opentype"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?b15db15f746f29ffa02638cb455b8ec0) format("woff2"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?bea989e82b07e9687c26fc58a4805021) format("woff"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?1ab236ed440ee51810c56bd16628aef0) format("truetype"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?ec763292e583294612f124c0b0def500) format("svg");
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
-
 .fa,
 .fas {
   font-family: "Font Awesome 5 Free";
@@ -6136,18 +6180,15 @@ readers do not read off random characters that represent icons */
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?c1868c9545d2de1cf8488f1dadd8c9d0);
-  src: url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?c1868c9545d2de1cf8488f1dadd8c9d0) format("embedded-opentype"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?a06da7f0950f9dd366fc9db9d56d618a) format("woff2"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?ec3cfddedb8bebd2d7a3fdf511f7c1cc) format("woff"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?13685372945d816a2b474fc082fd9aaa) format("truetype"), url(../fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?0cb5a5c0d251c109458c85c6afeffbaa) format("svg");
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
-
 .fab {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
-

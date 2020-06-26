@@ -22,11 +22,19 @@ Auth::routes();
 
 //Route::get('/admin', 'HomeController@index')->name('admin');
 
-Route::group(['middleware'=>'admin'],function(){
+/*Route::group(['middleware'=>'admin'],function(){
     Route::get('/admin',function() {
         return view('admin.index');
     })->name('admin');
+});*/
+
+//dit zou naar de home page moeten redirecten maar gaat nog steeds naar admin van backend
+Route::group(['middleware'=>'home'],function(){
+    Route::get('/home',function() {
+        return view('front.home');
+    })->name('home');
 });
+
 
 Auth::routes();
 
@@ -65,6 +73,7 @@ Route::get('/message-sent', 'ContactController@sent')->name('sent');
 Route::resource('admin/users', 'AdminUsersController');
 //Route::get('admin/users/restore/{user}','AdminUsersController@userRestore')->name('admin.userrestore');
 Route::get('/admin/user/restore/{user}', 'AdminUsersController@userRestore')->name('admin.userrestore');
+Route::get('/admin/order/restore/{order}', 'StripePaymentController@orderRestore')->name('admin.orderrestore');
 
 Route::resource('admin/categories','AdminCategoriesController');
 Route::resource('admin/cities','AdminCitiesController');
@@ -82,5 +91,5 @@ Route::resource('admin/comments', 'PostCommentController');
 Route::resource('admin/banners', 'BannerController');
 Route::resource('admin/index-banners', 'IndexBannerController');
 Route::resource('admin/orders', 'StripePaymentController');
-Route::resource('admin/addresses', 'StripePaymentController');
+Route::resource('admin/addresses', 'AdminAddressesController');
 

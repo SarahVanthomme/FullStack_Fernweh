@@ -23,23 +23,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <style>
-    html{
-        height: 100%;
-    }
-    body{
-        background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(144,87,197,1) 100%);
-        height: 100%;
-    }
-    button{
-        background-color: rgba(134,178,214,0.8);
-    }
 </style>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style="opacity: 0.8;">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-{{--                    {{ config('app.name', 'Laravel') }}--}}
                     Fernweh CMS
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -87,10 +76,6 @@
                 </div>
             </div>
         </nav>
-       {{-- <main class="py-4">
-            @yield('content')
-        </main>
---}}
         <main class="py-4 container">
             @if(isset($errors) && $errors->any())
                 <div class="alert alert-danger" role="alert">

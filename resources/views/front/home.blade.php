@@ -4,10 +4,6 @@
 @endsection
 @include('partials.header-light')
 @section('content')
-
-
-
-
     {{--<!doctype html>
 <html lang="en">
 <head>

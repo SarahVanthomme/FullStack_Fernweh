@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id')->index()->unsigned()->nullable();
             $table->decimal('amount');
             $table->string('token');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

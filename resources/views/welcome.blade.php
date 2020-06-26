@@ -108,20 +108,8 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Dashboard</div>
-                    <div class="card-body">
-                       {{-- @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        You are logged in!--}}
-                        Payments!
-                    </div>
-                </div>
+            <div class="col-md-8 align-items-center text-center">
+               <h1 class="display-3 text-secondary" style="margin-top: 15rem;">CMS FERNWEH</h1>
             </div>
         </div>
     </div>

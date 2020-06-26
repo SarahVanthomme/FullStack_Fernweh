@@ -39352,6 +39352,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./resources/assets/front_assets/vendor/jquery/app.js":
+/*!************************************************************!*\
+  !*** ./resources/assets/front_assets/vendor/jquery/app.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./resources/assets/front_assets/vendor/jquery/jquery.min.js":
 /*!*******************************************************************!*\
   !*** ./resources/assets/front_assets/vendor/jquery/jquery.min.js ***!
@@ -43454,6 +43465,7 @@ $('#show-more').click(function () {
   $('#show-more-content').show();
   $('#show-less').show();
   $('#show-more').hide();
+  console.log("mlqksdjfm");
 });
 $('#show-less').click(function () {
   $('#show-more-content').hide();
@@ -43555,7 +43567,16 @@ $(function () {
         })
     });*/
 
-/*carousel ipc slick*/
+/*
+
+    $('#box').each(function () {
+        $('#box').hover(function () {
+            $('#box-title').css('color', 'red');
+        }, function () {
+            $('#box-title').css('color', 'grey');
+        });
+    });
+*/
 
 /***/ }),
 
@@ -43620,6 +43641,9 @@ __webpack_require__(/*! ../assets/front_assets/vendor/jquery/jquery.min */ "./re
 __webpack_require__(/*! ../assets/front_assets/vendor/jquery/script */ "./resources/assets/front_assets/vendor/jquery/script.js");
 
 __webpack_require__(/*! ../assets/front_assets/vendor/bootstrap/js/bootstrap.min */ "./resources/assets/front_assets/vendor/bootstrap/js/bootstrap.min.js");
+
+__webpack_require__(/*! ../assets/front_assets/vendor/jquery/app */ "./resources/assets/front_assets/vendor/jquery/app.js"); //require('../../resources/front_assets/app.js');
+//require('@fortawesome/fontawesome-free/js/fontawesome.min.js');
 
 /***/ }),
 

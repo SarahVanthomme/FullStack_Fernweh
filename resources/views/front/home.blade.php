@@ -263,47 +263,18 @@
         @endforeach
     </div>
 </section>
-
 <section class="container-fluid mb-5">
-    <div class="row pt-4pr">
-        <div class="col-12 text-center">
-            <h2>BEST SELLERS</h2>
-            <p>Explore every day.</p>
-        </div>
-    </div>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                    @foreach($products as $product)
-                        @if($product->bestseller == "1")
-                            <img class="d-block m-4 small" src="{{$product->photo ? asset('images/products/' . $product->photo->file) : "none"}}" alt="First slide">
-                        @else
-                        @endif
-                   @endforeach
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <img class="d-block m-4 small" src="img/bestseller5a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller6a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller7a.png" alt="First slide">
-                    <img class="d-block m-4 small" src="img/bestseller4a.png" alt="First slide">
-
-                </div>
+        <div class="row pt-4pr">
+            <div class="col-12 text-center">
+                <h2>BEST SELLERS</h2>
+                <p>Explore every day.</p>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
 </section>
+
+
+    @include('front.slider')
+
 {{--
 <section class="container-fluid travel-type pt-4pr pb-5pr">
     <div class="row">

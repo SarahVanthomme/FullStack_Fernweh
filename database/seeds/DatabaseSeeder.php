@@ -21,13 +21,13 @@ class DatabaseSeeder extends Seeder
         $this->call(ContinentsTableSeeder::class);
         $this->call(PostsTableSeeder::class);
         $this->call(ProductSeeder::class);
-        $this->call(DiscountSeeder::class);
         $this->call(PhotoSeeder::class);
         $this->call(AddressesTableSeeder::class);
         $this->call(ZipsTableSeeder::class);
         $this->call(CategoryPhotosTableSeeder::class);
         $this->call(IndexBannersTableSeeder::class);
         $this->call(IndexBannerPhotosTableSeeder::class);
+        $this->call(ContinentPhotosTableSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

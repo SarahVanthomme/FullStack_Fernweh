@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/categories/cat-adventure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/categories/cat-beach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/categories/cat-city-break.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/index/index-man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/index/man.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,17 +134,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/index" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\index" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\categories" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\css" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\app\Http\Controllers" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\payment-platforms" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\categories" />
@@ -254,7 +251,7 @@
       <workItem from="1593020750019" duration="103000" />
       <workItem from="1593107910663" duration="4584000" />
       <workItem from="1593113391032" duration="4141000" />
-      <workItem from="1593179125857" duration="12065000" />
+      <workItem from="1593179125857" duration="13694000" />
     </task>
     <servers />
   </component>
@@ -319,10 +316,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1589208103431" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1592770349072">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1593196242113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1592770349072" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1593196242113" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1592505841502">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

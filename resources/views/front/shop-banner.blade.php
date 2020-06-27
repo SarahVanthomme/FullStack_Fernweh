@@ -1,17 +1,10 @@
 <section>
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
+
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             @foreach($banners as $banner)
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{$banner->photo ? asset('images/banners/' . $banner->photo->file) : "none"}}" alt="First slide">
+                <div class="carousel-item @if ($loop->first) active @endif">
+                    <img class="d-block w-100" src="{{$banner->photo ? asset('images/banners/' . $banner->photo->file) : "none"}}" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="destination-header">{{$banner->name}}</h5>
                         <p>{{$banner->body}}</p>
@@ -19,8 +12,47 @@
                 </div>
             @endforeach
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        {{--<div class="carousel-inner">
+
+
+
+
+{{--
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            @foreach($banners as $banner)
+                <div class="carousel-item @if ($loop->first) active @endif">
+                    <img class="d-block w-100" src="{{$banner->photo ? asset('images/banners/' . $banner->photo->file) : "none"}}" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="destination-header">{{$banner->name}}</h5>
+                        <p>{{$banner->body}}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+--}}
+
+
+
+{{--<div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="{{asset('images/frontend/destination-slider-1.png')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
@@ -64,7 +96,8 @@
                 </div>
             </div>
 
-        </div>--}}
+        </div>--}}{{--
+
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -74,4 +107,5 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+--}}
 </section>

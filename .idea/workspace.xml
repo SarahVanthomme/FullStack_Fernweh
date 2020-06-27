@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/continents/con-africa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/continents/con-asia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/continents/con-southam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/products/bestseller1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/slider.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/banners/con-africa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/banners/con-asia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/banners/con-southam.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ContinentsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContinentsTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DiscountSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/front-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/front-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Travel_Type1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/destination-slider-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/payment-platforms/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sign-up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script-dist.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script-dist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-banner.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,17 +138,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/banners" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\banners" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\continents" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\index" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\categories" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\products" />
@@ -267,7 +255,7 @@
       <workItem from="1593020750019" duration="103000" />
       <workItem from="1593107910663" duration="4584000" />
       <workItem from="1593113391032" duration="4141000" />
-      <workItem from="1593179125857" duration="21235000" />
+      <workItem from="1593179125857" duration="25761000" />
     </task>
     <servers />
   </component>

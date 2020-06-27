@@ -22,12 +22,12 @@
                             class="d-flex align-items-center pb-3pr pb-3pr"><input class="mb-1pr mr-4pr" type="checkbox"><p class="m-0">Categorie
                             </p></div>
                     </div>--}}
-                    <button class="collapsible toggle-icon-1 bg-dark">Continents<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-1 bg-filter text-dark">Continents<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a href="{{route('shop')}}">All continents</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All continents</a>
                             </p>
                         </div>
                         @foreach($continents as $continent)
@@ -35,18 +35,18 @@
 
                                 <input class="mb-1pr mr-4pr" type="checkbox">
                                 <p class="m-0">
-                                    <a href="{{route('productsPerContinent', $continent->id)}}">{{$continent->name}}</a>
+                                    <a class="text-dark text-decoration-none" href="{{route('productsPerContinent', $continent->id)}}">{{$continent->name}}</a>
                                 </p>
                             </div>
                         @endforeach
 
                     </div>
-                    <button class="collapsible toggle-icon-2 bg-dark">Country<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-2 bg-filter text-dark">Country<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
                     <div class="content">
                             <div class="d-flex align-items-center pb-3pr pt-3pr">
                                 <input class="mb-1pr mr-4pr" type="checkbox">
                                 <p class="m-0">
-                                    <a href="{{route('shop')}}">All countries</a>
+                                    <a class="text-dark text-decoration-none" href="{{route('shop')}}">All countries</a>
                                 </p>
                             </div>
                             @foreach($countries as $country)
@@ -54,19 +54,19 @@
 
                                     <input class="mb-1pr mr-4pr" type="checkbox">
                                     <p class="m-0">
-                                        <a href="{{route('productsPerCountry', $country->id)}}">{{$country->name}}</a>
+                                        <a class="text-dark text-decoration-none" href="{{route('productsPerCountry', $country->id)}}">{{$country->name}}</a>
                                     </p>
                                 </div>
                             @endforeach
                         </div>
-                    <button class="collapsible toggle-icon-3 bg-dark">City<div
+                    <button class="collapsible toggle-icon-3 bg-filter text-dark">City<div
                             class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
 
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a href="{{route('shop')}}">All cities</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All cities</a>
                             </p>
                         </div>
                         @foreach($cities as $city)
@@ -74,17 +74,17 @@
 
                                 <input class="mb-1pr mr-4pr" type="checkbox">
                                 <p class="m-0">
-                                    <a href="{{route('productsPerCity', $city->id)}}">{{$city->name}}</a>
+                                    <a class="text-dark text-decoration-none" href="{{route('productsPerCity', $city->id)}}">{{$city->name}}</a>
                                 </p>
                             </div>
                         @endforeach
                     </div>
-                    <button class="collapsible toggle-icon-4 bg-dark">Category<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-4 bg-filter text-dark">Category<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a href="{{route('shop')}}">All categories</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All categories</a>
                             </p>
                         </div>
                         @foreach($categories as $category)
@@ -92,7 +92,7 @@
 
                                 <input class="mb-1pr mr-4pr" type="checkbox">
                                 <p class="m-0">
-                                    <a href="{{route('productsPerCategory', $category->id)}}">{{$category->name}}</a>
+                                    <a class="text-dark text-decoration-none" href="{{route('productsPerCategory', $category->id)}}">{{$category->name}}</a>
                                 </p>
                             </div>
                         @endforeach
@@ -108,8 +108,15 @@
                                 <img class="img-fluid bottom-3 product-img-shop" src="{{$product->photo ? asset('/images/products/' . $product->photo->file) : 'NONE'}}" alt="">
                                 <div class="overlay">
                                     <p class="icon-links d-flex justify-content-around">
-                                        <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>
-                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
+{{--                                        <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>--}}
+{{--                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>--}}
+                                        @guest
+                                            <a href="{{route('login')}}"><i class="bg-circle-small-icon product-icon-1 fa fa-user font-xl large-font-300 text-white"></i>Login</a>
+                                        @else
+                                            <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
+                                        @endguest
+
+{{--                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>--}}
                                         <a href="{{route('product_detail', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
                                     </p>
                                 </div>
@@ -120,6 +127,7 @@
                             </div>
                         </div>
                     @endforeach
+
                 </div>
             </div>
 

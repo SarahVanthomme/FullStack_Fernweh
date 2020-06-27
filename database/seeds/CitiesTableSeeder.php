@@ -19,7 +19,7 @@ class CitiesTableSeeder extends Seeder
         DB::table('cities')->insert(['name'=>'Madrid', 'description'=>'description for this city']);
         DB::table('cities')->insert(['name'=>'Barcelona', 'description'=>'description for this city']);
 
-        factory('App\City', 5)->create();
+//        factory('App\City', 5)->create();
 
     }
 }

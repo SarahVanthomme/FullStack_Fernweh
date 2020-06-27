@@ -95,8 +95,9 @@
 
 @extends('layouts.front')
 @section('title')
-    Product Detail
+    {{$product->name}}
 @endsection
+@include('partials.header-dark')
 @section('content')
 
 <section class="container-fluid pt-4pr">
@@ -123,17 +124,8 @@
                         </div>
                         <div class="align-items-center d-flex">
                             <button class="btn text-white btn-dark mr-5pr">add to cart</button>
-                            <a href="#"><i class="bg-circle-product-detail product-icon-1 fa fa-heart font-xl text-light"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1 text-center d-none d-lg-block">
-                    <h5>Deals of the week</h5>
-                    <div class="text-center">
-                        <img class="small pt-4pr" src="img/product1.png" alt="product1">
-                        <img class="small pt-4pr" src="img/product1.png" alt="product1">
-                    </div>
-
                 </div>
             </div>
             <p id="product-content-mobile" class="pt-4pr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad assumenda

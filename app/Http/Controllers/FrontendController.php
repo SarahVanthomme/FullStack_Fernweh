@@ -92,13 +92,13 @@ class FrontendController extends Controller
         $cart = new Cart($oldCart);
         $cart->add($product, $id);
         Session::put('cart', $cart);
-        //dd(Session::get('cart'));
-        return redirect('/shop');
+        Session::flash('log_in', 'Please sign in to continue shopping');
+      //  return redirect('/shop');
+        return Redirect::back();
     }
 
     public function cart(){
         if(!Session::has('cart')){
-//            return redirect('/');
             return Redirect::back();
         }else{
             $currentCart = Session::has('cart') ? Session::get('cart') : null;

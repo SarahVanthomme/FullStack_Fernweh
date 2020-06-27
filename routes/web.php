@@ -55,6 +55,10 @@ Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('p
 Route::get('/account','FrontendController@account')->name('account');
 Route::post('/account','FrontendController@updateAccount')->name('update');
 
+//Log out
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
 //Routes payments - front
 
 Route::get('payment', 'StripePaymentController@stripe');

@@ -10333,6 +10333,10 @@ a.travel:hover .bg-circle {
     left: 80%
 }
 
+.bg-filter{
+    background-color: #dae0e5 !important;
+}
+
 .collapsible {
     background-color: #777;
     color: white;
@@ -10342,7 +10346,11 @@ a.travel:hover .bg-circle {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px
+    font-size: 1.2rem;
+}
+.inner-filter .collapsible:hover{
+    background-color: #f1f1f1 !important;
+
 }
 
 .content {
@@ -10360,7 +10368,7 @@ a.travel:hover .bg-circle {
 }
 
 .plus-minus-toggle:after, .plus-minus-toggle:before {
-    background: #fff;
+    background: #343a40;
     content: "";
     height: 1px;
     left: 0;
@@ -10371,15 +10379,18 @@ a.travel:hover .bg-circle {
 }
 
 .plus-minus-toggle:after {
-    transform-origin: center
+    transform-origin: center;
+
 }
 
 .plus-minus-toggle.collapsed:after {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
+
 }
 
 .plus-minus-toggle.collapsed:before {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+
 }
 
 .price-slider-range {

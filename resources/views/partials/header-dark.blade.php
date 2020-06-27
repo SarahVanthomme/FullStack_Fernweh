@@ -38,16 +38,17 @@
                     </div>
                 </li>--}}
 
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                     {{-- <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}"><i class="fa fa-shopping-cart"></i></a>
                      <a class="d-block d-lg-none nav-link" href="{{route('checkout')}}">Shopping cart</a>--}}
                     {{--                    bovenstaande regel is voor mobile !!!!!!!!!!!!!!!!!!!--}}
-                    <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}">
+                    <a class="nav-link pt-2rem ml-30pr d-none d-lg-block" href="{{route('checkout')}}">
                         <span class="fa-stack" data-count="{{Session::has('cart') ? Session::get('cart')->totalQuantity:'0'}}">
-                            <i class="fa fa-shopping-cart"></i>
+                            <i class="text-dark fa fa-shopping-cart"></i>
                         </span>
                     </a>
                 </li>
+
 
 
 {{--

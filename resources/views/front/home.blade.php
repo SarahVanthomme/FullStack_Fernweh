@@ -17,8 +17,8 @@
                         <p id="subtext-header" class="text-white text-center col-12">{{$cover->body}}</p>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <a href="destinations.html"><button type="button" class="btn btn-link header-button mr-2">SHOP</button></a>
-                        <a href="#"><button type="button" class="btn btn-link header-button">OUR BLOG</button></a>
+                        <a href="{{ env('URL') }}/shop"><button type="button" class="btn btn-lg btn-link header-button mr-2">SHOP</button></a>
+                        <a href="#"><button type="button" class="btn btn-lg btn-link header-button">BLOG</button></a>
                     </div>
                 </div>
             </div>

@@ -10191,10 +10191,11 @@ a.travel:hover .bg-circle {
     visibility: hidden
 }
 
-.hovereffect img {
-    display: block;
+.product-img-shop:hover {
+/*    display: block;
     position: relative;
-    transition: transform 0.35s
+    transition: transform 0.35s*/
+    opacity: 0;
 }
 
 .hovereffect a.info {
@@ -10240,6 +10241,22 @@ a.travel:hover .bg-circle {
     transform: translate3d(0, 0, 0);
     z-index: 10
 }
+
+.hovereffect img {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.hovereffect:hover img {
+    opacity: 0.5;
+}
+
+
+
+
+
 
 .hovereffect:hover p.icon-links a:nth-child(3) {
     transition-delay: 0.2s
@@ -10290,9 +10307,9 @@ a.travel:hover .bg-circle {
     z-index: 5
 }
 
-.product-content:hover .product-content-overlay {
+/*.product-content:hover .product-content-overlay {
     opacity: 1
-}
+}*/
 
 .product-content:hover .product-content-details {
     top: 50%;

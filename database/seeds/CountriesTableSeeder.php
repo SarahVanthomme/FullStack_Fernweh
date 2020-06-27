@@ -18,7 +18,7 @@ class CountriesTableSeeder extends Seeder
         DB::table('countries')->insert(['name'=>'Spain']);
 
 
-        factory('App\Country', 25)->create();
+        factory('App\Country', 5)->create();
 
     }
 }

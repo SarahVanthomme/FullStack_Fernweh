@@ -37,12 +37,18 @@
                         <button class="btn text-white border-none btn-dark mr-5pr w-80"><a href="shopping_cart.html" class="btn-proceed">Go to cart</a></button>
                     </div>
                 </li>--}}
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{{route('contact')}}">Contact</a>
+                </li>
 
                 <li class="nav-item">
                     {{-- <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}"><i class="fa fa-shopping-cart"></i></a>
                      <a class="d-block d-lg-none nav-link" href="{{route('checkout')}}">Shopping cart</a>--}}
                     {{--                    bovenstaande regel is voor mobile !!!!!!!!!!!!!!!!!!!--}}
-                    <a class="nav-link pt-2rem ml-30pr d-none d-lg-block" href="{{route('checkout')}}">
+                    <a class="nav-link pt-2rem ml-30pr d-none d-lg-block navdark" href="{{route('checkout')}}">
                         <span class="fa-stack" data-count="{{Session::has('cart') ? Session::get('cart')->totalQuantity:'0'}}">
                             <i class="text-dark fa fa-shopping-cart"></i>
                         </span>
@@ -87,22 +93,17 @@
                     <div class="dropdown-menu">
                         <form class="px-4 py-3">
                             @guest
-                                <a class="nav-link" style="color: black;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" style="color: black; font-size: x-large;" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <a class="nav-link" style="color: black;" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" style="color: black; font-size: x-large;" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
-                                {{ Auth::user()->name }}
-                                <a class="dropdown-item" href="{{ route('account')}}">Account</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
+                                <p style="font-size: x-large">{{ Auth::user()->name }}</p>
+                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('account')}}">Account</a>
+                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('logout') }}">Logout</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
-
                             @endguest
                         </form>
                     </div>

@@ -12,7 +12,7 @@
                     <a class="nav-link" href="{{ env('URL') }}/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-target="{{ env('URL') }}/shop" href="{{ env('URL') }}/shop" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link text-white dropdown-toggle" data-target="{{ env('URL') }}/shop" href="{{ env('URL') }}/shop" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
                         Shop
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDrop">
@@ -25,7 +25,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('contact')}}">Contact</a>
                 </li>
                 <li class="nav-item">
                    {{-- <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}"><i class="fa fa-shopping-cart"></i></a>
@@ -43,34 +46,20 @@
                     <div class="dropdown-menu">
                         <form class="px-4 py-3">
                             @guest
-                                <a class="nav-link" style="color: black;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" style="color: black; font-size: x-large;" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <a class="nav-link" style="color: black;" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" style="color: black; font-size: x-large" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
-                                {{ Auth::user()->name }}
-                                <a class="dropdown-item" href="{{ route('account')}}">Account</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}">Logout
-{{--                                <a class="text-decoration-none" href="{{Auth::logout()}}">Logout</a>--}}
-
-                               {{-- onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}--}}
-                                </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-
-
-
+                                <p style="font-size: x-large">{{ Auth::user()->name }}</p>
+                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('account')}}">Account</a>
+                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('logout') }}">Logout</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
                             @endguest
                         </form>
                     </div>
-
-
-
-
-
                 </li>
             </ul>
         </div>

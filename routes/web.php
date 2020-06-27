@@ -68,7 +68,7 @@ Route::get('/confirmation', 'StripePaymentController@confirmation')->name('confi
 /*Routes contact*/
 
 Route::get('/post/{slug}', 'AdminPostsController@post')->name('home.post');
-Route::get('/contact', 'ContactController@create');
+Route::get('/contact', 'ContactController@create')->name('contact');
 Route::post('/contact', 'ContactController@store');
 Route::get('/message-sent', 'ContactController@sent')->name('sent');
 

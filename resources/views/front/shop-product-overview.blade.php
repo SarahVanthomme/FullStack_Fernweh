@@ -111,7 +111,7 @@
 {{--                                        <a href="#"><i class="bg-circle-small-icon product-icon-1 fa fa-heart font-xl text-light"></i></a>--}}
 {{--                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>--}}
                                         @guest
-                                            <a href="{{route('login')}}"><i class="bg-circle-small-icon product-icon-1 fa fa-user font-xl large-font-300 text-white"></i>Login</a>
+                                            <a href="{{route('login')}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
                                         @else
                                             <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
                                         @endguest

@@ -1,8 +1,8 @@
 {{--nav voor een donkere achtergrond--}}
 
 <section id="position-navbar" class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-flex justify-content-between">
-        <a class="navbar-brand xxl-font-300" href="{{ env('URL') }}/home">FERNWEH</a>
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-flex justify-content-between align-items-lg-center">
+        <a class="navbar-brand xxl-font-3" href="{{ env('URL') }}/home">FERNWEH</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,7 +13,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-target="{{ env('URL') }}/shop" href="{{ env('URL') }}/shop" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
-                        Destinations
+                        Shop
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDrop">
                         <a class="dropdown-item" href="#">Africa</a>
@@ -24,18 +24,15 @@
                         <a class="dropdown-item" href="#">South America</a>
                     </div>
                 </li>
-                {{--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
-                </li>--}}
-                <li class="nav-item dropdown">
+                </li>
+                <li class="nav-item">
                    {{-- <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}"><i class="fa fa-shopping-cart"></i></a>
                     <a class="d-block d-lg-none nav-link" href="{{route('checkout')}}">Shopping cart</a>--}}
 {{--                    bovenstaande regel is voor mobile !!!!!!!!!!!!!!!!!!!--}}
-                    <a class="nav-link ml-30pr d-none d-lg-block" href="{{route('checkout')}}">
+                    <a class="nav-link pt-2rem ml-30pr d-none d-lg-block" href="{{route('checkout')}}">
                         <span class="fa-stack" data-count="{{Session::has('cart') ? Session::get('cart')->totalQuantity:'0'}}">
-{{--                            <i class="fa fa-circle fa-stack-2x"></i>--}}
-{{--                            deze lijn doet precies niets maar zou normaal de achtergrond zijn van de cart--}}
-
                             <i class="fa fa-shopping-cart"></i>
                         </span>
                     </a>

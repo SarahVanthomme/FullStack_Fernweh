@@ -37,6 +37,7 @@
 <script src="{{asset('js/front-app.js')}}"></script>
 <script src="{{asset('js/script-dist.js')}}"></script>
 
+
 </body>
 </html>
 

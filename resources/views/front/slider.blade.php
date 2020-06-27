@@ -71,7 +71,7 @@
 </script>--}}
 
 <!-- Top content -->
-<div class="top-content">
+<div class="top-content fade-in-section">
     <div class="container-fluid">
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">

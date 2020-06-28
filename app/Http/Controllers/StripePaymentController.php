@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Continent;
 use App\Order;
+use App\Translation;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,7 +22,10 @@ class StripePaymentController extends Controller
      */
     public function stripe()
     {
-        return view('front.stripe');
+        $continents = Continent::all();
+        $translation = Translation::all()->first();
+
+        return view('front.stripe', compact('continents', 'translation'));
     }
 
     /**

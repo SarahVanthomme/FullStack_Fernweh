@@ -67,6 +67,19 @@ class TranslationsTableSeeder extends Seeder
         DB::table('translations')->insert(['name'=>'TermsAndConditions', 'body'=>'terms and conditions']);
         DB::table('translations')->insert(['name'=>'ButtonProceedPayment', 'body'=>'Proceed to payment']);
 
+        //PAYMENT
+
+        DB::table('translations')->insert(['name'=>'YourPayment', 'body'=>'Your Payment']);
+        DB::table('translations')->insert(['name'=>'PaymentDetails', 'body'=>'Payment Details']);
+        DB::table('translations')->insert(['name'=>'NameOnCard', 'body'=>'Name On Card']);
+        DB::table('translations')->insert(['name'=>'CardNumber', 'body'=>'Card Number']);
+        DB::table('translations')->insert(['name'=>'CVC', 'body'=>'CVC']);
+        DB::table('translations')->insert(['name'=>'CVCexample', 'body'=>'ex. 311']);
+        DB::table('translations')->insert(['name'=>'ExpirationMonth', 'body'=>'Expiration Month']);
+        DB::table('translations')->insert(['name'=>'MM', 'body'=>'MM']);
+        DB::table('translations')->insert(['name'=>'ExpirationYear', 'body'=>'Expiration Year']);
+        DB::table('translations')->insert(['name'=>'YYYY', 'body'=>'YYYY']);
+        DB::table('translations')->insert(['name'=>'ButtonPayNow', 'body'=>' Pay Now ']);
 
         //CONTACT
         DB::table('translations')->insert(['name'=>'ContactUsTitle', 'body'=>'Contact Us']);

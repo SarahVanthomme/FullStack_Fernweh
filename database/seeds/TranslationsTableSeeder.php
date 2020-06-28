@@ -28,6 +28,14 @@ class TranslationsTableSeeder extends Seeder
 
         // SHOP OVERVIEW
         DB::table('translations')->insert(['name'=>'OurProducts', 'body'=>'OUR PRODUCTS']);
+        DB::table('translations')->insert(['name'=>'Continents', 'body'=>'Continents']);
+        DB::table('translations')->insert(['name'=>'AllContinents', 'body'=>'All continents']);
+        DB::table('translations')->insert(['name'=>'Countries', 'body'=>'Countries']);
+        DB::table('translations')->insert(['name'=>'AllCountries', 'body'=>'All countries']);
+        DB::table('translations')->insert(['name'=>'Cities', 'body'=>'Cities']);
+        DB::table('translations')->insert(['name'=>'AllCities', 'body'=>'All cities']);
+        DB::table('translations')->insert(['name'=>'Categories', 'body'=>'Categories']);
+        DB::table('translations')->insert(['name'=>'AllCategories', 'body'=>'All categories']);
 
         //SHOP DETAIL
         DB::table('translations')->insert(['name'=>'CategorieShopDetail', 'body'=>'Categorie: ']);

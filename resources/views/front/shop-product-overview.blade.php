@@ -22,12 +22,12 @@
                             class="d-flex align-items-center pb-3pr pb-3pr"><input class="mb-1pr mr-4pr" type="checkbox"><p class="m-0">Categorie
                             </p></div>
                     </div>--}}
-                    <button class="collapsible toggle-icon-1 bg-filter text-dark">Continents<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-1 bg-filter text-dark">{{$translation->where('name','Continents')->value('body')}}<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All continents</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">{{$translation->where('name','AllContinents')->value('body')}}</a>
                             </p>
                         </div>
                         @foreach($continents as $continent)
@@ -41,12 +41,12 @@
                         @endforeach
 
                     </div>
-                    <button class="collapsible toggle-icon-2 bg-filter text-dark">Country<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-2 bg-filter text-dark">{{$translation->where('name','Countries')->value('body')}}<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
                     <div class="content">
                             <div class="d-flex align-items-center pb-3pr pt-3pr">
                                 <input class="mb-1pr mr-4pr" type="checkbox">
                                 <p class="m-0">
-                                    <a class="text-dark text-decoration-none" href="{{route('shop')}}">All countries</a>
+                                    <a class="text-dark text-decoration-none" href="{{route('shop')}}">{{$translation->where('name','AllCountries')->value('body')}}</a>
                                 </p>
                             </div>
                             @foreach($countries as $country)
@@ -59,14 +59,14 @@
                                 </div>
                             @endforeach
                         </div>
-                    <button class="collapsible toggle-icon-3 bg-filter text-dark">City<div
+                    <button class="collapsible toggle-icon-3 bg-filter text-dark">{{$translation->where('name','Cities')->value('body')}}<div
                             class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
 
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All cities</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">{{$translation->where('name','AllCities')->value('body')}}</a>
                             </p>
                         </div>
                         @foreach($cities as $city)
@@ -79,12 +79,12 @@
                             </div>
                         @endforeach
                     </div>
-                    <button class="collapsible toggle-icon-4 bg-filter text-dark">Category<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-4 bg-filter text-dark">{{$translation->where('name','Categories')->value('body')}}<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
                             <p class="m-0">
-                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">All categories</a>
+                                <a class="text-dark text-decoration-none" href="{{route('shop')}}">{{$translation->where('name','AllCategories')->value('body')}}</a>
                             </p>
                         </div>
                         @foreach($categories as $category)

@@ -23,7 +23,6 @@
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.index')}}">Comments</a>--}}
                                     <a class="nav-link thin" href="{{route('orders.index')}}">Orders</a>
-{{--                                    <a class="nav-link thin" href="{{route('discounts.index')}}">Discounts</a>--}}
                                     <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
                                 </small></h4>
                         </nav>
@@ -38,7 +37,7 @@
 
                                     <a class="nav-link thin" href="{{route('banners.index')}}">Banners</a>
                                     <a class="nav-link thin" href="{{route('index-banners.index')}}">Index banners</a>
-                                    <a class="nav-link thin" href="#">Texts - titles</a>
+                                    <a class="nav-link thin" href="{{route('translations.index')}}">Texts - titles</a>
 
 
                                 </small></h4>

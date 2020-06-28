@@ -32,7 +32,12 @@
                                                 <td>{{$translation->body}}</td>
                                                 <td>{{$translation->created_at}}</td>
                                                 <td>{{$translation->updated_at}}</td>
-                                                <td><a href="{{route('continents.edit',$translation->id)}}" class="btn btn-link text-warning text-decoration-none">Edit content</a></td>
+                                                <td><a href="{{route('translations.edit',$translation->id)}}" class="btn btn-link text-warning text-decoration-none">Edit content</a></td>
+                                                {!! Form::open(['method'=>'DELETE', 'action'=>['TranslationsController@destroy', $translation->id]]) !!}
+                                                <td class="form-group">
+                                                    {!! form::submit('Delete content', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
+                                                </td>
+                                                {!! Form::close() !!}
                                             </tr>
                                         @endforeach
                                     @endif

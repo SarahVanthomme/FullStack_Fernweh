@@ -109,21 +109,22 @@
                 </div>
                 <div class="col-6 col-md-8 col-lg-6 d-flex flex-column">
                     <div class="flex-grow-1 flex-lg-grow-0">
-                        <h5 class="font-large">{{$product->name}}</h5>
-                        <p class="m-0">€ {{$product->price}}<br>Categorie: {{$product->category->name}}</p>
-                        <p id="product-content-medium">{{$product->description}}</p>
+                        <h5 class="font-xxl">{{$product->name}}</h5>
+                        <p class="m-0 font-xl">€ {{$product->price}}<br>Categorie: {{$product->category->name}}</p>
+                        <p class="font-large pt-5"><b>Description</b></p>
+                        <p id="product-content-medium font-large">{{$product->description}}</p>
                         <div class="d-flex mb-4pr d-md-none">
                             <label class="m-0">Quantity</label>
                             <input class="ml-5pr bg-grey input-number" type="number" min="1" max="10">
                         </div>
                     </div>
                     <div>
-                        <div class="d-flex mb-4pr d-sm-none d-md-block">
-                            <label class="m-0">Quantity</label>
+                        <div class="d-flex mb-4pr d-sm-none d-md-block pt-5">
+                            <label class="m-0 font-large"><b>Quantity</b></label>
                             <input class="ml-5pr input-number border-grey" type="number" min="1" max="10">
                         </div>
                         <div class="align-items-center d-flex">
-                            <button class="btn text-white btn-dark mr-5pr">add to cart</button>
+                            <button class="btn btn-lg text-white btn-dark mr-5pr mt-5">Yes, add to cart !</button>
                         </div>
                     </div>
                 </div>

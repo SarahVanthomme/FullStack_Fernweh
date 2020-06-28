@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->bigInteger('city_id')->unsigned()->index();
             $table->bigInteger('photo_id')->unsigned()->index();
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->decimal('price')->default(0);
             $table->string('bestseller');
             $table->timestamps();

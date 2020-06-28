@@ -22,7 +22,12 @@
                         {!! Form::text('number', $address->number,['class'=>'form-control']) !!}
                     </div>
                     <div class="form-group">
-                        {!! Form::submit('Create category', ['class' => 'btn btn-outline-primary']) !!}
+                        {!! Form::submit('Update address', ['class' => 'btn btn-outline-warning']) !!}
+                    </div>
+                    {!! Form::close() !!}
+                    {!! Form::open(['method'=>'DELETE', 'action'=>['AdminAddressesController@destroy', $address->id] ]) !!}
+                    <div class="form-group">
+                        {!! Form::submit('Delete address', ['class' => 'btn btn-outline-danger']) !!}
                     </div>
                     {!! Form::close() !!}
 

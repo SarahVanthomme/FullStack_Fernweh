@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ContinentPhotosTableSeeder::class);
         $this->call(BannersTableSeeder::class);
         $this->call(BannerPhotosTableSeeder::class);
+        $this->call(TranslationsTableSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable()->default('NULL');
-            $table->bigInteger('address_id')->index()->unsigned()->nullable();
+            $table->integer('address_id')->index()->unsigned()->nullable();
  /*           $table->bigInteger('zip_id')->index()->unsigned()->nullable();
             $table->bigInteger('city_id')->index()->unsigned()->nullable();*/
             //$table->integer('country_id')->index()->unsigned()->nullable();

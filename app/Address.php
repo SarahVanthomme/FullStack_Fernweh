@@ -12,16 +12,16 @@ class Address extends Model
         'user_id',
         'street',
         'number',
-        'city_id',
-        'zip_id',
+        /*'city_id',
+        'zip_id',*/
     ];
 
     public function user(){
         return $this->belongsTo('App\User');
     }
-    public function cities(){
+ /*   public function cities(){
         return$this->belongsTo('App\City');
-    }
+    }*/
 
     //hier ook zip linken
 }

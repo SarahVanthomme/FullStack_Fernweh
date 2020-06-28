@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Address;
 use App\Banner;
 use App\Cart;
 use App\Category;
@@ -12,6 +13,7 @@ use App\IndexBanner;
 use App\Post;
 use App\PostComment;
 use App\Product;
+use App\Translation;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,17 +21,24 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
+use Symfony\Component\Console\Input\Input;
 
 class FrontendController extends Controller
 {
     //
+    public function footer(){
+        $translation = Translation::all()->first();
+        return view('partials.footer', compact('translation'));
+
+    }
+
     public function index(){
         $continents = Continent::with(['photo'])->get();
         $categories = Category::with(['photo'])->get();
         $products = Product::with(['photo'])->get();
         $covers = IndexBanner::all();
-
-        return view('front.home',compact('covers', 'continents', 'categories', 'products'));
+        $translation = Translation::all()->first();
+        return view('front.home',compact('covers', 'continents', 'categories', 'products', 'translation'));
     }
 
     public function shop(){
@@ -145,7 +154,7 @@ class FrontendController extends Controller
         return view('front.account', compact('user', 'continents'));
     }
 
-    public function updateAccount(Request $request, User $user){
+    public function update(Request $request, User $user){
         $user = Auth::user();
 
         if (trim($request->password) == '') {
@@ -153,7 +162,10 @@ class FrontendController extends Controller
         } else {
             $input = $request->all();
             $input['password'] = Hash::make($request['password']);
-        }
+
+    }
+
+        $input['street'] = $request['street'];
 
         $user->update($input);
 

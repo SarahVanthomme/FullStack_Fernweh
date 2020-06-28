@@ -3,7 +3,7 @@
         <div class="col-9 col-lg-11 d-lg-flex justify-content-lg-around text-center text-lg-left">
             <div class="col-lg-2">
                 <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">
-                    ABOUT US
+{{--                    {{$translation->where('name','AboutUs')->value('body')}}--}}
                 </h2>
                 <p class="font-medium text-secondary m-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repudiandae voluptas. Aspernatur

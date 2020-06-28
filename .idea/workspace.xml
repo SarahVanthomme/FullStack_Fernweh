@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/products/product1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TranslationsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TranslationsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/account.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +256,7 @@
       <workItem from="1593107910663" duration="4584000" />
       <workItem from="1593113391032" duration="4141000" />
       <workItem from="1593179125857" duration="25792000" />
-      <workItem from="1593248776729" duration="92360000" />
+      <workItem from="1593248776729" duration="104538000" />
     </task>
     <servers />
   </component>
@@ -320,10 +321,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1589208103431" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1593347325050">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1593371214505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1593347325050" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1593371214505" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1593282896797">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

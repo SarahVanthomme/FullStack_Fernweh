@@ -104,7 +104,7 @@
                 <div class="row justify-content-around d-flex">
                     @foreach($products as $product)
                         <div class="text-center product-overview">
-                            <div class="hovereffect product-content">
+                            <div class="hovereffect product-content mb-5">
                                 <div class="product-content-overlay"></div>
                                 <img class="img-fluid bottom-3 product-img-shop" src="{{$product->photo ? asset('/images/products/' . $product->photo->file) : 'NONE'}}" alt="">
                                 <div class="overlay">
@@ -116,7 +116,6 @@
                                         @else
                                             <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>
                                         @endguest
-
 {{--                                        <a href="{{route('addToCart', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-shopping-cart font-xl large-font-300 text-white"></i></a>--}}
                                         <a href="{{route('product_detail', $product->id)}}"><i class="bg-circle-small-icon product-icon-1 fa fa-search-plus font-xl text-white"></i></a>
                                     </p>

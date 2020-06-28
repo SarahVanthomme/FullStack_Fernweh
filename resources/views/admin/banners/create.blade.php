@@ -37,7 +37,6 @@
                     </div>
                     {!! Form::close() !!}
                 </div>
-
             </div>
         </main>
         <footer class="py-4 bg-white mt-auto">

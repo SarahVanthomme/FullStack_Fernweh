@@ -11,14 +11,41 @@
         <div class="row mx-1">
             <h2 class="col-12">{{$translation->where('name','BillingDetails')->value('body')}}</h2>
             <div class="col-12 col-md-7">
-                <div class="row mt-2pr mx-1">
+                {!! Form::open( ['method'=>'PATCH', 'action'=>['FrontendController@frontUserUpdate', Auth::user()],'files'=>true]) !!}
+                <div class="d-flex justify-content-between">
+                    <div style="width: 20rem;">
+                        {!! Form::text('name', Auth::user()->name,['class'=>'form-control form-control-lg']) !!}
+                    </div>
+                    <div style="width: 34rem;">
+                        {!! Form::text('email', Auth::user()->email,['class'=>'form-control form-control-lg']) !!}
+                    </div>
+                </div>
+                {!! Form::close() !!}
+                <form action="{{route('frontUpdate', 'update')}}" method="post">
+                    @csrf
+                    @method('PATCH')
+                    <input type="hidden" name="address_id" id="address_id" value="{{Auth::user()->address->id}}">
+                    <div class="d-flex justify-content-between">
+                        <div style="width: 20rem;">
+                            {!! Form::text('street', Auth::user()->address->street,['class'=>'form-control form-control-lg']) !!}
+                        </div>
+                        <div style="width: 34rem;">
+                            {!! Form::text('number', Auth::user()->address->number,['class'=>'form-control form-control-lg']) !!}
+                        </div>
+                    </div>
+                </form>
+
+               {{-- <div class="row mt-2pr mx-1">
+
                     <form action="#" class="col-12">
+
                         <div class="row">
                             <input type="text" name="firstname" required placeholder="{{$translation->where('name','FullName')->value('body')}}" class="col-11 form-control-lg bg-lightgrey border-checkout">
-{{--                            <input type="text" name="lastname" required placeholder="Last name" class="col-5 offset-1 form-control-lg bg-lightgrey border-checkout">--}}
+--}}{{--                            <input type="text" name="lastname" required placeholder="Last name" class="col-5 offset-1 form-control-lg bg-lightgrey border-checkout">--}}{{--
                             <div class="col-1"></div>
                         </div>
                     </form>
+
                 </div>
                 <div class="row mt-2pr mx-1">
                     <form action="#" class="col-12">
@@ -53,9 +80,9 @@
                             <input type="text" name="postcode" placeholder="{{$translation->where('name','Zip')->value('body')}}" class="col-5 form-control-lg bg-lightgrey border-checkout">
                         </div>
                     </form>
-                </div>
+                </div>--}}
             </div>
-            <div class="col-12 col-md-5 bg-lightgrey margin-your-order">
+            <div class="col-12 col-md-5 bg-lightgrey margin-your-order mt-0">
                 @if(Session::has('cart'))
                 <h2 class="mt-3 pb-3pr border-bottom">{{$translation->where('name','YourOrder')->value('body')}}</h2>
                 <div class="row d-flex mt-4pr mb-3 border-bottom font-large">

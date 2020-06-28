@@ -53,8 +53,17 @@ Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
 Route::get('/removeItem/{id}', 'FrontendController@removeItem')->name('removeItem');
 
 Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('product_detail');
-Route::get('/account','FrontendController@account')->name('account');
-Route::post('/account','FrontendController@update')->name('update');
+/*Route::get('/account','FrontendController@account')->name('account');
+Route::patch('/account/address/update','FrontendController@updateinput')->name('updateinput');
+Route::post('/account/address', 'FrontendController@frontPostAddress')->name('frontPostAddress');
+Route::patch('/account/user/update', 'FrontendController@frontUserUpdate')->name('frontUserUpdate');*/
+
+Route::get('/account', 'FrontendController@account')->name('account');
+Route::patch('/account/address/update', 'FrontendController@frontUpdate')->name('frontUpdate');
+Route::post('/account/address', 'FrontendController@frontPostAddress')->name('frontPostAddress');
+Route::patch('/account/user/update', 'FrontendController@frontUserUpdate')->name('frontUserUpdate');
+
+
 
 //Route::get('/login','\App\Http\Controllers\Auth\LoginController@login')->name('login');
 Route::get('/admin', 'FrontendController@admin')->name('admin');
@@ -100,4 +109,5 @@ Route::resource('admin/index-banners', 'IndexBannerController');
 Route::resource('admin/orders', 'StripePaymentController');
 Route::resource('admin/addresses', 'AdminAddressesController');
 Route::resource('admin/translations', 'TranslationsController');
+Route::resource('admin/addresses', 'AdminAddressesController');
 

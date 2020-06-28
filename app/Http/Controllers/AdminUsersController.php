@@ -78,7 +78,6 @@ class AdminUsersController extends Controller
 
        // $user->save();
         User::create($input);
-        //$user->roles()->sync($request->roles, false);
         return redirect('/admin/users');
     }
 

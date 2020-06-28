@@ -17,6 +17,7 @@ use App\Translation;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
@@ -152,28 +153,15 @@ class FrontendController extends Controller
         return view('front.product_detail', compact('postcomments', 'product', 'continents', 'countries', 'cities', 'categories', 'translation'));
     }
 
-    public function account(){
-        $user = User::all();
-        $continents = Continent::all();
-        return view('front.account', compact('user', 'continents'));
-    }
 
-    public function update(Request $request, User $user){
-        $user = Auth::user();
 
-        if (trim($request->password) == '') {
-            $input = $request->except('password');
-        } else {
-            $input = $request->all();
-            $input['password'] = Hash::make($request['password']);
+    public function updateinput(Request $request, Address $address){
+//updaten address
 
-    }
-
-        $input['street'] = $request['street'];
-
-        $user->update($input);
-
-        //Session::flash('updated_user', 'User Updated!');
+        $address = Address::findOrFail($request->address_id);
+        $input = $request->all();
+        $address->update($input);
+        //Session::flash('address_updated', 'Address updated!');
         return redirect('account');
     }
 
@@ -186,5 +174,64 @@ class FrontendController extends Controller
         return view('partials.footer', compact('translation'));
 
     }
+    public function frontUserUpdate(Request $request, User $user)
+    {
+        //update de user
+        $user = Auth::user();
+
+        if (trim($request->password) == '') {
+            $input = $request->except('password');
+        } else {
+            $input = $request->all();
+            $input['password'] = Hash::make($request['password']);
+        }
+
+        $user->update($input);
+
+        Session::flash('updated_user', 'User Updated!');
+        return redirect('account');
+    }
+    public function frontPostAddress(Request $request)
+    {
+//een nieuw address toevoegen
+        //store
+        $user = Auth::user();
+
+        $address = new address();
+        $address->user_id = $request->user_id;
+        //om te weten welke user je bent aan het aanspreken
+        $address->street = $request->street;
+        $address->number = $request->number;
+
+        $address->save();
+
+        DB::table('users')
+            ->where('id', $user->id)
+            ->update(['address_id' => $address->id]);
+
+        Session::flash('created_address', 'The address has been created!');
+        return redirect('account');
+    }
+    public function frontUpdate(Request $request)
+    {
+        $address = Address::findOrFail($request->address_id);
+        //vindt hij dankzij de hidden address id
+        $input = $request->all();
+        $address->update($input);
+        Session::flash('address_updated', 'Address updated!');
+        return redirect('account');
+    }
+    public function account()
+    {
+        $user = User::get();
+        $address = Address::get();
+        $continents = Continent::all();
+        $translation = Translation::all()->first();
+        return view('front.account', compact('user', 'address', 'continents', 'translation'));
+    }
+
+
+
+
 
 }

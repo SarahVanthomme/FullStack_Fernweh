@@ -106,6 +106,8 @@ class FrontendController extends Controller
 
     public function cart(){
         $continents = Continent::all();
+        $translation = Translation::all()->first();
+
 
         if(!Session::has('cart')){
             return Redirect::back();
@@ -113,7 +115,7 @@ class FrontendController extends Controller
             $currentCart = Session::has('cart') ? Session::get('cart') : null;
             $cart = new Cart($currentCart);
             $cart = $cart->products;
-            return view('front.checkout',compact('cart', 'continents'));
+            return view('front.checkout',compact('cart', 'continents', 'translation'));
         }
     }
 

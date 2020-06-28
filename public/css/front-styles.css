@@ -15,6 +15,10 @@
     padding-top: 2rem;
 }
 
+.mr-3rem{
+    margin-right: 3rem;
+}
+
 .fa-stack[data-count]:after {
     position: absolute;
     right: 0%;
@@ -30,6 +34,15 @@
     font-weight: bold;
     /*border-style: solid;*/
     border: none;
+}
+
+.border-checkout{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.w-30rem{
+    width: 30rem;
 }
 
 .navdark .fa-stack[data-count]:after {

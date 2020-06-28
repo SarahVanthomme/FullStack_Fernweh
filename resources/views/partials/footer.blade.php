@@ -52,7 +52,7 @@
         <div class="col-6 col-lg-4 col-xl-3 text-secondary text-center">
 
             <p class="text-secondary font-small pt-2pr">&copy; Voyage. All Rights Reserved</p>
-            <div onclick="call()"><i class="fa fa-arrow-up text-white font-small bounce"></i></div>
+            <div onclick="call()"><i class="fa fa-arrow-up text-white font-small bounce" style="cursor: pointer"></i></div>
 
         </div>
     </div>

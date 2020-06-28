@@ -1,12 +1,15 @@
 <?php
 namespace App\Http\Controllers;
+use App\Continent;
 use App\Mail\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 class ContactController extends Controller
 {
     public function create(){
-        return view('front.contact');
+        $continents = Continent::all();
+
+        return view('front.contact', compact('continents'));
     }
     public function store(Request $request){
         $data = $request->all();

@@ -51,6 +51,8 @@ Route::get('/products/category/{id}', 'FrontendController@productsPerCategory')-
 Route::get('/products/addToCart/{id}','FrontendController@addToCart')->name('addToCart');
 Route::get('/checkout', 'FrontendController@cart')->name('checkout');
 Route::post('/checkout','FrontendController@updateQuantity')->name('quantity');
+Route::get('/removeItem/{id}', 'FrontendController@removeItem')->name('removeItem');
+
 Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('product_detail');
 Route::get('/account','FrontendController@account')->name('account');
 Route::post('/account','FrontendController@updateAccount')->name('update');

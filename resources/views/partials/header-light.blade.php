@@ -16,12 +16,9 @@
                         Shop
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDrop">
-                        <a class="dropdown-item" href="#">Africa</a>
-                        <a class="dropdown-item" href="#">Asia</a>
-                        <a class="dropdown-item" href="#">Australia</a>
-                        <a class="dropdown-item" href="#">Europe</a>
-                        <a class="dropdown-item" href="#">North America</a>
-                        <a class="dropdown-item" href="#">South America</a>
+                        @foreach($continents as $continent)
+                            <a class="dropdown-item font-large" href="#">{{$continent->name}}</a>
+                        @endforeach
                     </div>
                 </li>
                 <li class="nav-item">
@@ -46,14 +43,14 @@
                     <div class="dropdown-menu">
                         <form class="px-4 py-3">
                             @guest
-                                <a class="nav-link" style="color: black; font-size: x-large;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link font-large" style="color: black;" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <a class="nav-link" style="color: black; font-size: x-large" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link font-large" style="color: black;" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
-                                <p style="font-size: x-large">{{ Auth::user()->name }}</p>
-                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('account')}}">Account</a>
-                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('logout') }}">Logout</a>
+                                <p class="font-large border-bottom"><b>{{ Auth::user()->name }}</b></p>
+                                <a class="dropdown-item font-large" href="{{ route('account')}}">Account</a>
+                                <a class="dropdown-item font-large" href="{{ route('logout') }}">Logout</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>

@@ -98,13 +98,15 @@ class FrontendController extends Controller
     }
 
     public function cart(){
+        $continents = Continent::all();
+
         if(!Session::has('cart')){
             return Redirect::back();
         }else{
             $currentCart = Session::has('cart') ? Session::get('cart') : null;
             $cart = new Cart($currentCart);
             $cart = $cart->products;
-            return view('checkout',compact('cart'));
+            return view('checkout',compact('cart', 'continents'));
         }
     }
 
@@ -138,7 +140,8 @@ class FrontendController extends Controller
 
     public function account(){
         $user = User::all();
-        return view('front.account', compact('user'));
+        $continents = Continent::all();
+        return view('front.account', compact('user', 'continents'));
     }
 
     public function updateAccount(Request $request, User $user){

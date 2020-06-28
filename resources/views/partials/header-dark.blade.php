@@ -16,12 +16,9 @@
                         Destinations
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="africa.html">Africa</a>
-                        <a class="dropdown-item" href="asia.html">Asia</a>
-                        <a class="dropdown-item" href="australia.html">Australia</a>
-                        <a class="dropdown-item" href="europe.html">Europe</a>
-                        <a class="dropdown-item" href="north_america.html">North America</a>
-                        <a class="dropdown-item" href="south_america.html">South America</a>
+                        @foreach($continents as $continent)
+                            <a class="dropdown-item font-large" href="#">{{$continent->name}}</a>
+                        @endforeach
                     </div>
                 </li>
              {{--   <li class="nav-item">
@@ -98,9 +95,9 @@
                                     <a class="nav-link" style="color: black; font-size: x-large;" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
-                                <p style="font-size: x-large">{{ Auth::user()->name }}</p>
-                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('account')}}">Account</a>
-                                <a class="dropdown-item" style="font-size: x-large" href="{{ route('logout') }}">Logout</a>
+                                <p class="font-large border-bottom">{{ Auth::user()->name }}</p>
+                                <a class="dropdown-item font-large" href="{{ route('account')}}">Account</a>
+                                <a class="dropdown-item font-large" href="{{ route('logout') }}">Logout</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>

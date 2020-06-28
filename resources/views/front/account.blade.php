@@ -3,32 +3,38 @@
     My Account
 @endsection
 @include('partials.header-dark')
-
 @section('content')
-<section class="container-fluid pt-3pr">
-    <h1 class="ml-5">My Account</h1>
-    <div class="p-5 m-5 col-6" style="background-color: lightgrey">
+    <h1 class="mt-5 text-center">My Account</h1>
+
+    <section class="row d-flex justify-content-center">
+    <div class="m-5 row d-flex justify-content-center text-center">
         {!! Form::open(['method'=>'POST', 'action'=>'FrontendController@updateAccount','files'=>true]) !!}
         @csrf
-        <div class="form-group">
-            {!! Form::label('name', 'Name:') !!}
-            {!! Form::text('name', Auth::user()->name,['class'=>'form-control']) !!}
+        <div class="form-group text-center mb-5">
+            {!! Form::label('name', 'Name',['class'=>'font-large'] )!!}
+            {!! Form::text('name', Auth::user()->name,['class'=>'form-control form-control-lg col-12 border-checkout bg-light w-30rem']) !!}
         </div>
-        <div class="form-group">
-            {!! Form::label('email', 'Email:') !!}
-            {!! Form::text('email', Auth::user()->email,['class'=>'form-control']) !!}
+        <div class="form-group text-center mb-5">
+            {!! Form::label('email', 'Email',['class'=>'font-large'] ) !!}
+            {!! Form::text('email', Auth::user()->email,['class'=>'form-control form-control-lg col-12 border-checkout bg-light']) !!}
         </div>
-        <div class="form-group">
-            {!! Form::label('address', 'Address:') !!}
-            {!! Form::text('address', Auth::user()->address,['class'=>'form-control']) !!}
+        <div class="form-group text-center mb-5">
+            {!! Form::label('address', 'Address',['class'=>'font-large'] ) !!}
+            {!! Form::text('address', Auth::user()->address,['class'=>'form-control form-control-lg col-12 border-checkout bg-light']) !!}
         </div>
-        <div class="form-group">
-            {!! Form::label('country', 'Country:') !!}
-            {!! Form::text('country', Auth::user()->country,['class'=>'form-control']) !!}
+        <div class="form-group text-center mb-5">
+            {!! Form::label('country', 'Country',['class'=>'font-large'] ) !!}
+            {!! Form::text('country', Auth::user()->country,['class'=>'form-control form-control-lg col-12 border-checkout bg-light']) !!}
         </div>
-        <p>click save to update your information</p>
-        <button class="btn btn-light">save</button>
+        <button class="btn btn-lg btn-light text-center">save</button>
+        <p class="text-center">click save to update your information</p>
+
+        {!! Form::close() !!}
     </div>
+
+
+
+
 
 </section>
 @endsection

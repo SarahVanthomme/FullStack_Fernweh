@@ -13,11 +13,11 @@ class CitiesTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('cities')->insert(['name'=>'Marrakesh', 'description'=>'description for this city']);
-        DB::table('cities')->insert(['name'=>'Shanghai', 'description'=>'description for this city']);
-        DB::table('cities')->insert(['name'=>'Beijing', 'description'=>'description for this city']);
-        DB::table('cities')->insert(['name'=>'Madrid', 'description'=>'description for this city']);
-        DB::table('cities')->insert(['name'=>'Barcelona', 'description'=>'description for this city']);
+        DB::table('cities')->insert(['name'=>'Marrakesh']);
+        DB::table('cities')->insert(['name'=>'Shanghai']);
+        DB::table('cities')->insert(['name'=>'Beijing']);
+        DB::table('cities')->insert(['name'=>'Madrid']);
+        DB::table('cities')->insert(['name'=>'Barcelona']);
 
 //        factory('App\City', 5)->create();
 

@@ -10,6 +10,6 @@ $factory->define(City::class, function (Faker $faker) {
     return [
         //
         'name' => $faker->city,
-        'description' => $faker->sentence,
+        //'description' => $faker->sentence,
     ];
 });

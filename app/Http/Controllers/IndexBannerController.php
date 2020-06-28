@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\IndexBanner;
 use App\IndexBannerPhoto;
+use Cassandra\Index;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use phpDocumentor\Reflection\DocBlock\Tags\Covers;
 
 class IndexBannerController extends Controller
 {
@@ -67,5 +69,8 @@ class IndexBannerController extends Controller
     public function destroy($id)
     {
         //
+        $cover = IndexBanner::findOrFail($id);
+        $cover->delete();
+        return redirect('admin/index-banners');
     }
 }

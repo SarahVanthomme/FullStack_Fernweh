@@ -26,11 +26,7 @@ use Symfony\Component\Console\Input\Input;
 class FrontendController extends Controller
 {
     //
-    public function footer(){
-        $translation = Translation::all()->first();
-        return view('partials.footer', compact('translation'));
 
-    }
 
     public function index(){
         $continents = Continent::with(['photo'])->get();
@@ -48,7 +44,8 @@ class FrontendController extends Controller
         $categories = Category::all();
         $banners = Banner::with(['continent','photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
+        $translation = Translation::all()->first();
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
     }
 
 //    FILTERS SHOP
@@ -143,9 +140,14 @@ class FrontendController extends Controller
     //
 
     public function product_detail($id){
+        $continents = Continent::all();
+        $countries = Country::all();
+        $cities = City::all();
+        $categories = Category::all();
         $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id','=', $id)->first();
         $postcomments = PostComment::all();
-        return view('front.product_detail', compact('postcomments', 'product'));
+        $translation = Translation::all()->first();
+        return view('front.product_detail', compact('postcomments', 'product', 'continents', 'countries', 'cities', 'categories', 'translation'));
     }
 
     public function account(){
@@ -175,6 +177,12 @@ class FrontendController extends Controller
 
     public function admin(){
         return view('admin.index');
+    }
+
+    public function footer(){
+        $translation = Translation::all()->first();
+        return view('partials.footer', compact('translation'));
+
     }
 
 }

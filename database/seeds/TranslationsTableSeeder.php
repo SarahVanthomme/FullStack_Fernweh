@@ -14,6 +14,7 @@ class TranslationsTableSeeder extends Seeder
     {
         // PAGE TITLES
         DB::table('translations')->insert(['name'=>'Fernweh', 'body'=>'Fernweh']);
+        DB::table('translations')->insert(['name'=>'Shop', 'body'=>'Shop']);
 
         //HOME
         DB::table('translations')->insert(['name'=>'Titel1', 'body'=>'DISCOVER THE WORLD']);
@@ -26,8 +27,14 @@ class TranslationsTableSeeder extends Seeder
         DB::table('translations')->insert(['name'=>'ButtonContact', 'body'=>'CONTACT']);
 
         // SHOP OVERVIEW
+        DB::table('translations')->insert(['name'=>'OurProducts', 'body'=>'OUR PRODUCTS']);
 
-
+        //CONTACT
+        DB::table('translations')->insert(['name'=>'ContactUsTitle', 'body'=>'Contact Us']);
+        DB::table('translations')->insert(['name'=>'Name', 'body'=>'Name']);
+        DB::table('translations')->insert(['name'=>'Email', 'body'=>'Email']);
+        DB::table('translations')->insert(['name'=>'YourMessage', 'body'=>'Your Message']);
+        DB::table('translations')->insert(['name'=>'Send', 'body'=>' Send ']);
 
 
 

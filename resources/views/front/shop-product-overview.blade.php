@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('title')
-    Destinations
+    {{$translation->where('name','Shop')->value('body')}}
 @endsection
 @include('partials.header-light')
 
@@ -100,8 +100,7 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-12 col-4 offset-4 offset-md-0 filter-content">
-                <h1 class="mb-5 text-center">Our Products</h1>
-
+                <h1 class="mb-5 text-center">{{$translation->where('name','OurProducts')->value('body')}}</h1>
                 <div class="row justify-content-around d-flex">
                     @foreach($products as $product)
                         <div class="text-center product-overview">
@@ -124,7 +123,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="product_detail.html" class="product-title"><h5 class="pt-4pr">{{$product->name}}</h5></a>
+                                <a href="{{route('product_detail', $product->id)}}" class="product-title"><h5 class="pt-4pr">{{$product->name}}</h5></a>
                                 <p>{{$product->continent ? $product->continent->name : "No continent"}}<br>{{$product->price}}</p>
                             </div>
                         </div>

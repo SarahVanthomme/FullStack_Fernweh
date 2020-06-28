@@ -105,12 +105,12 @@
         <div class="col-12 align-items-center">
             <div class="row d-flex justify-content-around">
                 <div class="col-6 col-md-4 col-lg-3 text-center">
-                    <img src="{{$product->photo ? asset('images/products/' . $product->photo->file) : "NONE"}}" alt="product1">
+                    <img style="height: 40rem" src="{{$product->photo ? asset('images/products/' . $product->photo->file) : "NONE"}}" alt="product1">
                 </div>
                 <div class="col-6 col-md-8 col-lg-6 d-flex flex-column">
                     <div class="flex-grow-1 flex-lg-grow-0">
-                        <h5>{{$product->name}}</h5>
-                        <p class="m-0">€ {{$product->price}}<br>Categorie: {{$product->category->name}}<br>Availability: in stock</p>
+                        <h5 class="font-large">{{$product->name}}</h5>
+                        <p class="m-0">€ {{$product->price}}<br>Categorie: {{$product->category->name}}</p>
                         <p id="product-content-medium">{{$product->description}}</p>
                         <div class="d-flex mb-4pr d-md-none">
                             <label class="m-0">Quantity</label>

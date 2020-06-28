@@ -33,6 +33,11 @@
                                                 <td>{{$continent->created_at}}</td>
                                                 <td>{{$continent->updated_at}}</td>
                                                 <td><a href="{{route('continents.edit',$continent->id)}}" class="btn btn-link text-warning text-decoration-none">Edit continent</a></td>
+                                                {!! Form::open(['method'=>'DELETE', 'action'=>['AdminContinentsController@destroy', $continent->id]]) !!}
+                                                <td class="form-group">
+                                                    {!! form::submit('Delete continent', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}
+                                                </td>
+                                                {!! Form::close() !!}
                                             </tr>
                                         @endforeach
                                     @endif

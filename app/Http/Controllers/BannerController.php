@@ -77,6 +77,9 @@ class BannerController extends Controller
     public function destroy($id)
     {
         //
+        $banner = Banner::findOrFail($id);
+        $banner->delete();
+        return redirect('admin/banners');
     }
 
 }

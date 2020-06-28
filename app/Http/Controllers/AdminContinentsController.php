@@ -6,6 +6,7 @@ use App\Continent;
 use App\ContinentPhoto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 
 class AdminContinentsController extends Controller
 {
@@ -114,5 +115,9 @@ class AdminContinentsController extends Controller
     public function destroy($id)
     {
         //
+        $continent = Continent::findOrFail($id);
+        $continent->delete();
+        Session::flash('deleted_category', 'The category is deleted');
+        return redirect('/admin/continents');
     }
 }

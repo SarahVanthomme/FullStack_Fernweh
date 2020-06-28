@@ -38,14 +38,18 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="d-none d-lg-block nav-link ml-70pr" href="{{ env('URL') }}/account"><i class="fa fa-user pr-45pr"></i></a>
+                    @guest
+                        <a class="d-none d-lg-block nav-link ml-70pr" href="{{ env('URL') }}/login"><i class="fa fa-user pr-45pr"></i></a>
+                    @else
+                        <a class="d-none d-lg-block nav-link ml-70pr" href="{{ env('URL') }}/account"><i class="fa fa-user pr-45pr"></i></a>
+                    @endguest
                     <a class="d-block d-lg-none nav-link" href="{{ env('URL') }}/account">Your account</a>
                     <div class="dropdown-menu">
                         <form class="px-4 py-3">
                             @guest
-                                <a class="nav-link font-large" style="color: black;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" style="color: black; font-size: large !important;" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <a class="nav-link font-large" style="color: black;" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" style="color: black; font-size: large !important;" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @else
                                 <p class="font-large border-bottom"><b>{{ Auth::user()->name }}</b></p>

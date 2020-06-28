@@ -28,7 +28,6 @@ Auth::routes();
     })->name('admin');
 });*/
 
-//dit zou naar de home page moeten redirecten maar gaat nog steeds naar admin van backend
 Route::group(['middleware'=>'home'],function(){
     Route::get('/home',function() {
         return view('front.home');
@@ -57,6 +56,8 @@ Route::get('/product_detail/{id}', 'FrontendController@product_detail')->name('p
 Route::get('/account','FrontendController@account')->name('account');
 Route::post('/account','FrontendController@updateAccount')->name('update');
 
+//Route::get('/login','\App\Http\Controllers\Auth\LoginController@login')->name('login');
+Route::get('/admin', 'FrontendController@admin')->name('admin');
 //Log out
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

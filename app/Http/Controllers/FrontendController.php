@@ -16,6 +16,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 
@@ -106,7 +107,7 @@ class FrontendController extends Controller
             $currentCart = Session::has('cart') ? Session::get('cart') : null;
             $cart = new Cart($currentCart);
             $cart = $cart->products;
-            return view('checkout',compact('cart', 'continents'));
+            return view('front.checkout',compact('cart', 'continents'));
         }
     }
 
@@ -135,7 +136,7 @@ class FrontendController extends Controller
     public function product_detail($id){
         $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id','=', $id)->first();
         $postcomments = PostComment::all();
-        return view('product_detail', compact('postcomments', 'product'));
+        return view('front.product_detail', compact('postcomments', 'product'));
     }
 
     public function account(){
@@ -159,4 +160,9 @@ class FrontendController extends Controller
         //Session::flash('updated_user', 'User Updated!');
         return redirect('account');
     }
+
+    public function admin(){
+        return view('admin.index');
+    }
+
 }

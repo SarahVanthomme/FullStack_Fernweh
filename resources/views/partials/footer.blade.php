@@ -14,8 +14,9 @@
                 <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">NEWSLETTER</h2>
                 <p class="font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere placeat.</p>
                 <div class="d-flex justify-content-center justify-content-lg-start">
-                    <input type="email" placeholder="Subscribe">
-                    <button type="submit" class="btn text-white btn-dark">GO</button>
+{{--                    <input type="email" placeholder="Subscribe">
+                    <button type="submit" class="btn text-white btn-dark">GO</button>--}}
+                    <a href="{{route('contact')}}" class="btn text-white btn-dark">Yes, Sign Me Up !</a>
                 </div>
             </div>
             <div class="col-lg-2 footer-padding">

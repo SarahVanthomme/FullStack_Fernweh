@@ -5,7 +5,12 @@
 @include('partials.header-dark')
 @section('content')
     <h1 class="mt-5 text-center">My Account</h1>
-
+    <h5 class="text-center">
+        @if(Auth::user()->role->name == 'admin' && Auth::user()->is_active == '1')
+            <a class="text-decoration-none" href="{{ route('admin') }}">GO TO CMS</a>
+        @else
+        @endif
+    </h5>
     <section class="row d-flex justify-content-center">
     <div class="m-5 row d-flex justify-content-center text-center">
         {!! Form::open(['method'=>'POST', 'action'=>'FrontendController@updateAccount','files'=>true]) !!}

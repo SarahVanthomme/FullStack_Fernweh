@@ -9,8 +9,8 @@
     <section class="container-fluid pt-3pr">
         <button type="button" class="filter">Filter</button>
         <div class="row pt-4pr">
-            <div class="col-lg-3 col-5 eachfilter z-index-5">
-                <div class="inner-filter">
+            <div class="mt-5 col-lg-3 col-5 eachfilter z-index-5">
+                <div class="mt-5 inner-filter">
                     {{--<button class="collapsible toggle-icon-1 bg-dark">Categorie<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div
@@ -100,6 +100,8 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-12 col-4 offset-4 offset-md-0 filter-content">
+                <h1 class="mb-5 text-center">Our Products</h1>
+
                 <div class="row justify-content-around d-flex">
                     @foreach($products as $product)
                         <div class="text-center product-overview">

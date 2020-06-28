@@ -29,17 +29,28 @@
                             </div>
                         </div>
                     </div>
-                        <div class="col-3">
-                            <div class="card border-0 py-2">
-                                <p class="mt-3 pl-3 text-secondary"><small><b>FILTER ON CITIES</b></small></p>
-                                <div class="card-body">
-                                    <a href="{{route('products.index')}}" class="badge badge-info text-light">All cities</a>
-                                    @foreach($cities as $city)
-                                        <a href="{{route('admin.productsPerCity', $city->id)}}" class="badge badge-info">{{$city->name}}</a>
-                                    @endforeach
-                                </div>
+                    <div class="col-3">
+                        <div class="card border-0 py-2">
+                            <p class="mt-3 pl-3 text-secondary"><small><b>FILTER ON CITIES</b></small></p>
+                            <div class="card-body">
+                                <a href="{{route('products.index')}}" class="badge badge-info text-light">All cities</a>
+                                @foreach($cities as $city)
+                                    <a href="{{route('admin.productsPerCity', $city->id)}}" class="badge badge-info">{{$city->name}}</a>
+                                @endforeach
                             </div>
                         </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card border-0 py-2">
+                            <p class="mt-3 pl-3 text-secondary"><small><b>FILTER ON CATEGORIES</b></small></p>
+                            <div class="card-body">
+                                <a href="{{route('products.index')}}" class="badge badge-info text-light">All categories</a>
+                                @foreach($categories as $category)
+                                    <a href="{{route('admin.productsPerCategory', $category->id)}}" class="badge badge-info">{{$category->name}}</a>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row my-4">

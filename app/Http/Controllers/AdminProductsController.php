@@ -157,23 +157,35 @@ class AdminProductsController extends Controller
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
+        $categories = Category::all();
         $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('continent_id', '=', $id)->get();
-        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
     public function productsPerCountry($id){
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
+        $categories = Category::all();
         $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('country_id', '=', $id)->get();
-        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     public function productsPerCity($id){
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
+        $categories = Category::all();
         $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('city_id', '=', $id)->get();
-        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities', 'categories'));
+    }
+
+    public function productsPerCategory($id){
+        $continents = Continent::all();
+        $countries = Country::all();
+        $cities = City::all();
+        $categories = Category::all();
+        $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('category_id', '=', $id)->get();
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
 }

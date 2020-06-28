@@ -23,7 +23,7 @@
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.index')}}">Comments</a>--}}
                                     <a class="nav-link thin" href="{{route('orders.index')}}">Orders</a>
-                                    <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>
+{{--                                    <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>--}}
                                 </small></h4>
                         </nav>
                     </div>
@@ -63,15 +63,19 @@
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                                         ></a>--}}
                                     <a class="nav-link thin" href="{{route('users.create')}}">Users</a>
-                                    <a class="nav-link thin" href="#">Addresses</a>
+                                    <a class="nav-link thin" href="{{route('addresses.create')}}">Addresses</a>
                                     <a class="nav-link thin" href="{{route('products.create')}}">Products</a>
-                                    <a class="nav-link thin" href="{{route('banners.create')}}">Banners</a>
                                     <a class="nav-link thin" href="{{route('categories.create')}}">Categories</a>
                                     <a class="nav-link thin" href="{{route('cities.create')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.create')}}">Countries</a>
                                     <a class="nav-link thin" href="{{route('continents.create')}}">Continents</a>
+                                    <a class="nav-link thin" href="{{route('orders.create')}}">Orders</a>
+                                    <a class="nav-link thin" href="{{route('banners.create')}}">Banners</a>
+                                    <a class="nav-link thin" href="{{route('index-banners.create')}}">Index banners</a>
+                                    <a class="nav-link thin" href="{{route('translations.create')}}">Texts - titles</a>
+
 {{--                                    <a class="nav-link thin" href="{{route('comments.create')}}">Comments</a>--}}
-                                    <a class="nav-link thin" href="{{route('posts.create')}}">Posts</a>
+{{--                                    <a class="nav-link thin" href="{{route('posts.create')}}">Posts</a>--}}
                                 </small></h4>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav"><h4><small><a class="nav-link thin" href="401.html">401 Page</a><a class="nav-link thin" href="404.html">404 Page</a><a class="nav-link thin" href="500.html">500 Page</a></small></h4></nav>

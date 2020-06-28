@@ -29,14 +29,20 @@ class TranslationsTableSeeder extends Seeder
         // SHOP OVERVIEW
         DB::table('translations')->insert(['name'=>'OurProducts', 'body'=>'OUR PRODUCTS']);
 
+        //SHOP DETAIL
+        DB::table('translations')->insert(['name'=>'CategorieShopDetail', 'body'=>'Categorie: ']);
+        DB::table('translations')->insert(['name'=>'Description', 'body'=>'Description']);
+        DB::table('translations')->insert(['name'=>'Quantity', 'body'=>'Quantity']);
+        DB::table('translations')->insert(['name'=>'ButtonShopDetail', 'body'=>'Yes, add to cart !']);
+
+
+
         //CONTACT
         DB::table('translations')->insert(['name'=>'ContactUsTitle', 'body'=>'Contact Us']);
         DB::table('translations')->insert(['name'=>'Name', 'body'=>'Name']);
         DB::table('translations')->insert(['name'=>'Email', 'body'=>'Email']);
         DB::table('translations')->insert(['name'=>'YourMessage', 'body'=>'Your Message']);
         DB::table('translations')->insert(['name'=>'Send', 'body'=>' Send ']);
-
-
 
 
 

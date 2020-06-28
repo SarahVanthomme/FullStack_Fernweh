@@ -110,55 +110,32 @@
                 <div class="col-6 col-md-8 col-lg-6 d-flex flex-column">
                     <div class="flex-grow-1 flex-lg-grow-0">
                         <h5 class="font-xxl">{{$product->name}}</h5>
-                        <p class="m-0 font-xl">€ {{$product->price}}<br>Categorie: {{$product->category->name}}</p>
-                        <p class="font-large pt-5"><b>Description</b></p>
+                        <p class="m-0 font-xl">€ {{$product->price}}<br>{{$translation->where('name','CategorieShopDetail')->value('body')}}{{$product->category->name}}</p>
+                        <p class="font-large pt-5"><b>{{$translation->where('name','Description')->value('body')}}</b></p>
                         <p id="product-content-medium font-large">{{$product->description}}</p>
                         <div class="d-flex mb-4pr d-md-none">
-                            <label class="m-0">Quantity</label>
+                            <label class="m-0">{{$translation->where('name','Quantity')->value('body')}}</label>
                             <input class="ml-5pr bg-grey input-number" type="number" min="1" max="10">
                         </div>
                     </div>
                     <div>
                         <div class="d-flex mb-4pr d-sm-none d-md-block pt-5">
-                            <label class="m-0 font-large"><b>Quantity</b></label>
+                            <label class="m-0 font-large"><b>{{$translation->where('name','Quantity')->value('body')}}</b></label>
                             <input class="ml-5pr input-number border-grey" type="number" min="1" max="10">
                         </div>
                         <div class="align-items-center d-flex">
-                            <button class="btn btn-lg text-white btn-dark mr-5pr mt-5">Yes, add to cart !</button>
+                            <button class="btn btn-lg text-white btn-dark mr-5pr mt-5">{{$translation->where('name','ButtonShopDetail')->value('body')}}</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <p id="product-content-mobile" class="pt-4pr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad assumenda
-                corporis cum
-                dicta eius est
-                ex incidunt
-                iusto minus mollitia nisi non nulla officia repellat sapiente sequi tempore vitae.</p>
+            <p id="product-content-mobile" class="pt-4pr">{{$product->description}}</p>
         </div>
-
     </div>
 </section>
 <section class="container text-center pt-4pr pb-4pr">
     <h2>Reviews</h2>
     <div class="row">
-        <div class="col-6 col-md-2"><p>Overall<br><span class="font-xxl">4.0</span><br>200 revieuws</p></div>
-        <div class="col-6 col-md-4">
-            <p>Based on 200 reviews</p>
-            <div>
-                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i><i class="fa
-                            fa-star"></i><i class="fa fa-star"></i><p class="m-0 pt-1pr pl-4pr text-decoration-none">40</p></a>
-                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
-                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
-                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star-o"></i><i
-                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
-                <a class="d-flex align-items-center justify-content-center" href="#"><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i
-                        class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><p class="m-0 pt-1pr pl-4pr">40</p></a>
-            </div>
-        </div>
         <div class="col-10 col-md-5 offset-1 text-left">
             <h5>Add a review</h5>
             {!! Form::open(['method'=>'POST', 'action'=>'PostCommentController@store'])!!}
@@ -168,6 +145,7 @@
                 <a href="#"><i class="fa fa-star-o"></i><i
                         class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></a>
             </div>
+
             <div class="form-group">
                 {!! Form::text('author', null, ['class'=>'form-control']) !!}
             </div>
@@ -249,7 +227,7 @@
     </div>
 </section>
 
-<section class="container mb-5">
+{{--<section class="container mb-5">
     <div class="row">
         <div class="col-12">
             <div class="row">
@@ -266,7 +244,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 
 @endsection
 {{--

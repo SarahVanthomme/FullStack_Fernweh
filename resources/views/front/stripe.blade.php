@@ -2,7 +2,7 @@
 @section('title')
     {{$translation->where('name','YourPayment')->value('body')}}
 @endsection
-    @include('partials.header-dark')
+
 
     @section('content')
 
@@ -97,7 +97,6 @@
                                 <button class="btn btn-primary btn-lg btn-block" type="submit">{{$translation->where('name','ButtonPayNow')->value('body')}}</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>

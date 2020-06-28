@@ -36,6 +36,9 @@ class StripePaymentController extends Controller
 
     public function stripePost(Request $request)
     {
+        $continents = Continent::all();
+        $translation = Translation::all()->first();
+
         Stripe\Stripe::setApiKey('sk_test_51GwZBtG0dm6lqSBD177SisOW7umRjfhEKEsK9lAMGw1s9KRp0HC8JBNzQEpi3ztU4QPzBURSQIFmaXuS5NQAeTSp00zWRT2ASV');
         Stripe\Charge::create ([
             "amount" => (Session::get('cart')->totalPrice) * 100 +500,
@@ -55,7 +58,7 @@ class StripePaymentController extends Controller
 
        Session::forget('cart');
 
-        return view('front.confirmation');
+        return view('front.confirmation', compact('continents', 'translation'));
     }
 
     public function store(){

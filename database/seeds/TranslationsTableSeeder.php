@@ -81,6 +81,11 @@ class TranslationsTableSeeder extends Seeder
         DB::table('translations')->insert(['name'=>'YYYY', 'body'=>'YYYY']);
         DB::table('translations')->insert(['name'=>'ButtonPayNow', 'body'=>' Pay Now ']);
 
+        //CONFIRMATION
+        DB::table('translations')->insert(['name'=>'ThankYou', 'body'=>'Thank You !']);
+        DB::table('translations')->insert(['name'=>'OrderReceived', 'body'=>'Your order has been received.']);
+
+
         //CONTACT
         DB::table('translations')->insert(['name'=>'ContactUsTitle', 'body'=>'Contact Us']);
         DB::table('translations')->insert(['name'=>'Name', 'body'=>'Name']);

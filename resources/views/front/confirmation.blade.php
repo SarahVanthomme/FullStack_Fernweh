@@ -1,15 +1,15 @@
 @extends('layouts.front')
 @section('title')
-    Checkout
+    {{$translation->where('name','ThankYou')->value('body')}}
 @endsection
 @include('partials.header-dark')
 @section('content')
     <section class="container mt-5 mb-5">
         <div class="text-center">
-            <h2>Thank you!</h2>
-            <h2>Your order has been received.</h2>
+            <h2 style="margin-top: 8rem;">{{$translation->where('name','ThankYou')->value('body')}}</h2>
+            <h2 style="margin-bottom: 8rem;">{{$translation->where('name','OrderReceived')->value('body')}}</h2>
         </div>
-        <div class="row mt-5">
+        {{--<div class="row mt-5">
             <div class="col-12 col-md-8 col-lg-4">
                 <h5 class="border-bottom pb-4pr">Order Info</h5>
                 <div class="row">
@@ -67,9 +67,9 @@
                     <p class="col-6 text-right text-lg-left">36952</p>
                 </div>
             </div>
-        </div>
+        </div>--}}
     </section>
-    <section class="container mb-5">
+   {{-- <section class="container mb-5">
         <div class="row">
             <div class="col-12 bg-lightgrey margin-your-order">
                 <h2 class="mt-3 pb-3pr border-bottom">Your order</h2>
@@ -106,6 +106,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
 @endsection
 

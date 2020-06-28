@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/products/product1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PhotoSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/TranslationsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TranslationsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/confirmation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/stripe.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +137,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/translations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/products" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -147,11 +150,11 @@
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\assets\front_assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\products" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\resources\views\admin\translations" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\banners" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images" />
       <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\continents" />
-      <recent name="C:\wamp64\www\fernwehlaravelproject\public\images\index" />
     </key>
   </component>
   <component name="RunManager">
@@ -252,7 +255,7 @@
       <workItem from="1593107910663" duration="4584000" />
       <workItem from="1593113391032" duration="4141000" />
       <workItem from="1593179125857" duration="25792000" />
-      <workItem from="1593248776729" duration="90574000" />
+      <workItem from="1593248776729" duration="92360000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,7 @@ class PhotoSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('photos')->insert(['file'=>'bestseller1.jpg']);
+        DB::table('photos')->insert(['file'=>'product1.png']);
 
     }
 }

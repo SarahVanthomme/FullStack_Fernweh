@@ -38,7 +38,7 @@
                                                 <td>{{$address->country->name}}</td>--}}
                                                 <td>{{$address->created_at}}</td>
                                                 <td>{{$address->updated_at}}</td>
-                                                <td><a href="{{route('orders.edit',$address->id)}}" class="btn btn-link text-warning text-decoration-none">edit address</a></td>
+                                                <td><a href="{{route('addresses.edit',$address->id)}}" class="btn btn-link text-warning text-decoration-none">edit address</a></td>
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['AdminAddressesController@destroy', $address->id]]) !!}
                                                 <td class="form-group">
                                                     {!! form::submit('Delete order', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}

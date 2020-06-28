@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-3">
                         <div class="card border-0 py-2">
                             <p class="mt-3 pl-3 text-secondary"><small><b>FILTER ON COUNTRIES</b></small></p>
                             <div class="card-body">
@@ -29,24 +29,18 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-
-{{--
-                <div class="row my-4">
-                    <div class="col-12">
-                        <div class="card border-0 py-2">
-                            <div class="card-body">
-                                <a href="{{route('products.index')}}" class="badge badge-info text-light">All countries</a>
-                                @foreach($countries as $country)
-                                    <a href="{{route('admin.productsPerCountry', $country->id)}}" class="badge badge-info">{{$country->name}}</a>
-                                @endforeach
+                        <div class="col-3">
+                            <div class="card border-0 py-2">
+                                <p class="mt-3 pl-3 text-secondary"><small><b>FILTER ON CITIES</b></small></p>
+                                <div class="card-body">
+                                    <a href="{{route('products.index')}}" class="badge badge-info text-light">All cities</a>
+                                    @foreach($cities as $city)
+                                        <a href="{{route('admin.productsPerCity', $city->id)}}" class="badge badge-info">{{$city->name}}</a>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
---}}
 
                 <div class="row my-4">
                     <div class="col-12">

@@ -144,19 +144,36 @@ class AdminProductsController extends Controller
     public function destroy($id)
     {
         //
+        $product = Product::findOrFail($id);
+        $product->delete();
+        //flash is weergave message, deleted user is de message naam en the user deleted is wat er getoond wordt aan de gebruiker.
+        return redirect('admin/products');
+
+
+
     }
 
     public function productsPerContinent($id){
         $continents = Continent::all();
         $countries = Country::all();
-        $products = Product::with(['category', 'continent', 'country', 'photo'])->where('continent_id', '=', $id)->get();
-        return view('admin.products.index', compact('products', 'continents', 'countries'));
+        $cities = City::all();
+        $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('continent_id', '=', $id)->get();
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
     }
     public function productsPerCountry($id){
         $continents = Continent::all();
         $countries = Country::all();
-        $products = Product::with(['category', 'continent', 'country', 'photo'])->where('country_id', '=', $id)->get();
-        return view('admin.products.index', compact('products', 'continents', 'countries'));
+        $cities = City::all();
+        $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('country_id', '=', $id)->get();
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
+    }
+
+    public function productsPerCity($id){
+        $continents = Continent::all();
+        $countries = Country::all();
+        $cities = City::all();
+        $products = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('city_id', '=', $id)->get();
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
     }
 
 }

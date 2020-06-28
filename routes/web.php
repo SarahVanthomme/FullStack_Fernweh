@@ -101,6 +101,7 @@ Route::resource('admin/posts','AdminPostsController');
 Route::resource('admin/products','AdminProductsController', ['index'=>'admin.products.index']);
 Route::get('admin/products/continent/{id}','AdminProductsController@productsPerContinent')->name('admin.productsPerContinent');
 Route::get('admin/products/country/{id}','AdminProductsController@productsPerCountry')->name('admin.productsPerCountry');
+Route::get('admin/products/city/{id}','AdminProductsController@productsPerCity')->name('admin.productsPerCity');
 Route::resource('admin/discounts','AdminDiscountsController');
 Route::resource('admin/photos','AdminPhotosController');
 Route::resource('admin/comments', 'PostCommentController');

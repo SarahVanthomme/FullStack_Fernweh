@@ -30,7 +30,6 @@
                         {!! Form::submit('Delete address', ['class' => 'btn btn-outline-danger']) !!}
                     </div>
                     {!! Form::close() !!}
-
                 </div>
             </div>
         </main>

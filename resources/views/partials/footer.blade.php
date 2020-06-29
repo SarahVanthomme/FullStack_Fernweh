@@ -2,7 +2,7 @@
     <div class="row d-flex justify-content-center pb-2pr">
         <div class="col-9 col-lg-11 d-lg-flex justify-content-lg-around text-center text-lg-left">
             <div class="col-lg-2">
-                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">
+                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">About Us
 {{--                    {{$translation->where('name','AboutUs')->value('body')}}--}}
                 </h2>
                 <p class="font-medium text-secondary m-0">
@@ -11,7 +11,7 @@
                 </p>
             </div>
             <div class="col-lg-2 footer-padding">
-                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">NEWSLETTER</h2>
+                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">Newsletter</h2>
                 <p class="font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere placeat.</p>
                 <div class="d-flex justify-content-center justify-content-lg-start">
 {{--                    <input type="email" placeholder="Subscribe">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-2 footer-padding">
-                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">INSTAGRAM FEED</h2>
+                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">Instagram Feed</h2>
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     <img src="{{asset('images/frontend/footer1.png')}}" alt="instafeed" class="p-1pr">
                     <img src="{{asset('images/frontend/footer2.png')}}" alt="instafeed" class="p-1pr">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-lg-2 footer-padding">
-                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">CONTACT US</h2>
+                <h2 class="text-secondary pb-1pr" style="font-size: xx-large;">Contact Us</h2>
                 <p class="font-medium text-secondary m-0">Schönhauser Allee<br>167c, 10345 Berlin Germany</p>
                 <p class="font-medium text-secondary m-0"><span class="text-blue">Email:</span> moin@fernweh.de</p>
                 <p class="font-medium text-secondary m-0"><span class="text-blue">Telephone:</span> 0123456789</p>
@@ -52,7 +52,7 @@
     <div class="row d-flex justify-content-center footer-border pt-2pr">
         <div class="col-6 col-lg-4 col-xl-3 text-secondary text-center">
 
-            <p class="text-secondary font-small pt-2pr">&copy; Voyage. All Rights Reserved</p>
+            <p class="text-secondary font-small pt-2pr">&copy; Fernweh. All Rights Reserved</p>
             <div onclick="call()"><i class="fa fa-arrow-up text-white font-small bounce" style="cursor: pointer"></i></div>
 
         </div>

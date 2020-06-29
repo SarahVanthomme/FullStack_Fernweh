@@ -93,7 +93,7 @@
     </div>
     <div class="fade-in-section pb-5pr d-flex justify-content-around">
         @foreach($continents as $continent)
-            <a href="#" id="box"><h1 id="box-title" class="text-center">{{$continent->name}}</h1><img class="mb-5" width="500" height="500" src="{{$continent->photo ? asset('images/continents/' . $continent->photo->file) : "none"}}" alt="" style="object-fit: cover;"></a>
+            <a href="{{route('shop')}}" id="box"><h1 id="box-title" class="text-center">{{$continent->name}}</h1><img class="mb-5" src="{{$continent->photo ? asset('images/continents/' . $continent->photo->file) : "none"}}" alt=""></a>
         @endforeach
     </div>
 </section>
@@ -114,7 +114,7 @@
             <p>{{$translation->where('name','SubTitel3')->value('body')}}</p>
         </div>
     </div>
-    <div class="fade-in-section pb-5pr d-flex justify-content-around">
+    <div class="fade-in-section pb-5pr d-lg-flex justify-content-lg-around d-block justify-content-around>
         @foreach($categories as $category)
             <a href="#" style="text-decoration: none; color: black">
                 <div class="card" style="width: 25rem;">
@@ -128,89 +128,5 @@
         @endforeach
     </div>
 </section>
-
-{{--<section class="container pt-4pr pb-5pr">
-    <div class="row pb-4pr">
-        <div class="col-12 text-center">
-            <h2>HAPPY CLIENTS</h2>
-            <p>blablablablabla.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <small class="text-muted">Name of the client<br>Country</small>
-                </div>
-            </div>
-            <div class="card">
-
-
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <small class="text-muted">Name of the client<br>Country</small>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <small class="text-muted">Name of the client<br>Country</small>
-                </div>
-            </div>
-        </div>
-        <div id="show-more-content">
-            <div class="card-deck pt-4pr">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck pt-4pr">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <small class="text-muted">Name of the client<br>Country</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="row">
-                <button onclick="ShowMore()" type="button"  id="show-more" class="btn text-white border-none btn-dark mt-1pr col-2 offset-10">SHOW
-                    MORE</button>
-                <button onclick="ShowMore()" type="button"  id="show-less" class="btn text-white border-none btn-dark mt-1pr col-2 offset-10">SHOW
-                    LESS</button>
-            </div>
-        </div>
-    </div>
-</section>--}}
-
 
 @endsection

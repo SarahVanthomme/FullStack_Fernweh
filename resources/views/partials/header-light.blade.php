@@ -17,7 +17,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDrop">
                         @foreach($continents as $continent)
-                            <a class="dropdown-item font-large" href="#">{{$continent->name}}</a>
+                            <a class="dropdown-item font-large" href="{{route('shop')}}">{{$continent->name}}</a>
                         @endforeach
                     </div>
                 </li>

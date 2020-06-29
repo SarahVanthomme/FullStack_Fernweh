@@ -35,52 +35,6 @@
                     </div>
                 </form>
 
-               {{-- <div class="row mt-2pr mx-1">
-
-                    <form action="#" class="col-12">
-
-                        <div class="row">
-                            <input type="text" name="firstname" required placeholder="{{$translation->where('name','FullName')->value('body')}}" class="col-11 form-control-lg bg-lightgrey border-checkout">
---}}{{--                            <input type="text" name="lastname" required placeholder="Last name" class="col-5 offset-1 form-control-lg bg-lightgrey border-checkout">--}}{{--
-                            <div class="col-1"></div>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="row mt-2pr mx-1">
-                    <form action="#" class="col-12">
-                        <div class="row">
-                            <input type="number" name="phonenumber" required placeholder="{{$translation->where('name','Phone')->value('body')}}" class="col-5 form-control-lg bg-lightgrey border-checkout">
-                            <input type="email" name="email" required placeholder="{{$translation->where('name','Email')->value('body')}}" class="col-5 offset-1 form-control-lg bg-lightgrey border-checkout">
-                            <div class="col-1"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row mt-2pr mx-1">
-                    <form action="#" class="col-11 p-0">
-                        <input type="text" name="country" placeholder="{{$translation->where('name','Country')->value('body')}}" class="w-100 pl-15px form-control-lg bg-lightgrey border-checkout">
-                    </form>
-                </div>
-                <div class="row mt-2pr mx-1">
-                    <form action="#" class="col-8 p-0">
-                        <input type="text" name="address" placeholder="{{$translation->where('name','Street')->value('body')}}" class="w-100 pl-15px form-control-lg bg-lightgrey border-checkout">
-                    </form>
-                    <form action="#" class="col-3 p-0">
-                        <input type="text" name="address" placeholder="{{$translation->where('name','StreetNumber')->value('body')}}" class="w-100 pl-15px form-control-lg bg-lightgrey border-checkout">
-                    </form>
-                </div>
-                <div class="row mt-2pr mx-1">
-                    <form action="#" class="col-11 p-0">
-                        <input type="text" name="town-city" placeholder="{{$translation->where('name','City')->value('body')}}" class="w-100 pl-15px form-control-lg bg-lightgrey border-checkout">
-                    </form>
-                </div>
-                <div class="row mt-2pr mx-1">
-                    <form action="#" class="col-12">
-                        <div class="row">
-                            <input type="text" name="postcode" placeholder="{{$translation->where('name','Zip')->value('body')}}" class="col-5 form-control-lg bg-lightgrey border-checkout">
-                        </div>
-                    </form>
-                </div>--}}
             </div>
             <div class="col-12 col-md-5 bg-lightgrey margin-your-order mt-0">
                 @if(Session::has('cart'))
@@ -125,14 +79,22 @@
                 @endif
 
                 <div class="row d-flex align-items-center pt-4pr">
-                    <input type="checkbox" class="col-1">
+                    <input type="checkbox" id="confirm" class="col-1">
                     <p class="mb-0 col-11 text font-large">{{$translation->where('name','ReadAndAccept')->value('body')}}<a class="text-decoration-none" href="#">{{$translation->where('name','TermsAndConditions')->value('body')}}</a></p>
                 </div>
                 <div class="row d-flex justify-content-center pt-4pr pb-4pr">
-                    <a href="{{ env('URL') }}/payment" class="btn btn-lg btn-dark col-11 active" role="button" aria-pressed="true">{{$translation->where('name','ButtonProceedPayment')->value('body')}}</a>
+                    <a href="{{ env('URL') }}/payment" id="reset" class="btn btn-lg btn-dark col-11 active" role="button" aria-pressed="true">{{$translation->where('name','ButtonProceedPayment')->value('body')}}</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        $('#reset').click(function () {
+            if (!$('#confirm').is(':checked')) {
+                alert('not checked');
+            }
+        });
+    </script>
 @endsection
 

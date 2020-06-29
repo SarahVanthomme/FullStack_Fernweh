@@ -17,7 +17,8 @@ class Product extends Model
         'name',
         'description',
         'bestseller',
-        'price'
+        'price',
+        'review_id'
     ];
 
     public function photo(){
@@ -42,5 +43,9 @@ class Product extends Model
 
     public function city(){
         return $this->belongsTo(City::class);
+    }
+
+    public function reviews(){
+        return $this->hasMany(ProductReview::class);
     }
 }

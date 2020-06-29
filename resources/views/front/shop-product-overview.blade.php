@@ -22,7 +22,7 @@
                             class="d-flex align-items-center pb-3pr pb-3pr"><input class="mb-1pr mr-4pr" type="checkbox"><p class="m-0">Categorie
                             </p></div>
                     </div>--}}
-                    <button class="collapsible toggle-icon-1 bg-filter text-dark">{{$translation->where('name','Continents')->value('body')}}<div class="plus-minus-toggle collapsed toggle-1 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-1 bg-filter text-dark" style="border-bottom: 1px solid white;">{{$translation->where('name','Continents')->value('body')}}<div class="collapsed toggle-1 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">
@@ -41,7 +41,7 @@
                         @endforeach
 
                     </div>
-                    <button class="collapsible toggle-icon-2 bg-filter text-dark">{{$translation->where('name','Countries')->value('body')}}<div class="plus-minus-toggle collapsed toggle-2 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-2 bg-filter text-dark" style="border-bottom: 1px solid white;">{{$translation->where('name','Countries')->value('body')}}<div class="collapsed toggle-2 float-right mt-3pr"></div></button>
                     <div class="content">
                             <div class="d-flex align-items-center pb-3pr pt-3pr">
                                 <input class="mb-1pr mr-4pr" type="checkbox">
@@ -59,8 +59,8 @@
                                 </div>
                             @endforeach
                         </div>
-                    <button class="collapsible toggle-icon-3 bg-filter text-dark">{{$translation->where('name','Cities')->value('body')}}<div
-                            class="plus-minus-toggle collapsed toggle-3 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-3 bg-filter text-dark" style="border-bottom: 1px solid white;">{{$translation->where('name','Cities')->value('body')}}<div
+                            class="collapsed toggle-3 float-right mt-3pr"></div></button>
 
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
@@ -79,7 +79,7 @@
                             </div>
                         @endforeach
                     </div>
-                    <button class="collapsible toggle-icon-4 bg-filter text-dark">{{$translation->where('name','Categories')->value('body')}}<div class="plus-minus-toggle collapsed toggle-4 float-right mt-3pr"></div></button>
+                    <button class="collapsible toggle-icon-4 bg-filter text-dark" style="border-bottom: 1px solid white;">{{$translation->where('name','Categories')->value('body')}}<div class="collapsed toggle-4 float-right mt-3pr"></div></button>
                     <div class="content">
                         <div class="d-flex align-items-center pb-3pr pt-3pr">
                             <input class="mb-1pr mr-4pr" type="checkbox">

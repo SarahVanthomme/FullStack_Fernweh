@@ -13,6 +13,7 @@ use App\IndexBanner;
 use App\Post;
 use App\PostComment;
 use App\Product;
+use App\ProductReview;
 use App\Translation;
 use App\User;
 use Illuminate\Http\Request;
@@ -29,21 +30,23 @@ class FrontendController extends Controller
     //
 
 
-    public function index(){
+    public function index()
+    {
         $continents = Continent::with(['photo'])->get();
         $categories = Category::with(['photo'])->get();
         $products = Product::with(['photo'])->get();
         $covers = IndexBanner::all();
         $translation = Translation::all()->first();
-        return view('front.home',compact('covers', 'continents', 'categories', 'products', 'translation'));
+        return view('front.home', compact('covers', 'continents', 'categories', 'products', 'translation'));
     }
 
-    public function shop(){
+    public function shop()
+    {
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
-        $banners = Banner::with(['continent','photo'])->get();
+        $banners = Banner::with(['continent', 'photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->get();
         $translation = Translation::all()->first();
         return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
@@ -51,77 +54,88 @@ class FrontendController extends Controller
 
 //    FILTERS SHOP
 
-    public function productsPerContinent($id){
+    public function productsPerContinent($id)
+    {
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
-        $banners = Banner::with(['continent','photo'])->get();
+        $banners = Banner::with(['continent', 'photo'])->get();
+        $translation = Translation::all()->first();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('continent_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
     }
 
-    public function productsPerCountry($id){
+    public function productsPerCountry($id)
+    {
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
-        $banners = Banner::with(['continent','photo'])->get();
+        $translation = Translation::all()->first();
+        $banners = Banner::with(['continent', 'photo'])->get();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('country_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
     }
 
-    public function productsPerCity($id){
+    public function productsPerCity($id)
+    {
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
-        $banners = Banner::with(['continent','photo'])->get();
-        $products = Product::with(['continent', 'country', 'city', 'category',  'photo'])->where('city_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
-    }
-
-    public function productsPerCategory($id){
-        $continents = Continent::all();
-        $countries = Country::all();
-        $cities = City::all();
-        $categories = Category::all();
-        $banners = Banner::with(['continent','photo'])->get();
+        $banners = Banner::with(['continent', 'photo'])->get();
+        $translation = Translation::all()->first();
         $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('city_id', '=', $id)->get();
-        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners'));
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
+    }
+
+    public function productsPerCategory($id)
+    {
+        $continents = Continent::all();
+        $countries = Country::all();
+        $cities = City::all();
+        $categories = Category::all();
+        $banners = Banner::with(['continent', 'photo'])->get();
+        $translation = Translation::all()->first();
+        $products = Product::with(['continent', 'country', 'city', 'category', 'photo'])->where('city_id', '=', $id)->get();
+        return view('front.shop-product-overview', compact('products', 'continents', 'countries', 'cities', 'categories', 'banners', 'translation'));
     }
 
     //SHOPPING CART FUNCTIONS
 
-    public function addToCart($id){
-        $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id','=', $id)->first();
+    public function addToCart($id)
+    {
+        $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id', '=', $id)->first();
 
-        $oldCart = Session::has('cart') ? Session::get('cart'):null;
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->add($product, $id);
         Session::put('cart', $cart);
         Session::flash('log_in', 'Please sign in to continue shopping');
-      //  return redirect('/shop');
+        //  return redirect('/shop');
         return Redirect::back();
     }
 
-    public function cart(){
+    public function cart()
+    {
         $continents = Continent::all();
         $translation = Translation::all()->first();
 
 
-        if(!Session::has('cart')){
+        if (!Session::has('cart')) {
             return Redirect::back();
-        }else{
+        } else {
             $currentCart = Session::has('cart') ? Session::get('cart') : null;
             $cart = new Cart($currentCart);
             $cart = $cart->products;
-            return view('front.checkout',compact('cart', 'continents', 'translation'));
+            return view('front.checkout', compact('cart', 'continents', 'translation'));
         }
     }
 
-    public function updateQuantity(Request $request){
-        $oldCart = Session::has('cart') ? Session::get('cart'):null;
+    public function updateQuantity(Request $request)
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->updateQuantity($request->id, $request->quantity);
         //(Session('cart'));
@@ -130,7 +144,8 @@ class FrontendController extends Controller
         return redirect('/checkout');
     }
 
-    public function removeItem($id){
+    public function removeItem($id)
+    {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->removeItem($id);
@@ -142,41 +157,42 @@ class FrontendController extends Controller
 
     //
 
-    public function product_detail($id){
+    public function product_detail($id)
+    {
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
         $categories = Category::all();
-        $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id','=', $id)->first();
-        $postcomments = PostComment::all();
+        $product = Product::with(['category', 'continent', 'country', 'city', 'photo'])->where('id', '=', $id)->first();
         $translation = Translation::all()->first();
-        return view('front.product_detail', compact('postcomments', 'product', 'continents', 'countries', 'cities', 'categories', 'translation'));
+        $reviews = ProductReview::whereIsActive(1)->get();
+        return view('front.product_detail', compact('product', 'continents', 'countries', 'cities', 'categories', 'translation', 'reviews'));
     }
 
 
-
-    public function updateinput(Request $request, Address $address){
-//updaten address
+    public function updateinput(Request $request, Address $address)
+    {
 
         $address = Address::findOrFail($request->address_id);
         $input = $request->all();
         $address->update($input);
-        //Session::flash('address_updated', 'Address updated!');
         return redirect('account');
     }
 
-    public function admin(){
+    public function admin()
+    {
         return view('admin.index');
     }
 
-    public function footer(){
+    public function footer()
+    {
         $translation = Translation::all()->first();
         return view('partials.footer', compact('translation'));
 
     }
+
     public function frontUserUpdate(Request $request, User $user)
     {
-        //update de user
         $user = Auth::user();
 
         if (trim($request->password) == '') {
@@ -191,10 +207,9 @@ class FrontendController extends Controller
         Session::flash('updated_user', 'User Updated!');
         return redirect('account');
     }
+
     public function frontPostAddress(Request $request)
     {
-//een nieuw address toevoegen
-        //store
         $user = Auth::user();
 
         $address = new address();
@@ -212,6 +227,7 @@ class FrontendController extends Controller
         Session::flash('created_address', 'The address has been created!');
         return redirect('account');
     }
+
     public function frontUpdate(Request $request)
     {
         $address = Address::findOrFail($request->address_id);
@@ -221,6 +237,7 @@ class FrontendController extends Controller
         Session::flash('address_updated', 'Address updated!');
         return redirect('account');
     }
+
     public function account()
     {
         $user = User::get();
@@ -229,9 +246,6 @@ class FrontendController extends Controller
         $translation = Translation::all()->first();
         return view('front.account', compact('user', 'address', 'continents', 'translation'));
     }
-
-
-
 
 
 }

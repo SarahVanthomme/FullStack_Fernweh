@@ -112,4 +112,4 @@ Route::resource('admin/orders', 'StripePaymentController');
 Route::resource('admin/addresses', 'AdminAddressesController');
 Route::resource('admin/translations', 'TranslationsController');
 Route::resource('admin/addresses', 'AdminAddressesController');
-
+Route::resource('/admin/reviews','ProductsReviewController');

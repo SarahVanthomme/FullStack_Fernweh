@@ -21,6 +21,7 @@
                                     <a class="nav-link thin" href="{{route('cities.index')}}">Cities</a>
                                     <a class="nav-link thin" href="{{route('countries.index')}}">Countries</a>
                                     <a class="nav-link thin" href="{{route('continents.index')}}">Continents</a>
+                                    <a class="nav-link thin" href="{{route('reviews.index')}}">Reviews</a>
 {{--                                    <a class="nav-link thin" href="{{route('comments.index')}}">Comments</a>--}}
                                     <a class="nav-link thin" href="{{route('orders.index')}}">Orders</a>
 {{--                                    <a class="nav-link thin" href="{{route('posts.index')}}">Posts</a>--}}

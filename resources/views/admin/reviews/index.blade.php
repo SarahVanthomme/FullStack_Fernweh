@@ -36,7 +36,7 @@
                                                 <td>{{$review->created_at}}</td>
                                                 <td>{{$review->updated_at}}</td>
                                                 <td><a href="{{route('product_detail', $review->product->id)}}" class="btn btn-link text-warning text-decoration-none">View</a></td>
-                                                <td>
+                                                {{--<td>
                                                     @if($review->is_active == 1)
                                                         {!! Form::open(['method'=>'PATCH', 'action'=>['ProductsReviewController@update',$review->id]]) !!}
                                                         <input type="hidden" name="is_active" value="0">
@@ -52,7 +52,7 @@
                                                         </div>
                                                         {!! Form::close() !!}
                                                     @endif
-                                                </td>
+                                                </td>--}}
                                                 {!! Form::open(['method'=>'DELETE', 'action'=>['ProductsReviewController@destroy', $review->id]]) !!}
                                                 <td class="form-group">
                                                     {!! form::submit('Delete', ['class'=>'btn btn-link text-danger text-decoration-none']) !!}

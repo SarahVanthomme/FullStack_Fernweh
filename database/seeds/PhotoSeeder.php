@@ -14,6 +14,9 @@ class PhotoSeeder extends Seeder
     {
         //
         DB::table('photos')->insert(['file'=>'product1.png']);
+        DB::table('photos')->insert(['file'=>'product2.png']);
+        DB::table('photos')->insert(['file'=>'product3.png']);
+        DB::table('photos')->insert(['file'=>'product4.png']);
 
     }
 }

@@ -103,8 +103,8 @@
                 <h1 class="mb-5 text-center">{{$translation->where('name','OurProducts')->value('body')}}</h1>
                 <div class="row justify-content-around d-flex">
                     @foreach($products as $product)
-                        <div class="text-center product-overview">
-                            <div class="hovereffect product-content mb-5">
+                        <div class="text-center product-overview mb-5">
+                            <div class="hovereffect product-content mb-3">
                                 <div class="product-content-overlay"></div>
                                 <img class="img-fluid bottom-3 product-img-shop" src="{{$product->photo ? asset('/images/products/' . $product->photo->file) : 'NONE'}}" alt="">
                                 <div class="overlay">

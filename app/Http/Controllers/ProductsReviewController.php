@@ -50,7 +50,7 @@ class ProductsReviewController extends Controller
             'body' => $request->body
         ];
         ProductReview::create($data);
-        Session::flash('review_message','Your message has been submitted successfully');
+        Session::flash('review_message','You successfully added a review !');
         return redirect()->back();
     }
 

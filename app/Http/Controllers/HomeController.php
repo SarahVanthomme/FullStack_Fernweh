@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Currency;
-use App\PaymentPlatform;
+use App\Continent;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,17 +24,12 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
-    //dit was de index functie voor de pp payments
     public function index()
     {
+        $users = User::all();
+        $continents = Continent::all();
         //dit is de link naar de backend dus hier aanpassen om terug naar frontend te gaan
-        return view('admin.index');
+        return view('admin.index',compact('users', 'continents'));
     }
 
-/*    public function payment()
-    {
-        $currencies = Currency::all();
-        $paymentPlatforms = PaymentPlatform::all();
-        return view('home')->with(['currencies'=>$currencies, 'paymentPlatforms'=>$paymentPlatforms]);
-    }*/
 }

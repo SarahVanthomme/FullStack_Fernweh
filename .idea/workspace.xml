@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="46e5203e-a837-491e-b28f-6105c2899a3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminAddressesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/account.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop-product-overview.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/topbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header-dark.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header-dark.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header-light.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header-light.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +259,8 @@
       <workItem from="1593107910663" duration="4584000" />
       <workItem from="1593113391032" duration="4141000" />
       <workItem from="1593179125857" duration="25792000" />
-      <workItem from="1593248776729" duration="111888000" />
+      <workItem from="1593248776729" duration="117476000" />
+      <workItem from="1593411570548" duration="16000" />
     </task>
     <servers />
   </component>
@@ -313,10 +317,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="796" y="268" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1592754576308" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1593248777763">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1593411570568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1593248777763" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1593411570568" />
     <state x="606" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589208103431">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

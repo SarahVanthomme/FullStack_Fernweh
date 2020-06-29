@@ -25,8 +25,9 @@ class AdminProductsController extends Controller
         $continents = Continent::all();
         $countries = Country::all();
         $cities = City::all();
-        $products = Product::with(['category', 'continent', 'photo', 'country', 'city'])->get(); //moet photo hierbij??
-        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities'));
+        $categories = Category::all();
+        $products = Product::with(['category', 'continent', 'photo', 'country', 'city'])->get();
+        return view('admin.products.index', compact('products', 'continents', 'countries', 'cities', 'categories'));
     }
 
     /**

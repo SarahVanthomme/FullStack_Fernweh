@@ -62,6 +62,80 @@
             </ul>
         </div>
     </nav>
+    <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
+        <a class="navbar-brand xxl-font-300" href="index.html">FERNWEH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse large-font-300" id="navSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-target="destinations.html" href="destinations.html" id="navbarDrop" role="button" aria-haspopup="true" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDrop">
+                        <a class="dropdown-item" href="#">Africa</a>
+                        <a class="dropdown-item" href="#">Asia</a>
+                        <a class="dropdown-item" href="#">Australia</a>
+                        <a class="dropdown-item" href="#">Europe</a>
+                        <a class="dropdown-item" href="#">North America</a>
+                        <a class="dropdown-item" href="#">South America</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link ml-30pr d-none d-lg-block" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <a class="d-block d-lg-none nav-link" href="shopping_cart.html">Shopping cart</a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <p><b>Your shopping cart is empty</b></p>
+                        <button class="btn text-white border-none btn-dark mr-5pr w-80 mb-4pr">Go to shop</button>
+                        <button class="btn text-white border-none btn-dark mr-5pr w-80">Go to cart</button>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="d-none d-lg-block nav-link ml-70pr" href="#"><i class="fa fa-user pr-45pr"></i>
+                    </a>
+                    <a class="d-block d-lg-none nav-link" href="#">Your account</a>
+                    <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1"><b>Email address</b></label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1"><b>Password</b></label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropCheck">
+                                <label class="form-check-label" for="dropCheck">
+                                    <b>Remember me</b>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">New around here? Sign up</a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 border-grey" type="search"
+                       placeholder="Search"
+                       aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
 
 
 {{--
@@ -197,48 +271,3 @@
     </nav>
 --}}
 </section>
-
-
-
-
-
-{{--<div class="d-flex ">
-
-    @guest
-        <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
-        @if (Route::has('register'))
-            <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
-        @endif
-    @else
-        <div class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown"
-               aria-haspopup="true"
-               aria-expanded="false" v-pre>
-                <i class="fas fa-user text-white"></i>
-                {{ Auth::user()->name }} <span class="caret"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                @if(Auth::user()->role->name == 'admin' && Auth::user()->is_active == '1')
-
-                    <a class="dropdown-item" href="{{ route('backend') }}">Backend</a>
-                    <a class="dropdown-item" href="{{ route('account') }}">Account</a>
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt mr-3"></i>{{ __('Logout') }}
-                    </a>
-                @else
-                    <a class="dropdown-item" href="{{ route('account') }}">Account</a>
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt mr-3"></i>{{ __('Logout') }}
-                    </a>
-                @endif
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            </div>
-        </div>
-    @endguest
-</div>--}}

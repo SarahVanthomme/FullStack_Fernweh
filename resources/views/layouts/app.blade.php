@@ -21,6 +21,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="public/images/faviconfepng.png">
+
 </head>
 <style>
 </style>

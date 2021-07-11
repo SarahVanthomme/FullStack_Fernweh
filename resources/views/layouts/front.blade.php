@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{asset('css/front-styles.css')}}">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="shortcut icon" href="public/images/faviconfepng.png">
+
     <title>@yield('title')</title>
 </head>
 <body>

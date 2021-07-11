@@ -91,7 +91,7 @@
             <p>{{$translation->where('name','SubTitel1')->value('body')}}</p>
         </div>
     </div>
-    <div class="fade-in-section pb-5pr d-flex justify-content-around">
+    <div class="fade-in-section pb-5pr d-flex justify-content-center row">
         @foreach($continents as $continent)
             <a href="{{route('shop')}}" id="box"><h1 id="box-title" class="text-center">{{$continent->name}}</h1><img class="mb-5" src="{{$continent->photo ? asset('images/continents/' . $continent->photo->file) : "none"}}" alt=""></a>
         @endforeach
